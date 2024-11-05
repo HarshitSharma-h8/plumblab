@@ -1,15 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
-:root{
-    --primaryColor : #0053d4;
-    --primaryColorHover : #054aba;
-    --colorWhite : #ffffff;
-    --colorDark : #253141;
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+:root {
+  --primaryColor: #0053d4;
+  --primaryColorHover: #054aba;
+  --bgLight: #6c9be72b;
+  --colorWhite: #ffffff;
+  --colorDark: #253141;
+  --colorDark2: #212d3d;
+  --textGray: rgb(107 114 128);
+  --textGray2: rgb(100, 104, 111);
 }
 
-body{
-    font-family: "Mulish", sans-serif;
+body {
+  font-family: "Mulish", sans-serif;
 }
 
-li{
-    list-style: none;
+li {
+  list-style: none;
+}
+
+h1 {
+  font-size: 2rem;
+  font-size: clamp(2rem, 1.6rem + 2vw, 4rem);
 }

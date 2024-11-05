@@ -43,3 +43,9 @@ function toggleDropdown() {
   dropSymbole.classList.toggle("rotate-180");
   dropdown.classList.toggle("hidden");
 }
+
+// Add current year in footer
+const yearSpan = document.getElementById("year");
+
+// Set the text content of the span
+yearSpan.textContent = new Date().getFullYear(); // Replace "2024" with any text you want to add
