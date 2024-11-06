@@ -5,20 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PlumbLab | Provide Plumbing Service</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com" defer></script>
     <script src="./javascript/index.js" defer></script>
     <link rel="stylesheet" href="./style/style.css">
     <!-- font awsome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- swiper crousel  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
 </head>
 
 <body>
     <header>
         <!-- Top bar for location and email -->
         <div
-            class="z-50 bg-[var(--colorDark)] text-[var(--colorWhite)] text-sm p-2 sm:p-4 md:flex justify-between items-center px-4 md:px-10">
+            class="z-50 bg-[var(--colorDark)] text-[var(--colorWhite)] text-sm p-2 sm:p-4 md:flex justify-between items-center px-4 md:px-14">
             <div class="flex flex-col sm:flex-row  items-center justify-center  space-x-5  mb-1 md:mb-0">
                 <div class="flex items-center lg:text-base mb-1 md:mb-0"><i class="fas fa-map-marker-alt mr-1"></i> 121
                     King Street,
@@ -36,7 +40,7 @@
         </div>
 
         <!-- Main Navbar -->
-        <nav class="z-50 bg-white shadow-md px-4 md:px-10 relative">
+        <nav class="z-50 bg-white shadow-md shadow-[var(--bgLight)] px-4 md:px-14 relative">
             <div class="mx-auto  py-4 flex justify-between items-center ">
                 <!-- hamburger menue -->
                 <a
@@ -65,8 +69,8 @@
                         <!-- Dropdown Menu -->
                         <ul
                             class="absolute left-0 top-[2.1rem] w-[20rem] hidden group-hover:block bg-[var(--colorWhite)] py-6 pb-5 rounded-md px-3  mt-2  z-10">
-                            <li><a href="#"
-                                    class=" block hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Plumbing
+                            <li><a href="/pages/allservice.html"
+                                    class=" block hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">All
                                     Services</a>
                             </li>
                             <li><a href="./installationServices.html"
@@ -86,7 +90,7 @@
                 </div>
                 <!-- Get Free Quote Button -->
                 <div class="mt-3 md:mt-0">
-                    <a href="#"
+                    <a href="./rough.html"
                         class="hidden lg:block bg-[var(--primaryColor)] text-[var(--colorWhite)] py-3 px-5 rounded-md hover:bg-[var(--primaryColorHover)] transition duration-300 ease-in-out text-[1.1rem]">Get
                         Free Quote</a>
                 </div>
@@ -145,15 +149,16 @@
             </div>
         </nav>
 
-        <section class="h-[45vh] lg:h-[80vh]  flex justify-between items-center px-4 md:px-10  mx-auto">
+        <section
+            class="h-[60vh] lg:h-[80vh] bg-[var(--bgLight)] flex justify-between items-center px-4 md:px-14  mx-auto">
             <div class="lg:w-[70%]">
                 <h1
                     class="text-[var(--colorDark)] text-[2rem] lg:text-[2.6rem] xl:text-[3.5rem] font-medium  leading-tight mb-3">
                     We Provide Top- Notch <br><span class="text-[var(--primaryColor)] font-bold">Plumbing &
                         Repair</span><br> Service At Your Door</h1>
-                <p class="text-[var(--textGray)] text-[.6rem] lg:text-[.8rem] xl:text-lg mb-1">We provide top-notch
+                <p class="text-[var(--textGray)]  text-[1rem] lg:text-[1.1rem] xl:text-lg mb-1">We provide top-notch
                     plimbing and repair services at your doorstep!</p>
-                <p class="text-[var(--textGray)] text-[.6rem] lg:text-[.8rem] xl:text-lg mb-5">Whether you're dealing
+                <p class="text-[var(--textGray)]  text-[1rem] lg:text-[1.1rem] xl:text-lg mb-5">Whether you're dealing
                     with a leaky faucet, clogged drains, or need a full system.</p>
                 <button href="#"
                     class=" bg-[var(--primaryColor)] text-[var(--colorWhite)] py-3 px-5 rounded-md hover:bg-[var(--primaryColorHover)] transition duration-300 ease-in-out text-[1.1rem]">Get
@@ -167,12 +172,15 @@
     </header>
 
     <!-- about us -->
-    <section class=" mx-auto  py-12  bg-[var(--bgLight)] px-4 md:px-10">
+    <section class=" mx-auto  py-12   px-4 md:px-14">
         <div class="mb-10">
-            <h2 class="text-center text-4xl mb-3 text-[var(--colorDark)] font-bold">About <span class="text-[var(--primaryColor)]">Us</span></h2>
-        <p class="hidden sm:block text-center  text-[var(--colorDark)]">Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br> has been the industry's standard dummy text ever since the 1500s.</p>
+            <h2 class="text-center text-4xl mb-3 text-[var(--colorDark)] font-bold">About <span
+                    class="text-[var(--primaryColor)]">Us</span></h2>
+            <p class="hidden sm:block text-center  text-[var(--colorDark)]">Lorem Ipsum is simply dummy text of the
+                printing and typesetting industry.<br> has been the industry's standard dummy text ever since the 1500s.
+            </p>
         </div>
-        <div class="flex flex-col lg:flex-row items-center">
+        <div class="flex  flex-col lg:flex-row items-center">
             <!-- Left Image -->
             <div class="w-full lg:w-1/2 mb-8 lg:mb-0 flex justify-center">
                 <img src="./assets/about.jpg" alt="Plumber Image"
@@ -182,7 +190,7 @@
             <!-- Right Content -->
             <div class="w-full lg:w-1/2 lg:pl-12">
                 <!-- <h3 class="text-[var(--bgColorDark)] text-lg font-semibold mb-1">About Us</h3> -->
-                <h3 class="xl:text-3xl xl:mb-4 lg:text-2xl text-[1.5rem] font-bold text-[var(--primaryColor)] mb-3">Over
+                <h3 class="xl:text-4xl xl:mb-4 lg:text-2xl text-[1.5rem] font-bold text-[var(--primaryColor)] mb-3">Over
                     25+ Years Experience In Plumbing
                     Service</h3>
                 <p class="text-[var(--textGray2)] mb-5 xl:mb-6  lg:text-[1.120rem]">
@@ -193,11 +201,119 @@
                     iste nisi. Similique saepe nobis laudantium maiores libero provident dolore eligendi?
                 </p>
                 <button href="./pages/about.html"
-                    class=" bg-[var(--primaryColor)] text-[var(--colorWhite)] hover:bg-[var(--primaryColorHover)] py-3 px-5 rounded-md  transition duration-300 ease-in-out text-[1.1rem]">More About</button>
+                    class=" bg-[var(--primaryColor)] text-[var(--colorWhite)] hover:bg-[var(--primaryColorHover)] py-3 px-5 rounded-md  transition duration-300 ease-in-out text-[1.1rem]">More
+                    About</button>
             </div>
         </div>
     </section>
 
+    <!-- Servise -->
+    <section class=" mx-auto  py-12 bg-[var(--bgLight)]  px-4 md:px-14">
+        <div class="mb-10">
+            <h2 class="text-center text-4xl mb-3 text-[var(--colorDark)] font-bold">Best <span
+                class="text-[var(--primaryColor)]">Service</span> We Offer</h2>
+            <p class="hidden sm:block text-center  text-[var(--colorDark)]">Lorem Ipsum is simply dummy text of the
+                printing and typesetting industry.<br> has been the industry's standard dummy text ever since the 1500s.
+            </p>
+        </div>
+
+        <div class="container swiper">
+            <div class="slider-wrapper">
+                <div class="card-list swiper-wrapper">
+                    <div class="card-item swiper-slide bg-[var(--colorWhite)] rounded-xl group">
+                        <div class="overflow-hidden rounded-xl w-full h-[16rem]">
+                            <img src="./assets/about.jpg"
+                                class="rounded-xl w-full h-full object-cover transition-transform duration-200 ease-in-out group-hover:scale-110"
+                                alt="kitchen plumbing">
+                        </div>
+                        <h4 class="text-[var(--colorDark)] text-xl font-medium mt-4 mb-2">Kitchen Plumbing</h4>
+                        <p class="text-[var(--textGray2)] mb-2">Electronic typesetting rema essentially unchanged was
+                            popularised.</p>
+                        <a href=""
+                            class="transition duration-300 ease-in-out hover:text-[var(--primaryColor)] font-semibold">Read
+                            More
+                            <i class="fa-solid fa-angles-right"></i></a>
+                    </div>
+                    <div class="card-item swiper-slide bg-[var(--colorWhite)] rounded-xl group">
+                        <div class="overflow-hidden rounded-xl w-full h-[16rem]">
+                            <img src="./assets/service2.jpg"
+                                class="rounded-xl w-full h-full object-cover transition-transform duration-200 ease-in-out group-hover:scale-110"
+                                alt="kitchen plumbing">
+                        </div>
+                        <h4 class="text-[var(--colorDark)] text-xl font-medium mt-4 mb-2">Kitchen Plumbing</h4>
+                        <p class="text-[var(--textGray2)] mb-2">Electronic typesetting rema essentially unchanged was
+                            popularised.</p>
+                        <a href=""
+                            class="transition duration-300 ease-in-out hover:text-[var(--primaryColor)] font-semibold">Read
+                            More
+                            <i class="fa-solid fa-angles-right"></i></a>
+                    </div>
+                    <div class="card-item swiper-slide bg-[var(--colorWhite)] rounded-xl group">
+                        <div class="overflow-hidden rounded-xl w-full h-[16rem]">
+                            <img src="./assets/service3.jpg"
+                                class="rounded-xl w-full h-full object-cover transition-transform duration-200 ease-in-out group-hover:scale-110"
+                                alt="kitchen plumbing">
+                        </div>
+                        <h4 class="text-[var(--colorDark)] text-xl font-medium mt-4 mb-2">Kitchen Plumbing</h4>
+                        <p class="text-[var(--textGray2)] mb-2">Electronic typesetting rema essentially unchanged was
+                            popularised.</p>
+                        <a href=""
+                            class="transition duration-300 ease-in-out hover:text-[var(--primaryColor)] font-semibold">Read
+                            More
+                            <i class="fa-solid fa-angles-right"></i></a>
+                    </div>
+                    <div class="card-item swiper-slide bg-[var(--colorWhite)] rounded-xl group">
+                        <div class="overflow-hidden rounded-xl w-full h-[16rem]">
+                            <img src="./assets/service4.jpg"
+                                class="rounded-xl w-full h-full object-cover transition-transform duration-200 ease-in-out group-hover:scale-110"
+                                alt="kitchen plumbing">
+                        </div>
+                        <h4 class="text-[var(--colorDark)] text-xl font-medium mt-4 mb-2">Kitchen Plumbing</h4>
+                        <p class="text-[var(--textGray2)] mb-2">Electronic typesetting rema essentially unchanged was
+                            popularised.</p>
+                        <a href=""
+                            class="transition duration-300 ease-in-out hover:text-[var(--primaryColor)] font-semibold">Read
+                            More
+                            <i class="fa-solid fa-angles-right"></i></a>
+                    </div>
+                    <div class="card-item swiper-slide bg-[var(--colorWhite)] rounded-xl group">
+                        <div class="overflow-hidden rounded-xl w-full h-[16rem]">
+                            <img src="./assets/service6.jpg"
+                                class="rounded-xl w-full h-full object-cover transition-transform duration-200 ease-in-out group-hover:scale-110"
+                                alt="kitchen plumbing">
+                        </div>
+                        <h4 class="text-[var(--colorDark)] text-xl font-medium mt-4 mb-2">Kitchen Plumbing</h4>
+                        <p class="text-[var(--textGray2)] mb-2">Electronic typesetting rema essentially unchanged was
+                            popularised.</p>
+                        <a href=""
+                            class="transition duration-300 ease-in-out hover:text-[var(--primaryColor)] font-semibold">Read
+                            More
+                            <i class="fa-solid fa-angles-right"></i></a>
+                    </div>
+                    <div class="card-item swiper-slide bg-[var(--colorWhite)] rounded-xl group">
+                        <div class="overflow-hidden rounded-xl w-full h-[16rem]">
+                            <img src="./assets/servise5.jpg"
+                                class="rounded-xl w-full h-full object-cover transition-transform duration-200 ease-in-out group-hover:scale-110"
+                                alt="kitchen plumbing">
+                        </div>
+                        <h4 class="text-[var(--colorDark)] text-xl font-medium mt-4 mb-2">Kitchen Plumbing</h4>
+                        <p class="text-[var(--textGray2)] mb-2">Electronic typesetting rema essentially unchanged was
+                            popularised.</p>
+                        <a href=""
+                            class="transition duration-300 ease-in-out hover:text-[var(--primaryColor)] font-semibold">Read
+                            More
+                            <i class="fa-solid fa-angles-right"></i></a>
+                    </div>
+
+                    
+                </div>
+
+                <div class="swiper-pagination"></div>
+                <div class="swiper-slide-button swiper-button-prev"></div>
+                <div class="swiper-slide-button swiper-button-next"></div>
+            </div>
+        </div>
+    </section>
 
     <footer class="bg-[var(--colorDark)]">
         <div class="container mx-auto  grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 p-8 px-4 md:px-10 ">
@@ -286,6 +402,8 @@
             <p>&#169; Copyright <span id="year"></span> | PlumbLab - Plumber Website Theme | All right reserved.</p>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 
 </html>
