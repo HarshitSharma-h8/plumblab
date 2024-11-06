@@ -56,7 +56,7 @@ new Swiper('.slider-wrapper', {
   slidesPerView: 1,
   loop: true,
   autoplay: {
-    delay: 3000,
+    delay: 1000,
     disableOnInteraction: true,
   },
   grabCursor: true,
@@ -88,3 +88,7 @@ new Swiper('.slider-wrapper', {
     }
   }
 });
+
+
+
+// stats js
