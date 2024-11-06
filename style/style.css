@@ -112,3 +112,18 @@ h1 {
     display: none;
   }
 }
+
+
+/* team member overlay effect */
+.team-card {
+  position: relative;
+}
+
+.overlay {
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.3s ease; /* Smooth transition for overlay */
+}
+
+.team-card:hover .overlay {
+  opacity: 1; /* Show overlay on hover */
+}
