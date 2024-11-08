@@ -51,43 +51,42 @@ const yearSpan = document.getElementById("year");
 yearSpan.textContent = new Date().getFullYear(); // Replace "2024" with any text you want to add
 
 
-// swiper js
-new Swiper('.slider-wrapper', {
-  slidesPerView: 1,
-  loop: true,
-  autoplay: {
-    delay: 1000,
-    disableOnInteraction: false,
-  },
-  grabCursor: true,
-  spaceBetween: 30,
 
-  // Pagination bullets
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-    dynamicBullets: true
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  // Responsive breakpoints
-  breakpoints: {
-    640: {
-      slidesPerView: 1
-    },
-    768: {
-      slidesPerView: 2
-    },
-    1024: {
-      slidesPerView: 3
-    }
+// take me top
+// Show the button when scrolled down 100px
+window.onscroll = function () {
+  const backToTopButton = document.getElementById("backToTop");
+  if (document.documentElement.scrollTop > 100 || document.body.scrollTop > 100) {
+    backToTopButton.classList.remove("hidden");
+    backToTopButton.classList.add("opacity-100");
+  } else {
+    backToTopButton.classList.add("hidden");
+    backToTopButton.classList.remove("opacity-100");
   }
-});
+};
+
+// Scroll to top function
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+}
+
+// navbar
+let lastScrollTop = 0;
+const navbar = document.getElementById("navbar")
+window.addEventListener("scroll",function(){
+  const scrollTop = window.pageYOffset || window.scrollY || documentElement.scrollTop
+  if(!toggle){if(scrollTop > lastScrollTop){
+    navbar.style.top = "-100px"
+  }else{
+    navbar.style.top = "0"
+  }}
+  lastScrollTop = scrollTop
+})
+
+
 
 
 
@@ -184,39 +183,47 @@ Waterline.addEventListener('click',function(){
 })
 
 
-// take me top
-// Show the button when scrolled down 100px
-window.onscroll = function () {
-  const backToTopButton = document.getElementById("backToTop");
-  if (document.documentElement.scrollTop > 100 || document.body.scrollTop > 100) {
-    backToTopButton.classList.remove("hidden");
-    backToTopButton.classList.add("opacity-100");
-  } else {
-    backToTopButton.classList.add("hidden");
-    backToTopButton.classList.remove("opacity-100");
+
+
+
+
+// swiper js
+new Swiper('.slider-wrapper', {
+  slidesPerView: 1,
+  loop: true,
+  autoplay: {
+    delay: 1000,
+    disableOnInteraction: false,
+  },
+  grabCursor: true,
+  spaceBetween: 30,
+
+  // Pagination bullets
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // Responsive breakpoints
+  breakpoints: {
+    640: {
+      slidesPerView: 1
+    },
+    768: {
+      slidesPerView: 2
+    },
+    1024: {
+      slidesPerView: 3
+    }
   }
-};
-
-// Scroll to top function
-function scrollToTop() {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
-}
-
-// navbar
-let lastScrollTop = 0;
-const navbar = document.getElementById("navbar")
-window.addEventListener("scroll",function(){
-  const scrollTop = window.pageYOffset || window.scrollY || documentElement.scrollTop
-  if(!toggle){if(scrollTop > lastScrollTop){
-    navbar.style.top = "-100px"
-  }else{
-    navbar.style.top = "0"
-  }}
-  lastScrollTop = scrollTop
-})
+});
 
 
 
