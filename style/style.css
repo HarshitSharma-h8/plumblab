@@ -3,6 +3,7 @@
   --primaryColor: #0053d4;
   --primaryColorHover: #054aba;
   --bgLight: #6c9be738;
+  --bgLight2: #0051d4b3;
   --colorWhite: #ffffff;
   --colorDark: #253141;
   --colorDark2: #212d3d;
@@ -126,4 +127,10 @@ h1 {
 
 .team-card:hover .overlay {
   opacity: 1; /* Show overlay on hover */
+}
+
+
+.isActive{
+  background-color: var(--primaryColor) !important;
+  color: var(--colorWhite) !important;
 }
