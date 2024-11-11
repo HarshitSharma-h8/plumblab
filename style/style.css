@@ -28,6 +28,13 @@ h1 {
 }
 
 
+/* contactus for img */
+#contactusform-img {
+  background-size: cover;  /*Make the image cover the entire background */
+  background-position: center;  /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+
 /* Slider in service in home page */
 .slider-wrapper {
   overflow: hidden;
@@ -98,3 +105,5 @@ h1 {
   background-color: var(--primaryColor) !important;
   color: var(--colorWhite) !important;
 }
+
+
