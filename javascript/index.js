@@ -226,6 +226,24 @@ new Swiper('.slider-wrapper', {
 });
 
 
+// Function to toggle the accordion
+function toggleAccordion(id) {
+  // Close all other accordions
+  for (let i = 1; i <= 5; i++) {
+    if (i !== id) {
+      document.getElementById('content-' + i).classList.add('hidden');
+      document.getElementById('icon-' + i).classList.remove('rotate-180');
+    }
+  }
+
+  // Toggle the selected accordion
+  const content = document.getElementById('content-' + id);
+  const icon = document.getElementById('icon-' + id);
+  content.classList.toggle('hidden');
+  icon.classList.toggle('rotate-180');
+}
+
+
 
 
 
