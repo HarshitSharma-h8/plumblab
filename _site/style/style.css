@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+:root {
+  --primaryColor: #0053d4;
+  --primaryColorHover: #054aba;
+  --bgLight: #6c9be738;
+  --bgLight2: #0051d492;
+  --colorWhite: #ffffff;
+  --colorWhite2: #e6eaf051;
+  --colorDark: #253141;
+  --colorDark2: #212d3d;
+  --textGray: rgb(107 114 128);
+  --textGray2: rgb(100, 104, 111);
+  --gold : #fca900;
+  --purple : #6C48C5;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  font-size: 2rem;
+  font-size: clamp(2rem, 1.6rem + 2vw, 4rem);
+}
+
+
+/* contactus for img */
+#contactusform-img {
+  background-size: cover;  /*Make the image cover the entire background */
+  background-position: center;  /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+
+/* Slider in service in home page */
+.slider-wrapper {
+  overflow: hidden;
+  max-width: 1200px;
+  margin: 0 70px 55px;
+}
+
+.card-list .card-item {
+  height: auto;
+  user-select: none;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
+.slider-wrapper .swiper-pagination-bullet {
+  background: #fff;
+  height: 13px;
+  width: 13px;
+  opacity: 0.5;
+}
+
+.slider-wrapper .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+.slider-wrapper .swiper-slide-button {
+  color: #fff;
+  margin-top: -55px;
+  transition: 0.2s ease;
+  
+}
+
+.slider-wrapper .swiper-slide-button:hover {
+  color: #4658ff;
+}
+
+@media (max-width: 768px) {
+  .slider-wrapper {
+    margin: 0 10px 40px;
+  }
+
+  .slider-wrapper .swiper-slide-button {
+    display: none;
+  }
+}
+
+
+/* team member overlay effect */
+.team-card {
+  position: relative;
+}
+
+.overlay {
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.3s ease; /* Smooth transition for overlay */
+}
+
+.team-card:hover .overlay {
+  opacity: 1; /* Show overlay on hover */
+}
+
+
+.isActive{
+  background-color: var(--primaryColor) !important;
+  color: var(--colorWhite) !important;
+}
+
+
