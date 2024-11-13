@@ -37,5 +37,4 @@ Thumbs.db
 _build/
 *.bak
 
-# Optional: GitHub Actions or other CI/CD output if applicable
-.github/
+
