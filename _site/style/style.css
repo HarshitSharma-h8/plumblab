@@ -18,8 +18,12 @@ body {
   font-family: "Mulish", sans-serif;
 }
 
-li {
+/* utilities */
+header li {
   list-style: none;
+}
+.serviceareali{
+  list-style: disc;
 }
 
 h1 {

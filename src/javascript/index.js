@@ -11,7 +11,7 @@ moboiconAll.forEach((moboicon) => {
       mobomenu.style.transform = "translateX(0)";
       toggle = true;
     } else {
-      mobomenu.style.transform = "translateX(-600px)";
+      mobomenu.style.transform = "translateX(-800px)";
       toggle = false;
       const dropSymbole = document.getElementById("dropMenu");
       dropSymbole.classList.remove("rotate-180");
@@ -40,6 +40,12 @@ document.addEventListener("click", (e) => {
 function toggleDropdown() {
   const dropdown = document.getElementById("mobileDropdown");
   const dropSymbole = document.getElementById("dropMenu");
+  dropSymbole.classList.toggle("rotate-180");
+  dropdown.classList.toggle("hidden");
+}
+function toggleDropdown2() {
+  const dropdown = document.getElementById("mobileDropdown2");
+  const dropSymbole = document.getElementById("dropMenu2");
   dropSymbole.classList.toggle("rotate-180");
   dropdown.classList.toggle("hidden");
 }

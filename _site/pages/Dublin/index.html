@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PlumbLab | Basement Plumbing</title>
+    <title>PlumbLab | Dublin Plumbing Service</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="../../javascript/index.js" defer></script>
     <link rel="stylesheet" href="../../style/style.css">
@@ -49,11 +49,11 @@
             <div class="mx-auto  py-4 flex justify-between items-center ">
                 <!-- hamburger menue -->
                 <a
-                    class="lg:hidden bg-[var(--primaryColor)] text-[var(--colorWhite)] px-3 py-1 rounded-md cursor-pointer menuToggle">
+                    class="xl:hidden bg-[var(--primaryColor)] text-[var(--colorWhite)] px-3 py-1 rounded-md cursor-pointer menuToggle">
                     <i class="fa-solid fa-bars"></i>
                 </a>
                 <!-- Logo and company name -->
-                <a href="../../index.html" class="order-last lg:order-none flex items-center space-x-2">
+                <a href="../../index.html" class="order-last xl:order-none flex items-center space-x-2">
                     <img src="../../assets/logo.png" alt="Logo" class="lg:w-14 w-10">
                     <div class="flex flex-col">
                         <span class="text-[var(--primaryColor)] font-bold lg:text-3xl text-[1.3rem]">Plum<span
@@ -63,19 +63,20 @@
                     </div>
                 </a>
                 <!-- Navigation links -->
-                <div class="hidden lg:flex space-x-2 text-[var(--colorDark)] font-medium">
+                <div class="hidden xl:flex space-x-2 text-[var(--colorDark)] font-medium">
                     <a href="../../index.html"
                         class="hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Home</a>
-                    <a href="#"
+                    <a href="../about/index.html"
                         class="hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">About</a>
                     <li class="relative group ">
-                        <button href="#"
+                        <button onclick="window.location.href='../allservice/index.html';"
                             class="hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Services</button>
                         <!-- Dropdown Menu -->
                         <ul
                             class="absolute left-0 top-[2.1rem] w-[20rem] hidden group-hover:block bg-[var(--colorWhite)] py-6 pb-5 rounded-md px-3  mt-2  z-10">
                             <li><a href="../allservice/index.html"
-                                    class=" block hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Our Services</a>
+                                    class=" block hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Our
+                                    Services</a>
                             </li>
                             <li><a href="../basementservice/index.html"
                                     class=" block hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Basement
@@ -96,8 +97,30 @@
                                     Plumbing</a></li>
                         </ul>
                     </li>
+                    <li class="relative group">
+                        <button onclick="window.location.href='../servicearea/index.html';"
+                            class="hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Service
+                            Areas
+                        </button>
+                        <!-- Dropdown Menu -->
+                        <ul
+                            class="absolute left-0 top-[2.1rem] w-[20rem] hidden group-hover:block bg-[var(--colorWhite)] py-6 pb-5 rounded-md px-3  mt-2  z-10">
+                            <li><a href="../Dublin/index.html"
+                                    class=" block hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Dublin</a>
+                            </li>
+                            <li><a href="../Clintonville/index.html"
+                                    class=" block hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Clintonville</a>
+                            </li>
+                            <li><a href="../Downtown/index.html"
+                                    class="block hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Downtown</a>
+                            </li>
+
+
+                        </ul>
+                    </li>
                     <a href="../projects/index.html"
-                        class="hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Projects</a>
+                        class="hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Projects
+                    </a>
                     <!-- <a href="#"
                         class="hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Shop</a> -->
                     <a href="../blog/index.html"
@@ -108,7 +131,7 @@
                 <!-- Get Free Quote Button -->
                 <div class="mt-3 md:mt-0">
                     <a href="../contact/index.html#contactus"
-                        class="hidden lg:block bg-[var(--primaryColor)] text-[var(--colorWhite)] py-3 px-5 rounded-md hover:bg-[var(--primaryColorHover)] transition duration-300 ease-in-out text-[1.1rem]">Get
+                        class="hidden xl:block bg-[var(--primaryColor)] text-[var(--colorWhite)] py-3 px-5 rounded-md hover:bg-[var(--primaryColorHover)] transition duration-300 ease-in-out text-[1.1rem]">Get
                         Free Quote</a>
                 </div>
 
@@ -116,14 +139,14 @@
             </div>
 
             <!-- mobile menu -->
-            <div class="z-10  bg-[var(--primaryColor)]  lg:hidden absolute left-0 top-0 transition-all duration-300 ease-in-out transform -translate-x-[400%] w-[60%] h-screen px-4 md:px-10 py-5"
+            <div class="z-10  bg-[var(--primaryColor)]  xl:hidden absolute left-0 top-0 transition-all duration-300 ease-in-out transform -translate-x-[400%] lg:w-[40%] w-[60%] h-screen px-4 md:px-10 py-5"
                 id="mobileMenu">
                 <div class=" text-[var(--colorDark)] font-medium flex flex-col gap-2">
                     <!-- hamburger menue -->
                     <div class="flex justify-between">
                         <div></div>
                         <a
-                            class="lg:hidden bg-[var(--colorWhite)] text-[var(--primaryColor)] px-3 py-1 rounded-md cursor-pointer menuToggle group">
+                            class="xl:hidden bg-[var(--colorWhite)] text-[var(--primaryColor)] px-3 py-1 rounded-md cursor-pointer menuToggle group">
                             <i class="fa-solid fa-xmark transition group-hover:rotate-90"></i>
                         </a>
                     </div>
@@ -131,7 +154,7 @@
                         class="hover:bg-[var(--colorWhite)] text-[var(--colorWhite)] hover:text-[var(--colorDark)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Home</a>
                     <a href="../about/index.html"
                         class="hover:bg-[var(--colorWhite)] text-[var(--colorWhite)] hover:text-[var(--colorDark)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">About</a>
-                    <a href="#" <li class="relative">
+                    <li class="relative">
                         <a href="#"
                             class="flex items-center justify-between w-full hover:bg-[var(--colorWhite)] text-[var(--colorWhite)] hover:text-[var(--colorDark)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold]"
                             onclick="toggleDropdown()">Services <i
@@ -140,7 +163,8 @@
                         <!-- Dropdown Menu (Hidden by default) -->
                         <ul id="mobileDropdown" class="hidden pl-4 space-y-2 text-[var(--colorWhite)]">
                             <li><a href="../allservice/index.html"
-                                    class=" block hover:bg-[var(--colorWhite)] hover:text-[var(--primaryColor)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Our Services</a>
+                                    class=" block hover:bg-[var(--colorWhite)] hover:text-[var(--primaryColor)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Our
+                                    Services</a>
                             </li>
                             <li><a href="../basementservice/index.html"
                                     class=" block hover:bg-[var(--colorWhite)] hover:text-[var(--primaryColor)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Basement
@@ -160,20 +184,50 @@
                                     Plumbing</a></li>
 
                         </ul>
-                        </li>
-                        <a href="../projects/index.html"
-                            class="hover:bg-[var(--colorWhite)] text-[var(--colorWhite)] hover:text-[var(--colorDark)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Projects</a>
-                        <!-- <a href="#"
+                    </li>
+                    <li class="relative">
+                        <a href="#"
+                            class="flex items-center justify-between w-full hover:bg-[var(--colorWhite)] text-[var(--colorWhite)] hover:text-[var(--colorDark)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold]"
+                            onclick="toggleDropdown2()">Service Areas<i
+                                class="fa-solid fa-chevron-down transform transition duration-200 ease-in-out "
+                                id="dropMenu2"></i></a>
+                        <!-- Dropdown Menu (Hidden by default) -->
+                        <ul id="mobileDropdown2" class="hidden pl-4 space-y-2 text-[var(--colorWhite)]">
+                            <li><a href="../servicearea/index.html"
+                                    class=" block hover:bg-[var(--colorWhite)] hover:text-[var(--primaryColor)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Our
+                                    Service Areas</a>
+                            </li>
+                            <li><a href="../Dublin/index.html"
+                                    class=" block hover:bg-[var(--colorWhite)] hover:text-[var(--primaryColor)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Dublin,
+                                    Columbus</a>
+                            </li>
+                            <li><a href="../Clintonville/index.html"
+                                    class=" block hover:bg-[var(--colorWhite)] hover:text-[var(--primaryColor)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Clintonville,
+                                    Columbus</a>
+                            </li>
+                            <li><a href="../Downtown/index.html"
+                                    class=" block hover:bg-[var(--colorWhite)] hover:text-[var(--primaryColor)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Downtown,
+                                    Columbus</a>
+                            </li>
+
+
+                        </ul>
+                    </li>
+
+                    <a href="../projects/index.html"
+                        class="hover:bg-[var(--colorWhite)] text-[var(--colorWhite)] hover:text-[var(--colorDark)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Projects
+                    </a>
+                    <!-- <a href="#"
                             class="hover:bg-[var(--colorWhite)] text-[var(--colorWhite)] hover:text-[var(--colorDark)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Shop</a> -->
-                        <a href="../blog/index.html"
-                            class="hover:bg-[var(--colorWhite)] text-[var(--colorWhite)] hover:text-[var(--colorDark)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Blog</a>
-                        <a href="../contact/index.html"
-                            class="hover:bg-[var(--colorWhite)] text-[var(--colorWhite)] hover:text-[var(--colorDark)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Contact</a>
-                        <div class="mt-3">
-                            <a href="../contact/index.html#contactus"
-                                class=" bg-[var(--colorWhite)] text-[var(--colorDark)] hover:text-[var(--primaryColorHover)] py-3 px-5 rounded-md  transition duration-300 ease-in-out text-[1.1rem]">Get
-                                Free Quote</a>
-                        </div>
+                    <a href="../blog/index.html"
+                        class="hover:bg-[var(--colorWhite)] text-[var(--colorWhite)] hover:text-[var(--colorDark)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Blog</a>
+                    <a href="../contact/index.html"
+                        class="hover:bg-[var(--colorWhite)] text-[var(--colorWhite)] hover:text-[var(--colorDark)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Contact</a>
+                    <div class="mt-3">
+                        <a href="../contact/index.html#contactus"
+                            class=" bg-[var(--colorWhite)] text-[var(--colorDark)] hover:text-[var(--primaryColorHover)] py-3 px-5 rounded-md  transition duration-300 ease-in-out text-[1.1rem]">Get
+                            Free Quote</a>
+                    </div>
                 </div>
 
             </div>
@@ -192,8 +246,12 @@
         <div class="absolute inset-0 bg-[var(--bgLight2)] bg-opacity-50"></div>
 
         <!-- Text content -->
-        <div class="relative flex justify-center items-center h-full">
-            <h1 class="text-[var(--colorWhite)] text-xl md:text-3xl lg:text-4xl font-bold">Basement Plumbing</h1>
+        <div class="relative flex flex-col justify-center items-center h-full">
+            <h1 class="text-white text-3xl lg:text-4xl font-bold">Dublin Plumbing Services</h1>
+            <a href="tel:+1234567890"
+                class="block w-fit mt-5 bg-[var(--colorWhite)] text-[var(--primaryColor)] py-3 px-5 rounded-md  transition duration-300 ease-in-out text-[1.1rem] font-semibold">Call
+                Us <i class="fa-solid fa-phone-volume"></i>
+            </a>
         </div>
     </section>
 
@@ -203,135 +261,69 @@
         <section class="w-full lg:w-2/3  rounded-lg p-6 ">
 
             <!-- <p class="text-[var(--textGray)] mt-2">Published on April 20, 2024 by John Doe</p> -->
-            <img src="../../assets/service4.jpg" alt="Blog Post Image" class="w-full h-96 mb-4 rounded-lg object-cover">
-            <h2 class="text-3xl font-bold text-[var(--colorDark)]">Basement Service</h2>
+            <img src="../../assets/city1.jpg" alt="Blog Post Image" class="w-full h-96 mb-4 rounded-lg object-cover">
+            <h2 class="text-3xl font-bold text-[var(--primaryColor)]">Dublin Plumbing Services | PlumbLab - Your Local
+                Experts</h2>
 
             <p class="text-gray-700 mt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem nemo quod
                 nostrum tempora corporis esse similique quas asperiores soluta exercitationem expedita
                 necessitatibus vitae illum earum excepturi, sit, quidem ratione autem!
             </p>
-            <p class="text-gray-700 mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa reiciendis
-                voluptates quas sunt mollitia, id, labore accusamus nobis est ea nihil excepturi voluptas veritatis.
-                Voluptas voluptate maiores cupiditate assumenda quos magnam excepturi debitis, distinctio ab, repellat
-                quisquam fugit numquam officiis accusantium, repellendus optio fugiat a dolore sequi beatae. Aut eos et
-                ut cupiditate soluta, adipisci nam commodi id minus! Nihil voluptates explicabo neque sed magnam magni
-                sint ut tempore officiis laudantium cupiditate unde modi alias ipsam repellat, itaque non voluptatem
-                natus. Odio voluptates consequuntur culpa explicabo commodi et inventore quas dolor dolorum quo facilis
-                sit harum placeat quasi doloribus, aspernatur ipsa tenetur accusamus quibusdam deleniti quis. Excepturi
-                similique sed quia? Placeat vel tempora dolorem alias sit iusto excepturi minus ea cum in, dolor ex
-                voluptatibus suscipit aliquid eum quia consequuntur temporibus perferendis! Voluptatem, iure nobis?
-                Voluptates omnis assumenda tempore. Tenetur culpa numquam maiores nulla asperiores neque quo cumque
-                omnis harum placeat aut facere, dolorum natus cupiditate totam impedit? Facilis, totam consequuntur
-                sapiente quaerat libero dolore beatae tempore debitis et rerum cupiditate. Temporibus necessitatibus at
-                debitis veritatis obcaecati quae voluptas quibusdam. Architecto eaque mollitia maxime, qui nam
-                aspernatur consectetur nisi odit distinctio ad ducimus voluptatem iusto impedit et ratione omnis
-                quisquam.
-            </p>
-            <p class="text-gray-700 mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa reiciendis
-                voluptates quas sunt mollitia, id, labore accusamus nobis est ea nihil excepturi voluptas veritatis.
-                Voluptas voluptate maiores cupiditate assumenda quos magnam excepturi debitis, distinctio ab, repellat
-                quisquam fugit numquam officiis accusantium, repellendus optio fugiat a dolore sequi beatae. Aut eos et
-                ut cupiditate soluta, adipisci nam commodi id minus! Nihil voluptates explicabo neque sed magnam magni
-                sint ut tempore officiis laudantium cupiditate unde modi alias ipsam repellat, itaque non voluptatem
-                natus. Odio voluptates consequuntur culpa explicabo commodi et inventore quas dolor dolorum quo facilis
-                sit harum placeat quasi doloribus, aspernatur ipsa tenetur accusamus quibusdam deleniti quis. Excepturi
-                similique sed quia? Placeat vel tempora dolorem alias sit iusto excepturi minus ea cum in, dolor ex
-                voluptatibus suscipit aliquid eum quia consequuntur temporibus perferendis! Voluptatem, iure nobis?
-                Voluptates omnis assumenda tempore. Tenetur culpa numquam maiores nulla asperiores neque quo cumque
-                omnis harum placeat aut facere, dolorum natus cupiditate totam impedit? Facilis, totam consequuntur
-                sapiente quaerat libero dolore beatae tempore debitis et rerum cupiditate. Temporibus necessitatibus at
-                debitis veritatis obcaecati quae voluptas quibusdam. Architecto eaque mollitia maxime, qui nam
-                aspernatur consectetur nisi odit distinctio ad ducimus voluptatem iusto impedit et ratione omnis
-                quisquam.
-            </p>
 
-            <!-- Accordination -->
-            <div class="mt-6">
-                <h2 class="text-3xl font-bold text-[var(--colorDark)] mb-4">Frequently Ask Question</h2>
-                <div class="space-y-4">
-                    <!-- Accordion Item 1 (Open by default) -->
-                    <div class="border-l-[.2rem] border-[var(--primaryColor)] rounded shadow-md ">
-                        <button onclick="toggleAccordion(1)"
-                            class="w-full flex justify-between items-center p-4 bg-white text-left text-lg font-semibold text-[var(--colorDark)] focus:outline-none">
-                            How can I protect my pipes from freezing?
-                            <span id="icon-1"
-                                class="transform transition-transform rotate-180 hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
-                                    class="fa-solid fa-chevron-down"></i></span>
-                        </button>
-                        <hr>
-                        <div id="content-1" class="p-4 bg-white text-[var(--textGray)]">
-                            Take care before the cold to prepare your home and plumbing system for below-freezing
-                            temperatures. For more vulnerable pipes, you can install pipe insulation and heating cables.
-                            But if this isn’t an option and your pipes are in danger, turn on a faucet and run some
-                            water. Running water.
-                        </div>
-                    </div>
+            <h4 class="text-[var(--primaryColor)] text-2xl font-semibold mt-4">We Serve These Dublin Neighborhoods (and
+                More!)
+            </h4>
+            <p class="text-[var(--colorDark)] mt-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo
+                similique
+                libero nobis? Soluta, voluptatibus explicabo eius nisi asperiores vitae, facilis necessitatibus, eum
+                voluptatem dicta id incidunt harum quam </p>
+            <ul class="text-[var(--colorDark)] mt-2 list-disc marker:text-[var(--primaryColor)] serviceareali px-4">
+                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, est. Dolore enim soluta odit
+                    maxime
+                    nesciunt sit quibusdam dicta corporis ipsa voluptas harum reprehenderit corrupti doloribus
+                    architecto id
+                    consequatur, quam labore illo quasi facilis doloremque nulla repellendus sed adipisci! Omnis!</li>
+                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, est. Dolore enim soluta odit
+                    maxime
+                    nesciunt sit quibusdam dicta corporis ipsa voluptas harum reprehenderit corrupti doloribus
+                    architecto id
+                    consequatur, quam labore illo quasi facilis doloremque nulla repellendus sed adipisci! Omnis!</li>
+                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, est. Dolore enim soluta odit
+                    maxime
+                    nesciunt sit quibusdam dicta corporis ipsa voluptas harum reprehenderit corrupti doloribus
+                    architecto id
+                    consequatur, quam labore illo quasi facilis doloremque nulla repellendus sed adipisci! Omnis!</li>
+                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, est. Dolore enim soluta odit
+                    maxime
+                    nesciunt sit quibusdam dicta corporis ipsa voluptas harum reprehenderit corrupti doloribus
+                    architecto id
+                    consequatur, quam labore illo quasi facilis doloremque nulla repellendus sed adipisci! Omnis!</li>
+            </ul>
 
-                    <!-- Accordion Item 2 -->
-                    <div class="border-l-[.2rem] border-[var(--primaryColor)] rounded shadow-md ">
-                        <button onclick="toggleAccordion(2)"
-                            class="w-full flex justify-between items-center p-4 bg-white text-left text-lg font-semibold text-gray-700 focus:outline-none">
-                            Why is my toilet so noisy when it’s flushed?
-                            <!-- <span id="icon-2" class="transform transition-transform"><i class="fa-solid fa-chevron-down"></i></span> -->
-                            <span id="icon-2"
-                                class="transform transition-transform rotate-180 hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
-                                    class="fa-solid fa-chevron-down"></i></span>
-                        </button>
-                        <div id="content-2" class="hidden p-4 bg-white text-[var(--textGray)]">
-                            Noisy toilets can be caused by high water pressure, water hammer, or loose pipes. A plumber
-                            can help diagnose and fix these issues.
-                        </div>
-                    </div>
+            <h4 class="text-[var(--primaryColor)] text-2xl font-semibold mt-4">Why Choose PlumbLab Plumbing?</h4>
 
-                    <!-- Accordion Item 3 -->
-                    <div class="border-l-[.2rem] border-[var(--primaryColor)] rounded shadow-md">
-                        <button onclick="toggleAccordion(3)"
-                            class="w-full flex justify-between items-center p-4 bg-white text-left text-lg font-semibold text-gray-700 focus:outline-none">
-                            Why do my drains keep clogging?
-                            <!-- <span id="icon-3" class="transform transition-transform"><i class="fa-solid fa-chevron-down"></i></span> -->
-                            <span id="icon-3"
-                                class="transform transition-transform rotate-180 hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
-                                    class="fa-solid fa-chevron-down"></i></span>
-                        </button>
-                        <div id="content-3" class="hidden p-4 bg-white text-[var(--textGray)]">
-                            Frequent clogs can be due to grease buildup, hair, or foreign objects. Using a drain cover
-                            and avoiding disposing of grease in sinks can help prevent this issue.
-                        </div>
-                    </div>
+            <ul class="text-[var(--colorDark)] mt-2 list-disc marker:text-[var(--primaryColor)] serviceareali px-4">
+                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, est. Dolore enim soluta odit
+                    maxime
+                    nesciunt sit quibusdam dicta corporis ipsa voluptas harum reprehenderit corrupti doloribus
+                    architecto id
+                    consequatur, quam labore illo quasi facilis doloremque nulla repellendus sed adipisci! Omnis!</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatem sint consequuntur ad vel
+                    nesciunt vero beatae obcaecati maiores repudiandae?</li>
+                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut magnam nemo aliquid debitis sed!</li>
+                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, est. Dolore enim soluta odit
+                    maxime
+                    nesciunt sit quibusdam dicta corporis ipsa voluptas harum reprehenderit corrupti doloribus
+                    architecto id
+                    consequatur, quam labore illo quasi facilis doloremque nulla repellendus sed adipisci! Omnis!</li>
+            </ul>
+            <h4 class="text-[var(--primaryColor)] text-2xl font-semibold mt-4">Get Your Dublin Plumbing Fixed - Contact
+                Us Today</h4>
 
-                    <!-- Accordion Item 4 -->
-                    <div class="border-l-[.2rem] border-[var(--primaryColor)] rounded shadow-md">
-                        <button onclick="toggleAccordion(4)"
-                            class="w-full flex justify-between items-center p-4 bg-white text-left text-lg font-semibold text-gray-700 focus:outline-none">
-                            Why is my hot water temperature inconsistent?
-                            <!-- <span id="icon-4" class="transform transition-transform"><i class="fa-solid fa-chevron-down"></i></span> -->
-                            <span id="icon-4"
-                                class="transform transition-transform rotate-180 hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
-                                    class="fa-solid fa-chevron-down"></i></span>
-                        </button>
-                        <div id="content-4" class="hidden p-4 bg-white text-[var(--textGray)]">
-                            Inconsistent water temperature can be caused by a faulty water heater or sediment buildup.
-                            Flushing the heater or adjusting the thermostat may help.
-                        </div>
-                    </div>
-
-                    <!-- Accordion Item 5 -->
-                    <div class="border-l-[.2rem] border-[var(--primaryColor)] rounded shadow-md">
-                        <button onclick="toggleAccordion(5)"
-                            class="w-full flex justify-between items-center p-4 bg-white text-left text-lg font-semibold text-gray-700 focus:outline-none">
-                            Why has my water bill increased?
-                            <!-- <span id="icon-5" class="transform transition-transform"><i class="fa-solid fa-chevron-down"></i></span> -->
-                            <span id="icon-5"
-                                class="transform transition-transform rotate-180 hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
-                                    class="fa-solid fa-chevron-down"></i></span>
-                        </button>
-                        <div id="content-5" class="hidden p-4 bg-white text-[var(--textGray)]">
-                            A sudden increase in your water bill may indicate a leak, running toilet, or higher usage.
-                            Checking for leaks and fixing any issues can reduce your bill.
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <a href="../contact/index.html#contactus"
+                class="mt-4 text-center hidden xl:block bg-[var(--primaryColor)] text-[var(--colorWhite)] py-3 px-5 rounded-md hover:bg-[var(--primaryColorHover)] transition duration-300 ease-in-out text-[1.1rem]">Get
+                Call for Dublin Plumber
+            </a>
         </section>
 
         <!-- Sidebar -->
@@ -379,24 +371,22 @@
                 </div>
             </div> -->
             <div class="bg-[var(--colorWhite)] shadow-lg rounded-lg p-6 mt-6">
-                <h3 class="text-xl font-bold text-[var(--colorDark)]">Services</h3>
+                <h3 class="text-xl font-bold text-[var(--colorDark)]">Service Area</h3>
                 <hr class="h-[.3rem] bg-[var(--primaryColor)] rounded-full mt-3 mb-5" />
                 <ul class="mt-4 space-y-2">
-                    <li><a href="../remodelingservice/index.html"
-                            class="text-[var(--primaryColor)] hover:underline">Remodeling
-                            Service</a></li>
-                    <li><a href="../bathroomservice/index.html"
-                            class="text-[var(--primaryColor)] hover:underline">Basement
-                            Plumbing</a></li>
-                    <li><a href="../bathroomservice/index.html"
-                            class="text-[var(--primaryColor)] hover:underline">Bathroom
-                            Plumbing</a></li>
-                    <li><a href="../gaslineservice/index.html" class="text-[var(--primaryColor)] hover:underline">Gas
-                            Line
-                            Services</a></li>
-                    <li><a href="../kitchenservice/index.html"
-                            class="text-[var(--primaryColor)] hover:underline">Kitchen
-                            Plumbing</a></li>
+                    <li><a href="../servicearea/index.html" class="text-[var(--primaryColor)] hover:underline">Our
+                            Service Area</a></li>
+                    <li><a href="../Dublin/index.html" class="text-[var(--primaryColor)] hover:underline">Dublin,
+                            Columbus</a>
+                    </li>
+                    <li><a href="../Clintonville/index.html"
+                            class="text-[var(--primaryColor)] hover:underline">Clintonville,
+                            Columbus</a>
+                    </li>
+                    <li><a href="../Downtown/index.html" class="text-[var(--primaryColor)] hover:underline">Downtown,
+                            Columbus</a>
+                    </li>
+
                 </ul>
             </div>
             <!-- <div class="bg-[var(--bgLight)] shadow-lg rounded-lg p-6 mt-6">
@@ -429,9 +419,21 @@
     </main>
 
 
+    <!-- Map -->
+    <div class="w-full max-w-6.5xl mx-auto">
+
+        <div class="overflow-hidden  shadow-lg">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d197214.4195069445!2d-83.13986550453077!3d40.00966954536853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883889c1b990de71%3A0xe43266f8cfb1b533!2sColumbus%2C%20OH%2C%20USA!5e0!3m2!1sen!2sin!4v1730267760527!5m2!1sen!2sin"
+                width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+
     <!-- take me top button -->
     <button id="backToTop" onclick="scrollToTop()"
-        class="z-50 hidden fixed bottom-5 right-5 bg-[var(--bgLight2)]  h-10 w-10 flex justify-center items-center text-[var(--colorWhite)] py-2 px-4 rounded-full shadow-lg transition-opacity duration-300"><i
+        class="z-50 hidden fixed bottom-14 right-5 bg-[var(--bgLight2)]  h-10 w-10 flex justify-center items-center text-[var(--colorWhite)] py-2 px-4 rounded-full shadow-lg transition-opacity duration-300"><i
             class="fa-solid fa-arrow-up"></i></button>
 
     <footer class="bg-[var(--colorDark)]">
@@ -478,13 +480,26 @@
                             class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
                                 class="fa-solid fa-angles-right"></i> Projects</a></li>
                     <!-- <li><a href="#" class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
-                                        class="fa-solid fa-angles-right"></i> Services</a></li> -->
+                                class="fa-solid fa-angles-right"></i> Services</a></li> -->
                     <li><a href="../contact/index.html"
                             class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
                                 class="fa-solid fa-angles-right"></i> Contact</a></li>
                     <li><a href="../blog/index.html"
                             class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
-                                class="fa-solid fa-angles-right"></i> Our Blog</a></li>
+                                class="fa-solid fa-angles-right"></i> Our Blog</a>
+                    </li>
+                    <li><a href="../Dublin/index.html"
+                            class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
+                                class="fa-solid fa-angles-right"></i> Dublin, Columbus</a>
+                    </li>
+                    <li><a href="../Clintonville/index.html"
+                            class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
+                                class="fa-solid fa-angles-right"></i> Clintonville, Columbus</a>
+                    </li>
+                    <li><a href="../Downtown/index.html"
+                            class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
+                                class="fa-solid fa-angles-right"></i> Downtown, Columbus</a>
+                    </li>
                 </ul>
             </div>
 
@@ -528,8 +543,9 @@
                 </ul>
             </div>
         </div>
-        <div class="bg-[var(--colorDark2)] text-[var(--colorWhite)] text-center p-2 sm:p-4 lg:text-base px-4 md:px-10">
-            <p>&#169; Copyright <span id="year"></span> | PlumbLab - Plumber Website Theme | All right reserved.</p>
+        <div class="bg-[var(--colorDark2)] text-[var(--colorWhite)] text-center p-2 sm:p-4 lg:text-base px-8 md:px-10">
+            <p>&#169; Copyright <span id="year"></span> | PlumbLab - Plumber Website Theme | All right reserved. | <a
+                    href="../privacypolicy/index.html" class="underline">Privacy Policy</a></p>
         </div>
     </footer>
 
