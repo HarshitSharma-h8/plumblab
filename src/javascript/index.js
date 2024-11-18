@@ -223,13 +223,18 @@ new Swiper('.slider-wrapper', {
       slidesPerView: 1
     },
     768: {
-      slidesPerView: 2
+      slidesPerView: 1
     },
     1024: {
+      slidesPerView: 2
+    },
+    1300: {
       slidesPerView: 3
     }
   }
 });
+
+ 
 
 
 // Function to toggle the accordion

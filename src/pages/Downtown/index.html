@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlumbLab | Downtown Plumbing Service</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../../javascript/index.js" defer></script>
+    <link rel="stylesheet" href="../../style/style.css">
+    <link rel="icon" href="../../assets/favicon.ico" type="image/x-icon">
+    <!-- font awsome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- swiper crousel  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+</head>
+
+<body>
+    <!-- Top bar for location and email -->
+    <div
+        class="z-50 bg-[var(--colorDark)] text-[var(--colorWhite)] text-sm p-2 sm:p-4 md:flex justify-between items-center px-4 md:px-14 hidden ">
+        <div class="flex flex-col sm:flex-row  items-center justify-center  space-x-5  mb-1 md:mb-0">
+            <div class="flex items-center lg:text-base mb-1 md:mb-0"><i class="fas fa-map-marker-alt mr-1"></i> 121
+                King Street,
+                Melbourne,
+                Australia</div>
+            <div class="flex items-center lg:text-base"><i class="fas fa-envelope mr-1"></i> <a
+                    href="mailto:someone@example.com">plumblab@gmail.com</a></div>
+        </div>
+        <div class="text-center md:flex space-x-5">
+            <a href="https://www.facebook.com/" class="hover:text-gray-300 lg:text-base"><i
+                    class="fab fa-facebook-f"></i></a>
+            <a href="https://x.com/" class="hover:text-gray-300 lg:text-base"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/" class="hover:text-gray-300 lg:text-base"><i
+                    class="fab fa-linkedin-in"></i></a>
+            <a href="https://in.pinterest.com/" class="hover:text-gray-300 lg:text-base"><i
+                    class="fab fa-pinterest"></i></a>
+        </div>
+    </div>
+    <header id="navbar" class="sticky w-full z-50 top-0 transition-all duration-500 ease-in-out">
+
+
+        <!-- Main Navbar -->
+        <nav class="z-50 bg-white shadow-md shadow-[var(--bgLight)] px-4 md:px-14 relative ">
+            <div class="mx-auto  py-4 flex justify-between items-center ">
+                <!-- hamburger menue -->
+                <a
+                    class="xl:hidden bg-[var(--primaryColor)] text-[var(--colorWhite)] px-3 py-1 rounded-md cursor-pointer menuToggle">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+                <!-- Logo and company name -->
+                <a href="../../index.html" class="order-last xl:order-none flex items-center space-x-2">
+                    <img src="../../assets/logo.png" alt="Logo" class="lg:w-14 w-10">
+                    <div class="flex flex-col">
+                        <span class="text-[var(--primaryColor)] font-bold lg:text-3xl text-[1.3rem]">Plum<span
+                                class="text-[var(--colorDark)]">Lab.</span></span>
+                        <span class="text-[var(--textGray)] lg:text-sm text-[.6rem] font-semibold">Best Plumber
+                            Service</span>
+                    </div>
+                </a>
+                <!-- Navigation links -->
+                <div class="hidden xl:flex space-x-2 text-[var(--colorDark)] font-medium">
+                    <a href="../../index.html"
+                        class="hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Home</a>
+                    <a href="../about/index.html"
+                        class="hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">About</a>
+                    <li class="relative group ">
+                        <button onclick="window.location.href='../allservice/index.html';"
+                            class="hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Services</button>
+                        <!-- Dropdown Menu -->
+                        <ul
+                            class="absolute left-0 top-[2.1rem] w-[20rem] hidden group-hover:block bg-[var(--colorWhite)] py-6 pb-5 rounded-md px-3  mt-2  z-10">
+                            <li><a href="../allservice/index.html"
+                                    class=" block hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Our
+                                    Services</a>
+                            </li>
+                            <li><a href="../basementservice/index.html"
+                                    class=" block hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Basement
+                                    Plumbing</a>
+                            </li>
+                            <li><a href="../bathroomservice/index.html"
+                                    class="block hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Bathroom
+                                    Plumbing</a></li>
+
+                            <li><a href="../remodelingservice/index.html"
+                                    class="block hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Remodeling
+                                    Service</a></li>
+                            <li><a href="../gaslineservice/index.html"
+                                    class="block hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Gas
+                                    Line Services</a></li>
+                            <li><a href="../kitchenservice/index.html"
+                                    class="block hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Kitchen
+                                    Plumbing</a></li>
+                        </ul>
+                    </li>
+                    <li class="relative group">
+                        <button onclick="window.location.href='../servicearea/index.html';"
+                            class="hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Service
+                            Areas
+                        </button>
+                        <!-- Dropdown Menu -->
+                        <ul
+                            class="absolute left-0 top-[2.1rem] w-[20rem] hidden group-hover:block bg-[var(--colorWhite)] py-6 pb-5 rounded-md px-3  mt-2  z-10">
+                            <li><a href="../Dublin/index.html"
+                                    class=" block hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Dublin</a>
+                            </li>
+                            <li><a href="../Clintonville/index.html"
+                                    class=" block hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Clintonville</a>
+                            </li>
+                            <li><a href="../Downtown/index.html"
+                                    class="block hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Downtown</a>
+                            </li>
+
+
+                        </ul>
+                    </li>
+                    <a href="../projects/index.html"
+                        class="hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Projects
+                    </a>
+                    <!-- <a href="#"
+                        class="hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Shop</a> -->
+                    <a href="../blog/index.html"
+                        class="hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Blog</a>
+                    <a href="../contact/index.html"
+                        class="hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Contact</a>
+                </div>
+                <!-- Get Free Quote Button -->
+                <div class="mt-3 md:mt-0">
+                    <a href="../contact/index.html#contactus"
+                        class="hidden xl:block bg-[var(--primaryColor)] text-[var(--colorWhite)] py-3 px-5 rounded-md hover:bg-[var(--primaryColorHover)] transition duration-300 ease-in-out text-[1.1rem]">Get
+                        Free Quote</a>
+                </div>
+
+
+            </div>
+
+            <!-- mobile menu -->
+            <div class="z-10  bg-[var(--primaryColor)]  xl:hidden absolute left-0 top-0 transition-all duration-300 ease-in-out transform -translate-x-[400%] lg:w-[40%] w-[60%] h-screen px-4 md:px-10 py-5"
+                id="mobileMenu">
+                <div class=" text-[var(--colorDark)] font-medium flex flex-col gap-2">
+                    <!-- hamburger menue -->
+                    <div class="flex justify-between">
+                        <div></div>
+                        <a
+                            class="xl:hidden bg-[var(--colorWhite)] text-[var(--primaryColor)] px-3 py-1 rounded-md cursor-pointer menuToggle group">
+                            <i class="fa-solid fa-xmark transition group-hover:rotate-90"></i>
+                        </a>
+                    </div>
+                    <a href="../index.html"
+                        class="hover:bg-[var(--colorWhite)] text-[var(--colorWhite)] hover:text-[var(--colorDark)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Home</a>
+                    <a href="../about/index.html"
+                        class="hover:bg-[var(--colorWhite)] text-[var(--colorWhite)] hover:text-[var(--colorDark)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">About</a>
+                    <li class="relative">
+                        <a href="#"
+                            class="flex items-center justify-between w-full hover:bg-[var(--colorWhite)] text-[var(--colorWhite)] hover:text-[var(--colorDark)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold]"
+                            onclick="toggleDropdown()">Services <i
+                                class="fa-solid fa-chevron-down transform transition duration-200 ease-in-out "
+                                id="dropMenu"></i></a>
+                        <!-- Dropdown Menu (Hidden by default) -->
+                        <ul id="mobileDropdown" class="hidden pl-4 space-y-2 text-[var(--colorWhite)]">
+                            <li><a href="../allservice/index.html"
+                                    class=" block hover:bg-[var(--colorWhite)] hover:text-[var(--primaryColor)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Our
+                                    Services</a>
+                            </li>
+                            <li><a href="../basementservice/index.html"
+                                    class=" block hover:bg-[var(--colorWhite)] hover:text-[var(--primaryColor)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Basement
+                                    Plumbing</a>
+                            </li>
+                            <li><a href="../bathroomservice/index.html"
+                                    class="block hover:bg-[var(--colorWhite)] hover:text-[var(--primaryColor)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Bathroom
+                                    Plumbing</a></li>
+                            <li><a href="../remodelingservice/index.html"
+                                    class="block hover:bg-[var(--colorWhite)] hover:text-[var(--primaryColor)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Remodeling
+                                    Service</a></li>
+                            <li><a href="../gaslineservice/index.html"
+                                    class="block hover:bg-[var(--colorWhite)] hover:text-[var(--primaryColor)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Gas
+                                    Line Services</a></li>
+                            <li><a href="../kitchenservice/index.html"
+                                    class="block hover:bg-[var(--colorWhite)] hover:text-[var(--primaryColor)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Kitchen
+                                    Plumbing</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="relative">
+                        <a href="#"
+                            class="flex items-center justify-between w-full hover:bg-[var(--colorWhite)] text-[var(--colorWhite)] hover:text-[var(--colorDark)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold]"
+                            onclick="toggleDropdown2()">Service Areas<i
+                                class="fa-solid fa-chevron-down transform transition duration-200 ease-in-out "
+                                id="dropMenu2"></i></a>
+                        <!-- Dropdown Menu (Hidden by default) -->
+                        <ul id="mobileDropdown2" class="hidden pl-4 space-y-2 text-[var(--colorWhite)]">
+                            <li><a href="../servicearea/index.html"
+                                    class=" block hover:bg-[var(--colorWhite)] hover:text-[var(--primaryColor)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Our
+                                    Service Areas</a>
+                            </li>
+                            <li><a href="../Dublin/index.html"
+                                    class=" block hover:bg-[var(--colorWhite)] hover:text-[var(--primaryColor)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Dublin,
+                                    Columbus</a>
+                            </li>
+                            <li><a href="../Clintonville/index.html"
+                                    class=" block hover:bg-[var(--colorWhite)] hover:text-[var(--primaryColor)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Clintonville,
+                                    Columbus</a>
+                            </li>
+                            <li><a href="../Downtown/index.html"
+                                    class=" block hover:bg-[var(--colorWhite)] hover:text-[var(--primaryColor)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Downtown,
+                                    Columbus</a>
+                            </li>
+
+
+                        </ul>
+                    </li>
+
+                    <a href="../projects/index.html"
+                        class="hover:bg-[var(--colorWhite)] text-[var(--colorWhite)] hover:text-[var(--colorDark)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Projects
+                    </a>
+                    <!-- <a href="#"
+                            class="hover:bg-[var(--colorWhite)] text-[var(--colorWhite)] hover:text-[var(--colorDark)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Shop</a> -->
+                    <a href="../blog/index.html"
+                        class="hover:bg-[var(--colorWhite)] text-[var(--colorWhite)] hover:text-[var(--colorDark)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Blog</a>
+                    <a href="../contact/index.html"
+                        class="hover:bg-[var(--colorWhite)] text-[var(--colorWhite)] hover:text-[var(--colorDark)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Contact</a>
+                    <div class="mt-3">
+                        <a href="../contact/index.html#contactus"
+                            class=" bg-[var(--colorWhite)] text-[var(--colorDark)] hover:text-[var(--primaryColorHover)] py-3 px-5 rounded-md  transition duration-300 ease-in-out text-[1.1rem]">Get
+                            Free Quote</a>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+
+
+    </header>
+
+    <!-- Hero section of about page -->
+    <section class="relative w-full h-48 md:h-64 lg:h-72">
+        <!-- Background image -->
+        <img src="../../assets/about.jpg" alt="Background Image"
+            class="absolute inset-0 w-full h-full object-cover object-bottom">
+
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-[var(--bgLight2)] bg-opacity-50"></div>
+
+        <!-- Text content -->
+        <div class="relative flex flex-col justify-center items-center h-full">
+            <h1 class="text-white text-3xl lg:text-4xl font-bold">Downtown Plumbing Services</h1>
+            <a href="tel:+1234567890"
+                class="block w-fit mt-5 bg-[var(--colorWhite)] text-[var(--primaryColor)] py-3 px-5 rounded-md  transition duration-300 ease-in-out text-[1.1rem] font-semibold">Call
+                Us <i class="fa-solid fa-phone-volume"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="mx-auto  px-4 md:px-14 py-16  lg:flex lg:space-x-8 ">
+        <!-- Blog Content -->
+        <section class="w-full lg:w-2/3  rounded-lg p-6 ">
+
+            <!-- <p class="text-[var(--textGray)] mt-2">Published on April 20, 2024 by John Doe</p> -->
+            <img src="../../assets/city2.jpeg" alt="Blog Post Image" class="w-full h-96 mb-4 rounded-lg object-cover">
+            <h2 class="text-3xl font-bold text-[var(--primaryColor)]">Downtown Plumbing Services | PlumbLab - Your Local
+                Experts</h2>
+
+            <p class="text-gray-700 mt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem nemo quod
+                nostrum tempora corporis esse similique quas asperiores soluta exercitationem expedita
+                necessitatibus vitae illum earum excepturi, sit, quidem ratione autem!
+            </p>
+
+            <h4 class="text-[var(--primaryColor)] text-2xl font-semibold mt-4">We Serve These Downtown Neighborhoods
+                (and
+                More!)
+            </h4>
+            <p class="text-[var(--colorDark)] mt-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo
+                similique
+                libero nobis? Soluta, voluptatibus explicabo eius nisi asperiores vitae, facilis necessitatibus, eum
+                voluptatem dicta id incidunt harum quam </p>
+            <ul class="text-[var(--colorDark)] mt-2 list-disc marker:text-[var(--primaryColor)] serviceareali px-4">
+                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, est. Dolore enim soluta odit
+                    maxime
+                    nesciunt sit quibusdam dicta corporis ipsa voluptas harum reprehenderit corrupti doloribus
+                    architecto id
+                    consequatur, quam labore illo quasi facilis doloremque nulla repellendus sed adipisci! Omnis!</li>
+                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, est. Dolore enim soluta odit
+                    maxime
+                    nesciunt sit quibusdam dicta corporis ipsa voluptas harum reprehenderit corrupti doloribus
+                    architecto id
+                    consequatur, quam labore illo quasi facilis doloremque nulla repellendus sed adipisci! Omnis!</li>
+                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, est. Dolore enim soluta odit
+                    maxime
+                    nesciunt sit quibusdam dicta corporis ipsa voluptas harum reprehenderit corrupti doloribus
+                    architecto id
+                    consequatur, quam labore illo quasi facilis doloremque nulla repellendus sed adipisci! Omnis!</li>
+                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, est. Dolore enim soluta odit
+                    maxime
+                    nesciunt sit quibusdam dicta corporis ipsa voluptas harum reprehenderit corrupti doloribus
+                    architecto id
+                    consequatur, quam labore illo quasi facilis doloremque nulla repellendus sed adipisci! Omnis!</li>
+            </ul>
+
+            <h4 class="text-[var(--primaryColor)] text-2xl font-semibold mt-4">Why Choose PlumbLab Plumbing?</h4>
+
+            <ul class="text-[var(--colorDark)] mt-2 list-disc marker:text-[var(--primaryColor)] serviceareali px-4">
+                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, est. Dolore enim soluta odit
+                    maxime
+                    nesciunt sit quibusdam dicta corporis ipsa voluptas harum reprehenderit corrupti doloribus
+                    architecto id
+                    consequatur, quam labore illo quasi facilis doloremque nulla repellendus sed adipisci! Omnis!</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatem sint consequuntur ad vel
+                    nesciunt vero beatae obcaecati maiores repudiandae?</li>
+                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut magnam nemo aliquid debitis sed!</li>
+                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, est. Dolore enim soluta odit
+                    maxime
+                    nesciunt sit quibusdam dicta corporis ipsa voluptas harum reprehenderit corrupti doloribus
+                    architecto id
+                    consequatur, quam labore illo quasi facilis doloremque nulla repellendus sed adipisci! Omnis!</li>
+            </ul>
+            <h4 class="text-[var(--primaryColor)] text-2xl font-semibold mt-4">Get Your Downtown Plumbing Fixed -
+                Contact
+                Us Today</h4>
+
+            <a href="../contact/index.html#contactus"
+                class="mt-4 text-center hidden xl:block bg-[var(--primaryColor)] text-[var(--colorWhite)] py-3 px-5 rounded-md hover:bg-[var(--primaryColorHover)] transition duration-300 ease-in-out text-[1.1rem]">Get
+                Call for Downtown Plumber
+            </a>
+        </section>
+
+        <!-- Sidebar -->
+        <aside class="w-full lg:w-1/3 mt-8 lg:mt-0">
+            <!-- <div class="bg-[var(--bgLight)] shadow-lg rounded-lg p-6">
+                <h3 class="text-xl font-bold text-[var(--colorDark)]">Recent Posts</h3>
+                <hr class="h-[.3rem] bg-[var(--primaryColor)] rounded-full mt-3 mb-5" />
+                <div class="mt-4">
+                    <div class="flex bg-[var(--colorWhite)] rounded-md gap-2 items-center mb-3">
+                        <img src="../assets/service2.jpg" class="w-[8rem] h-[8rem] rounded-md object-cover"
+                            alt="servise">
+                        <div class="p-1">
+                            <p
+                                class=" text-[var(--colorDark)] hover:text-[var(--primaryColor)] transform duration-300 ease-in-out">
+                                Joining the Plumbing Club During Your MBA
+                            </p>
+                            <p class="text-sm text-[var(--textGray)] mt-1"><i class="fa-regular fa-clock"></i> 04 Nov
+                                2021</p>
+                        </div>
+                    </div>
+                    <div class="flex bg-[var(--colorWhite)] rounded-md gap-2 items-center mb-3">
+                        <img src="../assets/teamperson2.jpg" class="w-[8rem] h-[8rem] rounded-md object-cover"
+                            alt="servise">
+                        <div class="p-1">
+                            <p
+                                class=" text-[var(--colorDark)] hover:text-[var(--primaryColor)] transform duration-300 ease-in-out">
+                                Joining the Plumbing Club During Your MBA
+                            </p>
+                            <p class="text-sm text-[var(--textGray)] mt-1"><i class="fa-regular fa-clock"></i> 04 Nov
+                                2021</p>
+                        </div>
+                    </div>
+                    <div class="flex bg-[var(--colorWhite)] rounded-md gap-2 items-center mb-3">
+                        <img src="../assets/service4.jpg" class="w-[8rem] h-[8rem] rounded-md object-cover"
+                            alt="servise">
+                        <div class="p-1">
+                            <p
+                                class=" text-[var(--colorDark)] hover:text-[var(--primaryColor)] transform duration-300 ease-in-out">
+                                Joining the Plumbing Club During Your MBA
+                            </p>
+                            <p class="text-sm text-[var(--textGray)] mt-1"><i class="fa-regular fa-clock"></i> 04 Nov
+                                2021</p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <div class="bg-[var(--colorWhite)] shadow-lg rounded-lg p-6 mt-6">
+                <h3 class="text-xl font-bold text-[var(--colorDark)]">Service Area</h3>
+                <hr class="h-[.3rem] bg-[var(--primaryColor)] rounded-full mt-3 mb-5" />
+                <ul class="mt-4 space-y-2">
+                    <li><a href="../servicearea/index.html" class="text-[var(--primaryColor)] hover:underline">Our
+                            Service Area</a></li>
+                    <li><a href="../Dublin/index.html" class="text-[var(--primaryColor)] hover:underline">Dublin,
+                            Columbus</a>
+                    </li>
+                    <li><a href="../Clintonville/index.html"
+                            class="text-[var(--primaryColor)] hover:underline">Clintonville,
+                            Columbus</a>
+                    </li>
+                    <li><a href="../Downtown/index.html" class="text-[var(--primaryColor)] hover:underline">Downtown,
+                            Columbus</a>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- <div class="bg-[var(--bgLight)] shadow-lg rounded-lg p-6 mt-6">
+                <h3 class="text-xl font-bold text-[var(--colorDark)]">Tags</h3>
+                <hr class="h-[.3rem] bg-[var(--primaryColor)] rounded-full mt-3 mb-5" />
+                <div class="mt-4 flex flex-wrap gap-2">
+                    <a href="#"
+                        class="inline-block bg-[var(--primaryColor)] text-[var(--colorWhite)] px-3 py-1 rounded-full text-sm">Plumbing</a>
+                    <a href="#"
+                        class="inline-block bg-[var(--primaryColor)] text-[var(--colorWhite)] px-3 py-1 rounded-full text-sm">Remodeling</a>
+                    <a href="#"
+                        class="inline-block bg-[var(--primaryColor)] text-[var(--colorWhite)] px-3 py-1 rounded-full text-sm">Gas
+                        Line</a>
+                </div>
+            </div> -->
+
+            <!-- contactus -->
+            <div class="bg-[var(--primaryColor)] shadow-lg rounded-lg p-6 mt-6">
+                <h3 class="text-xl font-bold text-[var(--colorWhite)]">Get a Free Quote</h3>
+                <hr class="h-[.3rem] bg-[var(--colorWhite)] rounded-full mt-3 mb-5" />
+                <p class="text-[var(--colorWhite)]">We are a Plumber company that has been in the business for almost 7
+                    years Since our inception
+                </p>
+                <a href="../contact/index.html#contactus"
+                    class="block w-fit mt-5 bg-[var(--colorWhite)] text-[var(--primaryColor)] py-3 px-5 rounded-md  transition duration-300 ease-in-out text-[1.1rem] font-semibold">Contact
+                    Us
+                </a>
+            </div>
+        </aside>
+    </main>
+
+
+    <!-- Map -->
+    <div class="w-full max-w-6.5xl mx-auto">
+
+        <div class="overflow-hidden  shadow-lg">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d197214.4195069445!2d-83.13986550453077!3d40.00966954536853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883889c1b990de71%3A0xe43266f8cfb1b533!2sColumbus%2C%20OH%2C%20USA!5e0!3m2!1sen!2sin!4v1730267760527!5m2!1sen!2sin"
+                width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+
+    <!-- take me top button -->
+    <button id="backToTop" onclick="scrollToTop()"
+        class="z-50 hidden fixed bottom-14 right-5 bg-[var(--bgLight2)]  h-10 w-10 flex justify-center items-center text-[var(--colorWhite)] py-2 px-4 rounded-full shadow-lg transition-opacity duration-300"><i
+            class="fa-solid fa-arrow-up"></i></button>
+
+    <footer class="bg-[var(--colorDark)]">
+        <div class="container mx-auto  grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 p-8 px-4 md:px-10 ">
+            <!-- Logo and Description -->
+            <div>
+                <a href="../../index.html" class="order-last lg:order-none flex items-center space-x-2">
+                    <img src="../../assets/logo.png" alt="Logo" class="w-14 ">
+                    <div class="flex flex-col">
+                        <span class="text-[var(--primaryColor)] font-bold text-3xl ">Plum<span
+                                class="text-[var(--colorWhite)]">Lab.</span></span>
+                        <span class="text-[var(--colorWhite)] text-sm  font-semibold">Best Plumber Service</span>
+                    </div>
+                </a>
+                <p class="mt-4 max-w-xs text-[var(--colorWhite)]">
+                    Management Plumbing includes a broad range of activities, and the many firms and their members often
+                    define these practices.
+                </p>
+                <!-- Social Media Icons -->
+                <div class="flex mt-4 space-x-3">
+                    <a href="#"
+                        class="text-[var(--textGray)] hover:text-[var(--primaryColor)] hover:scale-150 transition duration-300 ease-in-out"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="#"
+                        class="text-[var(--textGray)] hover:text-[var(--primaryColor)] hover:scale-150 transition duration-300 ease-in-out"><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="#"
+                        class="text-[var(--textGray)] hover:text-[var(--primaryColor)] hover:scale-150 transition duration-300 ease-in-out"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="#"
+                        class="text-[var(--textGray)] hover:text-[var(--primaryColor)] hover:scale-150 transition duration-300 ease-in-out"><i
+                            class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h5 class="text-xl font-semibold text-[var(--colorWhite)]">Quick Link</h5>
+                <ul class="mt-4 space-y-2 text-[var(--colorWhite)] transition duration-300 ease-in-out">
+                    <li><a href="../about/index.html"
+                            class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
+                                class="fa-solid fa-angles-right"></i> About Us</a></li>
+                    <li><a href="../projects/index.html"
+                            class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
+                                class="fa-solid fa-angles-right"></i> Projects</a></li>
+                    <!-- <li><a href="#" class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
+                                        class="fa-solid fa-angles-right"></i> Services</a></li> -->
+                    <li><a href="../contact/index.html"
+                            class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
+                                class="fa-solid fa-angles-right"></i> Contact</a></li>
+                    <li><a href="../blog/index.html"
+                            class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
+                                class="fa-solid fa-angles-right"></i> Our Blog</a>
+                    </li>
+                    <li><a href="../Dublin/index.html"
+                            class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
+                                class="fa-solid fa-angles-right"></i> Dublin, Columbus</a>
+                    </li>
+                    <li><a href="../Clintonville/index.html"
+                            class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
+                                class="fa-solid fa-angles-right"></i> Clintonville, Columbus</a>
+                    </li>
+                    <li><a href="../Downtown/index.html"
+                            class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
+                                class="fa-solid fa-angles-right"></i> Downtown, Columbus</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Quick contacts -->
+            <div>
+                <h5 class="text-xl font-semibold text-[var(--colorWhite)]">Quick Contact</h5>
+                <ul class="mt-4 space-y-2 text-[var(--colorWhite)] transition duration-300 ease-in-out">
+                    <li><a href="#" class=" transition duration-300 ease-in-out flex items-center gap-4"><i
+                                class="fa-solid fa-location-dot text-[var(--colorWhite)]"></i> Columbus, Ohio, USA</a>
+                    </li>
+                    <li><a href="#" class=" transition duration-300 ease-in-out flex items-center gap-4"><i
+                                class="fa-solid fa-phone text-[var(--colorWhite)]"></i> +000 123 456 789</a></li>
+                    <li><a href="#" class=" transition duration-300 ease-in-out flex items-center gap-4"><i
+                                class="fa-solid fa-envelope text-[var(--colorWhite)]"></i> plumblab@gmail.com</a></li>
+
+                </ul>
+            </div>
+
+            <!-- Our Services -->
+            <div>
+                <h5 class="text-xl font-semibold text-[var(--colorWhite)]">Our Services</h5>
+                <ul class="mt-4 space-y-2 text-[var(--colorWhite)] transition duration-300 ease-in-out">
+                    <li><a href="../allservice/index.html"
+                            class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
+                                class="fa-solid fa-angles-right"></i> Our Services</a></li>
+                    <li><a href="../remodelingservice/index.html"
+                            class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
+                                class="fa-solid fa-angles-right"></i> Remodeling Service</a></li>
+                    <li><a href="../basementservice/index.html"
+                            class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
+                                class="fa-solid fa-angles-right"></i> Basement Plumbing</a></li>
+                    <li><a href="../bathroomservice/index.html"
+                            class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
+                                class="fa-solid fa-angles-right"></i> Bathroom Plumbing</a></li>
+                    <li><a href="../gaslineservice/index.html"
+                            class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
+                                class="fa-solid fa-angles-right"></i> Gas Line Services</a></li>
+                    <li><a href="../kitchenservice/index.html"
+                            class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
+                                class="fa-solid fa-angles-right"></i> Kitchen Plumbing</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bg-[var(--colorDark2)] text-[var(--colorWhite)] text-center p-2 sm:p-4 lg:text-base px-8 md:px-10">
+            <p>&#169; Copyright <span id="year"></span> | PlumbLab - Plumber Website Theme | All right reserved. | <a
+                    href="../privacypolicy/index.html" class="underline">Privacy Policy</a></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+
+</html>

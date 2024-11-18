@@ -49,7 +49,7 @@ h1 {
 .card-list .card-item {
   height: auto;
   user-select: none;
-  padding: 35px;
+  padding: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
