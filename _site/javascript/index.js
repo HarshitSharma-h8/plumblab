@@ -237,33 +237,28 @@ new Swiper('.slider-wrapper', {
  
 
 
-// Function to toggle the accordion
-function toggleAccordion(id) {
-  // Close all other accordions
-  for (let i = 1; i <= 5; i++) {
-    if (i !== id) {
-      document.getElementById('content-' + i).classList.add('hidden');
-      document.getElementById('icon-' + i).classList.remove('rotate-180');
+// Accordion
+let activeAccordion = null;
+
+function toggleAccordion(index) {
+  const content = document.getElementById(`content-${index}`);
+  const allContents = document.querySelectorAll('[id^="content-"]');
+
+  // Close all accordion contents except the clicked one
+  allContents.forEach((item, idx) => {
+    if (item !== content) {
+      item.classList.add('max-h-0');
+      item.classList.remove('max-h-[1000px]');
     }
+  });
+
+  if (activeAccordion === index) {
+    content.classList.add('max-h-0');
+    content.classList.remove('max-h-[1000px]');
+    activeAccordion = null;
+  } else {
+    content.classList.remove('max-h-0');
+    content.classList.add('max-h-[1000px]');
+    activeAccordion = index;
   }
-
-  // Toggle the selected accordion
-  const content = document.getElementById('content-' + id);
-  const icon = document.getElementById('icon-' + id);
-  content.classList.toggle('hidden');
-  icon.classList.toggle('rotate-180');
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,0 +1,383 @@
+---
+layout : 'base.njk'
+title : "PlumbLab"
+---
+
+
+    <!-- hero section -->
+    <section class="h-[60vh] lg:h-[80vh] bg-[var(--bgLight)] flex justify-between items-center px-4 md:px-14  mx-auto">
+        <div class="lg:w-[70%]">
+            <h1
+                class="text-[var(--colorDark)] text-[2rem] lg:text-[2.6rem] xl:text-[3.5rem] font-medium  leading-tight mb-3">
+                We Provide Top- Notch <br><span class="text-[var(--primaryColor)] font-bold">Plumbing &
+                    Repair</span><br> Service At Your Door</h1>
+            <p class="text-[var(--textGray)]  text-[1rem] lg:text-[1.1rem] xl:text-lg mb-1">We provide top-notch
+                plimbing and repair services at your doorstep!</p>
+            <p class="text-[var(--textGray)]  text-[1rem] lg:text-[1.1rem] xl:text-lg mb-5">Whether you're dealing
+                with a leaky faucet, clogged drains, or need a full system.</p>
+            <a href="./pages/contact/index.html#contactus"
+                class=" bg-[var(--primaryColor)] text-[var(--colorWhite)] py-3 px-5 rounded-md hover:bg-[var(--primaryColorHover)] transition duration-300 ease-in-out text-[1.1rem]">Get
+                Free Quote</a>
+        </div>
+        <div class="hidden md:block h-full">
+            <img src="./assets/heroimg.png" class="md:w-full w-[2rem] md:pr-12  h-full  object-cover object-top "
+                alt="heroimg">
+        </div>
+    </section>
+
+    <!-- about section -->
+    {% include "_layouts/aboutUsSection.njk" %}
+
+    <!-- Servise -->
+    <section class=" mx-auto  py-16 bg-[var(--bgLight)]  px-4 md:px-14">
+        <div class="mb-10">
+            <h2 class="text-center text-4xl mb-3 text-[var(--colorDark)] font-bold">Best <span
+                    class="text-[var(--primaryColor)]">Services</span> We Offer</h2>
+            <p class="hidden sm:block text-center  text-[var(--colorDark)]">Lorem Ipsum is simply dummy text of the
+                printing and typesetting industry.<br> has been the industry's standard dummy text ever since the 1500s.
+            </p>
+        </div>
+
+        <div class="container swiper">
+            <div class="slider-wrapper">
+                <div class="card-list swiper-wrapper">
+                    <div class="card-item swiper-slide bg-[var(--colorWhite)] rounded-xl group">
+                        <div class="overflow-hidden rounded-xl w-full h-[16rem]">
+                            <img src="./assets/about.jpg"
+                                class="rounded-xl w-full h-full object-cover transition-transform duration-200 ease-in-out group-hover:scale-110"
+                                alt="kitchen plumbing">
+                        </div>
+                        <h4 class="text-[var(--colorDark)] text-xl font-medium mt-4 mb-2">Bathroom Plumbing</h4>
+                        <p class="text-[var(--textGray2)] mb-2">Electronic typesetting rema essentially unchanged was
+                            popularised.</p>
+                        <a href="./pages/bathroomservice/index.html"
+                            class="transition duration-300 ease-in-out hover:text-[var(--primaryColor)] font-semibold">Read
+                            More
+                            <i class="fa-solid fa-angles-right"></i></a>
+                    </div>
+                    <div class="card-item swiper-slide bg-[var(--colorWhite)] rounded-xl group">
+                        <div class="overflow-hidden rounded-xl w-full h-[16rem]">
+                            <img src="./assets/service2.jpg"
+                                class="rounded-xl w-full h-full object-cover transition-transform duration-200 ease-in-out group-hover:scale-110"
+                                alt="kitchen plumbing">
+                        </div>
+                        <h4 class="text-[var(--colorDark)] text-xl font-medium mt-4 mb-2">Basement Plumbing</h4>
+                        <p class="text-[var(--textGray2)] mb-2">Electronic typesetting rema essentially unchanged was
+                            popularised.</p>
+                        <a href="./pages/basementservice/index.html"
+                            class="transition duration-300 ease-in-out hover:text-[var(--primaryColor)] font-semibold">Read
+                            More
+                            <i class="fa-solid fa-angles-right"></i></a>
+                    </div>
+                    <div class="card-item swiper-slide bg-[var(--colorWhite)] rounded-xl group">
+                        <div class="overflow-hidden rounded-xl w-full h-[16rem]">
+                            <img src="./assets/service3.jpg"
+                                class="rounded-xl w-full h-full object-cover transition-transform duration-200 ease-in-out group-hover:scale-110"
+                                alt="kitchen plumbing">
+                        </div>
+                        <h4 class="text-[var(--colorDark)] text-xl font-medium mt-4 mb-2">Gas Line Service</h4>
+                        <p class="text-[var(--textGray2)] mb-2">Electronic typesetting rema essentially unchanged was
+                            popularised.</p>
+                        <a href="./pages/gaslineservice/index.html"
+                            class="transition duration-300 ease-in-out hover:text-[var(--primaryColor)] font-semibold">Read
+                            More
+                            <i class="fa-solid fa-angles-right"></i></a>
+                    </div>
+                    <div class="card-item swiper-slide bg-[var(--colorWhite)] rounded-xl group">
+                        <div class="overflow-hidden rounded-xl w-full h-[16rem]">
+                            <img src="./assets/service4.jpg"
+                                class="rounded-xl w-full h-full object-cover transition-transform duration-200 ease-in-out group-hover:scale-110"
+                                alt="kitchen plumbing">
+                        </div>
+                        <h4 class="text-[var(--colorDark)] text-xl font-medium mt-4 mb-2">Remodeling Service</h4>
+                        <p class="text-[var(--textGray2)] mb-2">Electronic typesetting rema essentially unchanged was
+                            popularised.</p>
+                        <a href="./pages/remodelingservice/index.html"
+                            class="transition duration-300 ease-in-out hover:text-[var(--primaryColor)] font-semibold">Read
+                            More
+                            <i class="fa-solid fa-angles-right"></i></a>
+                    </div>
+                    <div class="card-item swiper-slide bg-[var(--colorWhite)] rounded-xl group">
+                        <div class="overflow-hidden rounded-xl w-full h-[16rem]">
+                            <img src="./assets/service6.jpg"
+                                class="rounded-xl w-full h-full object-cover transition-transform duration-200 ease-in-out group-hover:scale-110"
+                                alt="kitchen plumbing">
+                        </div>
+                        <h4 class="text-[var(--colorDark)] text-xl font-medium mt-4 mb-2">Bathroom Plumbing</h4>
+                        <p class="text-[var(--textGray2)] mb-2">Electronic typesetting rema essentially unchanged was
+                            popularised.</p>
+                        <a href="./pages/bathroomservice/index.html"
+                            class="transition duration-300 ease-in-out hover:text-[var(--primaryColor)] font-semibold">Read
+                            More
+                            <i class="fa-solid fa-angles-right"></i></a>
+                    </div>
+                    <div class="card-item swiper-slide bg-[var(--colorWhite)] rounded-xl group">
+                        <div class="overflow-hidden rounded-xl w-full h-[16rem]">
+                            <img src="./assets/servise5.jpg"
+                                class="rounded-xl w-full h-full object-cover transition-transform duration-200 ease-in-out group-hover:scale-110"
+                                alt="kitchen plumbing">
+                        </div>
+                        <h4 class="text-[var(--colorDark)] text-xl font-medium mt-4 mb-2">Kitchen Plumbing</h4>
+                        <p class="text-[var(--textGray2)] mb-2">Electronic typesetting rema essentially unchanged was
+                            popularised.</p>
+                        <a href="./pages/kitchenservice/index.html"
+                            class="transition duration-300 ease-in-out hover:text-[var(--primaryColor)] font-semibold">Read
+                            More
+                            <i class="fa-solid fa-angles-right"></i></a>
+                    </div>
+
+
+                </div>
+
+                <div class="swiper-pagination"></div>
+                <div class="swiper-slide-button swiper-button-prev"></div>
+                <div class="swiper-slide-button swiper-button-next"></div>
+            </div>
+        </div>
+    </section>
+
+    {# Why choose us #}
+    {% include "_layouts/whyChooseUs.njk" %}
+    
+
+    <!-- projects gallary -->
+    <section class=" mx-auto  py-16 bg-[var(--bgLight)]  px-4 md:px-14">
+        <div class="mb-10">
+            <h2 class="text-center text-4xl mb-3 text-[var(--colorDark)] font-bold">Our Latest <span
+                    class="text-[var(--primaryColor)]">Projects</span></h2>
+            <p class="hidden sm:block text-center  text-[var(--colorDark)]">Lorem Ipsum is simply dummy text of the
+                printing and typesetting industry.<br> has been the industry's standard dummy text ever since the 1500s.
+            </p>
+        </div>
+
+        <div class="text-center mb-10">
+            <button
+                class="hover:bg-[var(--primaryColor)]  hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-medium text-[var(--colorDark)] uppercase isActive"
+                id="Allimg">All Project</button>
+            <button
+                class="hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-medium text-[var(--colorDark)] uppercase"
+                id="Bathroom">Bathroom</button>
+            <button
+                class="hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-medium text-[var(--colorDark)] uppercase"
+                id="Gasline">Gas Line</button>
+            <button
+                class="hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-medium text-[var(--colorDark)] uppercase"
+                id="Kitchen">Kitchen</button>
+            <button
+                class="hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-medium text-[var(--colorDark)] uppercase"
+                id="Waterline">Water Line</button>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="team-card bg-[var(--colorWhite)] rounded-xl overflow-hidden waterline">
+                <!-- Team member image with overlay effect -->
+                <div class="image-container relative group">
+                    <img src="./assets/waterlinerepair.jpg" class="w-full h-[20rem] object-cover rounded-xl" alt="">
+
+                    <!-- Overlay with social icons -->
+                    <div
+                        class="overlay absolute inset-0 bg-[rgba(0,0,0,0.6)] flex items-end p-8 opacity-0 transition-opacity duration-300 rounded-xl">
+                        <div class="">
+                            <p class="text-[var(--colorWhite)] text-2xl font-bold">Water Line Repair</p>
+                            <p class="text-[var(--colorWhite)] text-xl font-medium">Plumbing</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="team-card bg-[var(--colorWhite)] rounded-xl overflow-hidden kitchen">
+                <!-- Team member image with overlay effect -->
+                <div class="image-container relative group">
+                    <img src="./assets/servise5.jpg" class="w-full h-[20rem] object-cover rounded-xl" alt="">
+
+                    <!-- Overlay with social icons -->
+                    <div
+                        class="overlay absolute inset-0 bg-[rgba(0,0,0,0.6)] flex items-end p-8 opacity-0 transition-opacity duration-300 rounded-xl">
+                        <div class="">
+                            <p class="text-[var(--colorWhite)] text-2xl font-bold">Kitchen Plumbing</p>
+                            <p class="text-[var(--colorWhite)] text-xl font-medium">Plumbing</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="team-card bg-[var(--colorWhite)] rounded-xl overflow-hidden gasline">
+                <!-- Team member image with overlay effect -->
+                <div class="image-container relative group">
+                    <img src="./assets/service3.jpg" class="w-full h-[20rem] object-cover rounded-xl" alt="">
+
+                    <!-- Overlay with social icons -->
+                    <div
+                        class="overlay absolute inset-0 bg-[rgba(0,0,0,0.6)] flex items-end p-8 opacity-0 transition-opacity duration-300 rounded-xl">
+                        <div class="">
+                            <p class="text-[var(--colorWhite)] text-2xl font-bold">Gas line Service</p>
+                            <p class="text-[var(--colorWhite)] text-xl font-medium">Plumbing</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="team-card bg-[var(--colorWhite)] rounded-xl overflow-hidden waterline">
+                <!-- Team member image with overlay effect -->
+                <div class="image-container relative group">
+                    <img src="./assets/teamperson3.jpg" class="w-full h-[20rem] object-cover rounded-xl" alt="">
+
+                    <!-- Overlay with social icons -->
+                    <div
+                        class="overlay absolute inset-0 bg-[rgba(0,0,0,0.6)] flex items-end p-8 opacity-0 transition-opacity duration-300 rounded-xl">
+                        <div class="">
+                            <p class="text-[var(--colorWhite)] text-2xl font-bold">Water Line Repair</p>
+                            <p class="text-[var(--colorWhite)] text-xl font-medium">Plumbing</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="team-card bg-[var(--colorWhite)] rounded-xl overflow-hidden waterline">
+                <!-- Team member image with overlay effect -->
+                <div class="image-container relative group">
+                    <img src="./assets/service4.jpg" class="w-full h-[20rem] object-cover rounded-xl" alt="">
+
+                    <!-- Overlay with social icons -->
+                    <div
+                        class="overlay absolute inset-0 bg-[rgba(0,0,0,0.6)] flex items-end p-8 opacity-0 transition-opacity duration-300 rounded-xl">
+                        <div class="">
+                            <p class="text-[var(--colorWhite)] text-2xl font-bold">Water Line Repair</p>
+                            <p class="text-[var(--colorWhite)] text-xl font-medium">Plumbing</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="team-card bg-[var(--colorWhite)] rounded-xl overflow-hidden bathroom">
+                <!-- Team member image with overlay effect -->
+                <div class="image-container relative group">
+                    <img src="./assets/service2.jpg" class="w-full h-[20rem] object-cover rounded-xl" alt="">
+
+                    <!-- Overlay with social icons -->
+                    <div
+                        class="overlay absolute inset-0 bg-[rgba(0,0,0,0.6)] flex items-end p-8 opacity-0 transition-opacity duration-300 rounded-xl">
+                        <div class="">
+                            <p class="text-[var(--colorWhite)] text-2xl font-bold">Bathroom Repair</p>
+                            <p class="text-[var(--colorWhite)] text-xl font-medium">Plumbing</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="team-card bg-[var(--colorWhite)] rounded-xl overflow-hidden bathroom">
+                <!-- Team member image with overlay effect -->
+                <div class="image-container relative group">
+                    <img src="./assets/about.jpg" class="w-full h-[20rem] object-cover rounded-xl" alt="">
+
+                    <!-- Overlay with social icons -->
+                    <div
+                        class="overlay absolute inset-0 bg-[rgba(0,0,0,0.6)] flex items-end p-8 opacity-0 transition-opacity duration-300 rounded-xl">
+                        <div class="">
+                            <p class="text-[var(--colorWhite)] text-2xl font-bold">Bathroom Repair</p>
+                            <p class="text-[var(--colorWhite)] text-xl font-medium">Plumbing</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="team-card bg-[var(--colorWhite)] rounded-xl overflow-hidden bathroom">
+                <!-- Team member image with overlay effect -->
+                <div class="image-container relative group">
+                    <img src="./assets/service6.jpg" class="w-full h-[20rem] object-cover rounded-xl" alt="">
+
+                    <!-- Overlay with social icons -->
+                    <div
+                        class="overlay absolute inset-0 bg-[rgba(0,0,0,0.6)] flex items-end p-8 opacity-0 transition-opacity duration-300 rounded-xl">
+                        <div class="">
+                            <p class="text-[var(--colorWhite)] text-2xl font-bold">Bathroom Repair</p>
+                            <p class="text-[var(--colorWhite)] text-xl font-medium">Plumbing</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial -->
+    {% include "_layouts/testimonial.njk" %}
+
+    
+    
+    <!-- Blog -->
+    <section class=" mx-auto  py-16 bg-[var(--bgLight)]  px-4 md:px-14 flex flex-col items-center">
+        <div class="mb-10">
+            <h2 class="text-center text-4xl mb-3 text-[var(--colorDark)] font-bold">Latest <span
+                class="text-[var(--primaryColor)]">News</span> & <span
+                class="text-[var(--primaryColor)]">Blogs</span> </h2>
+            <p class="hidden sm:block text-center  text-[var(--colorDark)]">Lorem Ipsum is simply dummy text of the
+                printing and typesetting industry.<br> has been the industry's standard dummy text ever since the 1500s.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8  ">
+            <div href="#" class="md:hidden lg:block team-card bg-[var(--bgLight)] rounded-xl overflow-hidden ">
+                <!-- Team member image with overlay effect -->
+                <div class="image-container relative group">
+                    <img src="./assets/service3.jpg" class="w-full h-[18rem] object-cover rounded-xl" alt="">
+                </div>
+                <!-- Text below image -->
+                <div class="p-6">
+                    <p class="text-[var(--primaryColor)] mb-2"><i class="fa-regular fa-clock"></i> 04 November, 2023</p>
+                    <h5 class="text-[var(--colorDark)] hover:text-[var(--primaryColor)] text-xl font-semibold mb-4">
+                        Making this the first true ones the uses a dictionary.</h5>
+                    <div class="flex gap-4 items-center mb-4">
+                        <p class="text-[var(--textGray)]"><i class="fa-regular fa-user text-[var(--primaryColor)]"></i>
+                            Mabel Fox</p>
+                        <p class="text-[var(--textGray)]"><i
+                                class="fa-regular fa-message text-[var(--primaryColor)]"></i> Coments (0)</p>
+                    </div>
+                    <a href="./pages/blogpage/index.html"
+                        class="w-fit hidden lg:block bg-[var(--primaryColor)] text-[var(--colorWhite)] py-2 px-4 rounded-md hover:bg-[var(--primaryColorHover)] transition duration-300 ease-in-out text-[1.1rem]">Read
+                        More</a>
+                </div>
+            </div>
+            <div href="#" class="team-card bg-[var(--bgLight)] rounded-xl overflow-hidden ">
+                <!-- Team member image with overlay effect -->
+                <div class="image-container relative group">
+                    <img src="./assets/servise5.jpg" class="w-full h-[18rem] object-cover rounded-xl" alt="">
+                </div>
+                <!-- Text below image -->
+                <div class="p-6">
+                    <p class="text-[var(--primaryColor)] mb-2"><i class="fa-regular fa-clock"></i> 04 November, 2023</p>
+                    <h5 class="text-[var(--colorDark)] hover:text-[var(--primaryColor)] text-xl font-semibold mb-4">
+                        Making this the first true ones the uses a dictionary.</h5>
+                    <div class="flex gap-4 items-center mb-4">
+                        <p class="text-[var(--textGray)]"><i class="fa-regular fa-user text-[var(--primaryColor)]"></i>
+                            Mabel Fox</p>
+                        <p class="text-[var(--textGray)]"><i
+                                class="fa-regular fa-message text-[var(--primaryColor)]"></i> Coments (0)</p>
+                    </div>
+                    <a href="./pages/blogpage/index.html"
+                        class="w-fit hidden lg:block bg-[var(--primaryColor)] text-[var(--colorWhite)] py-2 px-4 row-fit rounded-md hover:bg-[var(--primaryColorHover)] transition duration-300 ease-in-out text-[1.1rem]">Read
+                        More</a>
+                </div>
+            </div>
+            <div href="#" class="team-card bg-[var(--bgLight)] rounded-xl overflow-hidden ">
+                <!-- Team member image with overlay effect -->
+                <div class="image-container relative group">
+                    <img src="./assets/service6.jpg" class="w-full h-[18rem] object-cover rounded-xl" alt="">
+                </div>
+                <!-- Text below image -->
+                <div class="p-6">
+                    <p class="text-[var(--primaryColor)] mb-2"><i class="fa-regular fa-clock"></i> 04 November, 2023</p>
+                    <h5 class="text-[var(--colorDark)] hover:text-[var(--primaryColor)] text-xl font-semibold mb-4">
+                        Making this the first true ones the uses a dictionary.</h5>
+                    <div class="flex gap-4 items-center mb-4">
+                        <p class="text-[var(--textGray)]"><i class="fa-regular fa-user text-[var(--primaryColor)]"></i>
+                            Mabel Fox</p>
+                        <p class="text-[var(--textGray)]"><i
+                                class="fa-regular fa-message text-[var(--primaryColor)]"></i> Coments (0)</p>
+                    </div>
+                    <a href="./pages/blogpage/index.html"
+                        class="w-fit hidden lg:block bg-[var(--primaryColor)] text-[var(--colorWhite)] py-2 px-4 rounded-md hover:bg-[var(--primaryColorHover)] transition duration-300 ease-in-out text-[1.1rem]">Read
+                        More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {# Take me top btn #}
+    {% include "_layouts/takeMeTopBTN.njk" %}
+
+
+    {% include "_layouts/accordion.njk" %}
+

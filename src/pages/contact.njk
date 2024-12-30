@@ -1,0 +1,111 @@
+---
+layout : 'base.njk'
+title : "PlumbLab | About"
+
+
+
+---
+
+    <!-- Hero section of about page -->
+    <section class="relative w-full h-48 md:h-64 lg:h-72">
+        <!-- Background image -->
+        <img src="/assets/about.jpg" alt="Background Image"
+            class="absolute inset-0 w-full h-full object-cover object-bottom">
+
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-[var(--bgLight2)] bg-opacity-50"></div>
+
+        <!-- Text content -->
+        <div class="relative flex justify-center items-center h-full">
+            <h1 class="text-[var(--colorWhite)] text-xl md:text-3xl lg:text-4xl font-bold">Contact Us</h1>
+        </div>
+    </section>
+
+
+    <!-- contactus -->
+
+    <!-- Container -->
+    <section class="grid grid-cols-1 lg:grid-cols-2 h-screen" id="contactus">
+
+        <!-- Form Section -->
+        <div class="bg-gray-900 p-8 px-4 md:px-14  w-full  flex flex-col justify-center py-20">
+            <h2 class="text-sm font-semibold text-[var(--textGray)]">BOOK ONLINE</h2>
+            <h1 class="text-3xl font-bold text-[var(--colorWhite)] mb-6">Online Booking For Appointments.</h1>
+
+            <!-- Form -->
+            <form class="space-y-4 ">
+
+                <!-- Full Name and Email -->
+                <div class="flex flex-col md:flex-row md:space-x-4">
+                    <div class="w-full mb-4 md:mb-0">
+                        <label class="block text-[var(--textGray)] text-sm mb-1">Full name here*</label>
+                        <input type="text" placeholder="Ross Ward"
+                            class="w-full px-4 py-2 bg-gray-800 rounded-lg text-[var(--colorWhite)] focus:outline-none focus:ring-2 focus:ring-[var(--primaryColor)]">
+                    </div>
+                    <div class="w-full">
+                        <label class="block text-[var(--textGray)] text-sm mb-1">Email here*</label>
+                        <input type="email" placeholder="rossward@gmail.com"
+                            class="w-full px-4 py-2 bg-gray-800 rounded-lg text-[var(--colorWhite)] focus:outline-none focus:ring-2 focus:ring-[var(--primaryColor)]">
+                    </div>
+                </div>
+
+                <!-- Contact Number and Select Service -->
+                <div class="flex flex-col md:flex-row md:space-x-4">
+                    <div class="w-full mb-4 md:mb-0">
+                        <label class="block text-[var(--textGray)] text-sm mb-1">Contact number*</label>
+                        <input type="tel" placeholder="+88 *** *** ***"
+                            class="w-full px-4 py-2 bg-gray-800 rounded-lg text-[var(--colorWhite)] focus:outline-none focus:ring-2 focus:ring-[var(--primaryColor)]">
+                    </div>
+                    <div class="w-full">
+                        <label class="block text-[var(--textGray)] text-sm mb-1">Select service*</label>
+                        <select
+                            class="w-full px-4 py-2 bg-gray-800 rounded-lg text-[var(--colorWhite)] focus:outline-none focus:ring-2 focus:ring-[var(--primaryColor)]">
+                            <option>Subject</option>
+                            <option>Remodeling Service</option>
+                            <option>Basement Plumbing</option>
+                            <option>Bathroom Plumbing</option>
+                            <option>Gas Line Services</option>
+                            <option>Kitchen Plumbing</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Short Text -->
+                <div>
+                    <label class="block text-[var(--textGray)] text-sm mb-1">Short text*</label>
+                    <textarea placeholder="Type your message"
+                        class="w-full px-4 py-2 bg-gray-800 rounded-lg text-[var(--colorWhite)] focus:outline-none focus:ring-2 focus:ring-[var(--primaryColor)] h-32"></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit"
+                    class="w-full bg-[var(--primaryColor)] hover:bg-[var(--primaryColorHover)] text-[var(--colorWhite)] font-semibold py-3 rounded-lg mt-4">Get
+                    An Appointment</button>
+            </form>
+        </div>
+
+        <!-- Image Section -->
+        <div class="hidden lg:block " id="contactusform-img" style="background-image: url('/assets/contactus.jpg');">
+            <!-- <div class="w-full h-full bg-cover bg-center " style="background-image: url('../assets/teamperson1.jpg')">
+                
+            </div> -->
+            {# <img src="/assets/contactus.jpg" class="h-full w-full overflow-hidden  object-cover" alt="">  #}
+        </div>
+
+    </section>
+
+
+
+    <!-- Map -->
+    <div class="w-full max-w-6.5xl mx-auto">
+
+        <div class="overflow-hidden  shadow-lg">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d197214.4195069445!2d-83.13986550453077!3d40.00966954536853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883889c1b990de71%3A0xe43266f8cfb1b533!2sColumbus%2C%20OH%2C%20USA!5e0!3m2!1sen!2sin!4v1730267760527!5m2!1sen!2sin"
+                width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+
+

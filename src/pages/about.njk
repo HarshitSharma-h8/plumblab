@@ -1,0 +1,229 @@
+---
+layout : 'base.njk'
+title : "PlumbLab | About"
+
+
+aboutUsSectionBTN : "hidden"
+aboutUsSectionTopHeading : "hidden"
+aboutUsSectionBgColor : "bg-[var(--bgLight)]"
+---
+
+
+    <!-- Hero section of about page -->
+    <section class="relative w-full h-48 md:h-64 lg:h-72">
+        <!-- Background image -->
+        <img src="/assets/about.jpg" alt="Background Image"
+            class="absolute inset-0 w-full h-full object-cover object-bottom">
+
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-[var(--bgLight2)] bg-opacity-50"></div>
+
+        <!-- Text content -->
+        <div class="relative flex justify-center items-center h-full">
+            <h1 class="text-white text-xl md:text-3xl lg:text-4xl font-bold">About Us</h1>
+        </div>
+    </section>
+
+    <!-- about section -->
+    {% include "_layouts/aboutUsSection.njk" %}
+
+    {# Why choose us #}
+    {% include "_layouts/whyChooseUs.njk" %}
+
+    
+
+    <!-- Members -->
+    <section class=" mx-auto  py-16 bg-[var(--bgLight)]  px-4 md:px-14">
+        <div class="mb-10">
+            <h2 class="text-center text-4xl mb-3 text-[var(--colorDark)] font-bold">Dedicated <span
+                    class="text-[var(--primaryColor)]">Member</span></h2>
+            <p class="hidden sm:block text-center  text-[var(--colorDark)]">Lorem Ipsum is simply dummy text of the
+                printing and typesetting industry.<br> has been the industry's standard dummy text ever since the 1500s.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-4 gap-8 ">
+            <div class="team-card bg-[var(--colorWhite)] rounded-xl overflow-hidden">
+                <!-- Team member image with overlay effect -->
+                <div class="image-container relative group">
+                    <img src="/assets/teamperson1.jpg" class="w-full h-[18rem] object-cover rounded-xl" alt="">
+
+                    <!-- Overlay with social icons -->
+                    <div
+                        class="overlay absolute inset-0 bg-[rgba(0,0,0,0.6)] flex items-center justify-center opacity-0 transition-opacity duration-300 rounded-xl">
+                        <div class="flex space-x-4   text-2xl">
+                            <!-- Social Icons (Font Awesome) -->
+                            <a href="#"><i
+                                    class="fab fa-facebook-f text-[var(--colorWhite)] hover:text-[var(--primaryColor)] transition ease-in-out duration-300"></i></a>
+                            <a href="#"><i
+                                    class="fa-brands fa-x-twitter text-[var(--colorWhite)] hover:text-[var(--primaryColor)] transition ease-in-out duration-300"></i></i></a>
+                            <a href="#"><i
+                                    class="fab fa-linkedin-in text-[var(--colorWhite)] hover:text-[var(--primaryColor)] transition ease-in-out duration-300"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Text below image -->
+                <div class="p-4">
+                    <p class="text-[var(--colorDark)] text-3xl mb-2">Cloie Dekar</p>
+                    <p class="text-[var(--textGray)]">Team Leader</p>
+                </div>
+            </div>
+            <div class="team-card bg-[var(--colorWhite)] rounded-xl overflow-hidden">
+                <!-- Team member image with overlay effect -->
+                <div class="image-container relative group">
+                    <img src="/assets/teamperson2.jpg" class="w-full h-[18rem] object-cover rounded-xl" alt="">
+
+                    <!-- Overlay with social icons -->
+                    <div
+                        class="overlay absolute inset-0 bg-[rgba(0,0,0,0.6)] flex items-center justify-center opacity-0 transition-opacity duration-300 rounded-xl">
+                        <div class="flex space-x-4   text-2xl">
+                            <!-- Social Icons (Font Awesome) -->
+                            <a href="#"><i
+                                    class="fab fa-facebook-f text-[var(--colorWhite)] hover:text-[var(--primaryColor)] transition ease-in-out duration-300"></i></a>
+                            <a href="#"><i
+                                    class="fa-brands fa-x-twitter text-[var(--colorWhite)] hover:text-[var(--primaryColor)] transition ease-in-out duration-300"></i></i></a>
+                            <a href="#"><i
+                                    class="fab fa-linkedin-in text-[var(--colorWhite)] hover:text-[var(--primaryColor)] transition ease-in-out duration-300"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Text below image -->
+                <div class="p-4">
+                    <p class="text-[var(--colorDark)] text-3xl mb-2">Palak Sam</p>
+                    <p class="text-[var(--textGray)]">Junior Member</p>
+                </div>
+            </div>
+            <div class="team-card bg-[var(--colorWhite)] rounded-xl overflow-hidden">
+                <!-- Team member image with overlay effect -->
+                <div class="image-container relative group">
+                    <img src="/assets/teamperson4.jpg" class="w-full h-[18rem] object-cover rounded-xl" alt="">
+
+                    <!-- Overlay with social icons -->
+                    <div
+                        class="overlay absolute inset-0 bg-[rgba(0,0,0,0.6)] flex items-center justify-center opacity-0 transition-opacity duration-300 rounded-xl">
+                        <div class="flex space-x-4   text-2xl">
+                            <!-- Social Icons (Font Awesome) -->
+                            <a href="#"><i
+                                    class="fab fa-facebook-f text-[var(--colorWhite)] hover:text-[var(--primaryColor)] transition ease-in-out duration-300"></i></a>
+                            <a href="#"><i
+                                    class="fa-brands fa-x-twitter text-[var(--colorWhite)] hover:text-[var(--primaryColor)] transition ease-in-out duration-300"></i></i></a>
+                            <a href="#"><i
+                                    class="fab fa-linkedin-in text-[var(--colorWhite)] hover:text-[var(--primaryColor)] transition ease-in-out duration-300"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Text below image -->
+                <div class="p-4">
+                    <p class="text-[var(--colorDark)] text-3xl mb-2">Amanedil</p>
+                    <p class="text-[var(--textGray)]">Junior Member</p>
+                </div>
+            </div>
+            <div class="team-card bg-[var(--colorWhite)] rounded-xl overflow-hidden">
+                <!-- Team member image with overlay effect -->
+                <div class="image-container relative group">
+                    <img src="/assets/teamperson3.jpg" class="w-full h-[18rem] object-cover rounded-xl" alt="">
+
+                    <!-- Overlay with social icons -->
+                    <div
+                        class="overlay absolute inset-0 bg-[rgba(0,0,0,0.6)] flex items-center justify-center opacity-0 transition-opacity duration-300 rounded-xl">
+                        <div class="flex space-x-4   text-2xl">
+                            <!-- Social Icons (Font Awesome) -->
+                            <a href="#"><i
+                                    class="fab fa-facebook-f text-[var(--colorWhite)] hover:text-[var(--primaryColor)] transition ease-in-out duration-300"></i></a>
+                            <a href="#"><i
+                                    class="fa-brands fa-x-twitter text-[var(--colorWhite)] hover:text-[var(--primaryColor)] transition ease-in-out duration-300"></i></i></a>
+                            <a href="#"><i
+                                    class="fab fa-linkedin-in text-[var(--colorWhite)] hover:text-[var(--primaryColor)] transition ease-in-out duration-300"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Text below image -->
+                <div class="p-4">
+                    <p class="text-[var(--colorDark)] text-3xl mb-2">Jhon Dao</p>
+                    <p class="text-[var(--textGray)]">Junior Member</p>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Blog -->
+    <section class=" mx-auto  py-16 bg-[var(--colorWhite)]  px-4 md:px-14 flex flex-col items-center">
+        <div class="mb-10">
+            <h2 class="text-center text-4xl mb-3 text-[var(--colorDark)] font-bold">Latest <span
+                    class="text-[var(--primaryColor)]">News</span> & <span
+                    class="text-[var(--primaryColor)]">Blog</span> </h2>
+            <p class="hidden sm:block text-center  text-[var(--colorDark)]">Lorem Ipsum is simply dummy text of the
+                printing and typesetting industry.<br> has been the industry's standard dummy text ever since the 1500s.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8  ">
+            <div class="md:hidden lg:block team-card bg-[var(--bgLight)] rounded-xl overflow-hidden ">
+                <!-- Team member image with overlay effect -->
+                <div class="image-container relative group">
+                    <img src="/assets/service3.jpg" class="w-full h-[18rem] object-cover rounded-xl" alt="">
+                </div>
+                <!-- Text below image -->
+                <div class="p-6">
+                    <p class="text-[var(--primaryColor)] mb-2"><i class="fa-regular fa-clock"></i> 04 November, 2023</p>
+                    <h5 class="text-[var(--colorDark)] hover:text-[var(--primaryColor)] text-xl font-semibold mb-4">
+                        Making this the first true ones the uses a dictionary.</h5>
+                    <div class="flex gap-4 items-center mb-4">
+                        <p class="text-[var(--textGray)]"><i class="fa-regular fa-user text-[var(--primaryColor)]"></i>
+                            Mabel Fox</p>
+                        <p class="text-[var(--textGray)]"><i
+                                class="fa-regular fa-message text-[var(--primaryColor)]"></i> Coments (0)</p>
+                    </div>
+                    <a href="./blogpage.html"
+                        class="w-fit hidden lg:block bg-[var(--primaryColor)] text-[var(--colorWhite)] py-2 px-4 rounded-md hover:bg-[var(--primaryColorHover)] transition duration-300 ease-in-out text-[1.1rem]">Read
+                        More</a>
+                </div>
+            </div>
+            <div class="team-card bg-[var(--bgLight)] rounded-xl overflow-hidden ">
+                <!-- Team member image with overlay effect -->
+                <div class="image-container relative group">
+                    <img src="../assets/servise5.jpg" class="w-full h-[18rem] object-cover rounded-xl" alt="">
+                </div>
+                <!-- Text below image -->
+                <div class="p-6">
+                    <p class="text-[var(--primaryColor)] mb-2"><i class="fa-regular fa-clock"></i> 04 November, 2023</p>
+                    <h5 class="text-[var(--colorDark)] hover:text-[var(--primaryColor)] text-xl font-semibold mb-4">
+                        Making this the first true ones the uses a dictionary.</h5>
+                    <div class="flex gap-4 items-center mb-4">
+                        <p class="text-[var(--textGray)]"><i class="fa-regular fa-user text-[var(--primaryColor)]"></i>
+                            Mabel Fox</p>
+                        <p class="text-[var(--textGray)]"><i
+                                class="fa-regular fa-message text-[var(--primaryColor)]"></i> Coments (0)</p>
+                    </div>
+                    <a href="./blogpage.html"
+                        class="w-fit hidden lg:block bg-[var(--primaryColor)] text-[var(--colorWhite)] py-2 px-4 rounded-md hover:bg-[var(--primaryColorHover)] transition duration-300 ease-in-out text-[1.1rem]">Read
+                        More</a>
+                </div>
+            </div>
+            <div class="team-card bg-[var(--bgLight)] rounded-xl overflow-hidden ">
+                <!-- Team member image with overlay effect -->
+                <div class="image-container relative group">
+                    <img src="../assets/service6.jpg" class="w-full h-[18rem] object-cover rounded-xl" alt="">
+                </div>
+                <!-- Text below image -->
+                <div class="p-6">
+                    <p class="text-[var(--primaryColor)] mb-2"><i class="fa-regular fa-clock"></i> 04 November, 2023</p>
+                    <h5 class="text-[var(--colorDark)] hover:text-[var(--primaryColor)] text-xl font-semibold mb-4">
+                        Making this the first true ones the uses a dictionary.</h5>
+                    <div class="flex gap-4 items-center mb-4">
+                        <p class="text-[var(--textGray)]"><i class="fa-regular fa-user text-[var(--primaryColor)]"></i>
+                            Mabel Fox</p>
+                        <p class="text-[var(--textGray)]"><i
+                                class="fa-regular fa-message text-[var(--primaryColor)]"></i> Coments (0)</p>
+                    </div>
+                    <a href="./blogpage.html"
+                        class="w-fit hidden lg:block bg-[var(--primaryColor)] text-[var(--colorWhite)] py-2 px-4 rounded-md hover:bg-[var(--primaryColorHover)] transition duration-300 ease-in-out text-[1.1rem]">Read
+                        More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+

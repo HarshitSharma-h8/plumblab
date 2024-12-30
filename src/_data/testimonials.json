@@ -1,0 +1,38 @@
+[
+    {
+        "stars" : 5,
+        "message" : "Lorem ipsum odor amet, consectetuer adipiscing elit. Penatibus vel ullamcorper mattis senectus tincidunt feugiat? Netus elementum phasellus dictumst ",
+        "person" : "Bobby Sen",
+        "position" : "CEO",
+        "img" : "/assets/teamperson2.jpg"
+    },
+    {
+        "stars" : 4,
+        "message" : "Lorem ipsum odor amet, consectetuer adipiscing elit. Penatibus vel ullamcorper mattis senectus tincidunt feugiat? Netus elementum.",
+        "person" : "Sandy H.",
+        "position" : "Designer",
+        "img" : "/assets/teamperson2.jpg"
+    },
+    {
+        "stars" : 5,
+        "message" : "Lorem ipsum odor amet, consectetuer adipiscing elit.",
+        "person" : "JK",
+        "position" : "Developer",
+        "img" : "/assets/teamperson2.jpg"
+    },
+    {
+        "stars" : 4,
+        "message" : "Lorem ipsum odor amet, consectetuer adipiscing elit.",
+        "person" : "JK",
+        "position" : "Developer",
+        "img" : "/assets/teamperson2.jpg"
+    },
+    {
+        "stars" : 3,
+        "message" : "Lorem ipsum odor amet, consectetuer adipiscing elit. Penatibus vel  Lorem ipsum odor amet, consectetuer adipiscing elit. Penatibus vel ullamcorper mattis senectus tincidunt feugiat? Netus elementum",
+        "person" : "Sandy H.",
+        "position" : "Designer",
+        "img" : "/assets/teamperson2.jpg"
+    }
+    
+]
