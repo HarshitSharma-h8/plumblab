@@ -114,6 +114,7 @@ const Bathroom = document.getElementById("Bathroom")
 const Gasline = document.getElementById("Gasline")
 const Kitchen = document.getElementById("Kitchen")
 const Waterline = document.getElementById("Waterline")
+
 allimg.addEventListener('click',function(){
   reset()
   Bathroom.classList.remove("isActive")
@@ -238,14 +239,14 @@ new Swiper('.slider-wrapper', {
 
 
 // Accordion
-let activeAccordion = null;
 
 function toggleAccordion(index) {
+  let activeAccordion = null;
   const content = document.getElementById(`content-${index}`);
   const allContents = document.querySelectorAll('[id^="content-"]');
 
   // Close all accordion contents except the clicked one
-  allContents.forEach((item, idx) => {
+  allContents.forEach((item, ind) => {
     if (item !== content) {
       item.classList.add('max-h-0');
       item.classList.remove('max-h-[1000px]');

@@ -1,0 +1,4 @@
+{
+    "layout" : "servicePageTemplate.njk",
+    "tags" : "services"
+}

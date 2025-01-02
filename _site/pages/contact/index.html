@@ -78,23 +78,23 @@
                                 class=" block hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Our
                                 Services</a>
                         </li>
-                        <li><a href="./pages/basementservice/index.html"
-                                class=" block hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Basement
-                                Plumbing servise</a>
+                        
+                        <li><a href="/services/BasementService/"
+                                class=" block hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Basement Service</a>
                         </li>
-                        <li><a href="./pages/bathroomservice/index.html"
-                                class="block hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Bathroom
-                                Plumbing</a></li>
-
-                        <li><a href="./pages/remodelingservice/index.html"
-                                class="block hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Remodeling
-                                Service</a></li>
-                        <li><a href="./pages/gaslineservice/index.html"
-                                class="block hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Gas
-                                Line Services</a></li>
-                        <li><a href="./pages/kitchenservice/index.html"
-                                class="block hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Kitchen
-                                Plumbing</a></li>
+                        
+                        <li><a href="/services/BathroomService/"
+                                class=" block hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Bathroom Service</a>
+                        </li>
+                        
+                        <li><a href="/services/GaslineServise/"
+                                class=" block hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Gasline Service</a>
+                        </li>
+                        
+                        <li><a href="/services/KichenService/"
+                                class=" block hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Kichen Service</a>
+                        </li>
+                        
                     </ul>
                 </li>
                 <li class="relative group">
@@ -118,7 +118,7 @@
 
                     </ul>
                 </li>
-                <a href="./pages/projects/index.html"
+                <a href="/pages/projects"
                     class="hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Projects</a>
                 <!-- <a href="#"
                 class="hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Shop</a> -->
@@ -337,6 +337,12 @@
 
 
     </main>
+    
+    <!-- take me top button -->
+<button id="backToTop" onclick="scrollToTop()"
+class="z-50 hidden fixed bottom-14 right-5 bg-[var(--bgLight2)]  h-10 w-10 flex justify-center items-center text-[var(--colorWhite)] py-2 px-4 rounded-full shadow-lg transition-opacity duration-300">
+<i class="fa-solid fa-arrow-up"></i>
+</button>
     <footer class="bg-[var(--colorDark)]">
     <div class="container mx-auto  grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 p-8 px-4 md:px-10 ">
         <!-- Logo and Description -->
@@ -423,21 +429,27 @@
         <div>
             <h5 class="text-xl font-semibold text-[var(--colorWhite)]">Our Services</h5>
             <ul class="mt-4 space-y-2 text-[var(--colorWhite)] transition duration-300 ease-in-out">
-                <li><a href="/pages/remodelingservice"
+                
+                <li><a href="/services/BasementService/"
                         class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
-                            class="fa-solid fa-angles-right"></i> Remodeling Service</a></li>
-                <li><a href="/pages/basementservice"
+                            class="fa-solid fa-angles-right"></i>Basement Service</a>
+                </li>
+                
+                <li><a href="/services/BathroomService/"
                         class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
-                            class="fa-solid fa-angles-right"></i> Basement Plumbing</a></li>
-                <li><a href="/pages/bathroomservice"
+                            class="fa-solid fa-angles-right"></i>Bathroom Service</a>
+                </li>
+                
+                <li><a href="/services/GaslineServise/"
                         class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
-                            class="fa-solid fa-angles-right"></i> Bathroom Plumbing</a></li>
-                <li><a href="/pages/gaslineservice"
+                            class="fa-solid fa-angles-right"></i>Gasline Service</a>
+                </li>
+                
+                <li><a href="/services/KichenService/"
                         class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
-                            class="fa-solid fa-angles-right"></i> Gas Line Services</a></li>
-                <li><a href="/pages/kitchenservice"
-                        class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
-                            class="fa-solid fa-angles-right"></i> Kitchen Plumbing</a></li>
+                            class="fa-solid fa-angles-right"></i>Kichen Service</a>
+                </li>
+                
             </ul>
         </div>
     </div>

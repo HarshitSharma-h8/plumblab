@@ -3,26 +3,20 @@ layout : 'base.njk'
 title : "PlumbLab | About"
 
 
+heroImgSrc: "/assets/about.jpg"
+heroImgAlt: "HomePageHeroImg"
+eleventyComputed:
+ heroTitle: "{{ title }}"
+
+
 aboutUsSectionBTN : "hidden"
 aboutUsSectionTopHeading : "hidden"
 aboutUsSectionBgColor : "bg-[var(--bgLight)]"
 ---
 
 
-    <!-- Hero section of about page -->
-    <section class="relative w-full h-48 md:h-64 lg:h-72">
-        <!-- Background image -->
-        <img src="/assets/about.jpg" alt="Background Image"
-            class="absolute inset-0 w-full h-full object-cover object-bottom">
-
-        <!-- Overlay -->
-        <div class="absolute inset-0 bg-[var(--bgLight2)] bg-opacity-50"></div>
-
-        <!-- Text content -->
-        <div class="relative flex justify-center items-center h-full">
-            <h1 class="text-white text-xl md:text-3xl lg:text-4xl font-bold">About Us</h1>
-        </div>
-    </section>
+    <!-- hero section -->
+    {% include "_layouts/heroSection.njk" %}
 
     <!-- about section -->
     {% include "_layouts/aboutUsSection.njk" %}

@@ -54,23 +54,12 @@
                                 class=" block hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Our
                                 Services</a>
                         </li>
-                        <li><a href="./pages/basementservice/index.html"
-                                class=" block hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Basement
-                                Plumbing servise</a>
+                        {% for service in collections.services %}
+                        <li><a href="{{service.url}}"
+                                class=" block hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">{{
+                                service.data.title }}</a>
                         </li>
-                        <li><a href="./pages/bathroomservice/index.html"
-                                class="block hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Bathroom
-                                Plumbing</a></li>
-
-                        <li><a href="./pages/remodelingservice/index.html"
-                                class="block hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Remodeling
-                                Service</a></li>
-                        <li><a href="./pages/gaslineservice/index.html"
-                                class="block hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Gas
-                                Line Services</a></li>
-                        <li><a href="./pages/kitchenservice/index.html"
-                                class="block hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Kitchen
-                                Plumbing</a></li>
+                        {% endfor %}
                     </ul>
                 </li>
                 <li class="relative group">
@@ -94,7 +83,7 @@
 
                     </ul>
                 </li>
-                <a href="./pages/projects/index.html"
+                <a href="/pages/projects"
                     class="hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Projects</a>
                 <!-- <a href="#"
                 class="hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Shop</a> -->

@@ -84,21 +84,12 @@
         <div>
             <h5 class="text-xl font-semibold text-[var(--colorWhite)]">Our Services</h5>
             <ul class="mt-4 space-y-2 text-[var(--colorWhite)] transition duration-300 ease-in-out">
-                <li><a href="/pages/remodelingservice"
+                {% for service in collections.services %}
+                <li><a href="{{service.url}}"
                         class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
-                            class="fa-solid fa-angles-right"></i> Remodeling Service</a></li>
-                <li><a href="/pages/basementservice"
-                        class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
-                            class="fa-solid fa-angles-right"></i> Basement Plumbing</a></li>
-                <li><a href="/pages/bathroomservice"
-                        class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
-                            class="fa-solid fa-angles-right"></i> Bathroom Plumbing</a></li>
-                <li><a href="/pages/gaslineservice"
-                        class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
-                            class="fa-solid fa-angles-right"></i> Gas Line Services</a></li>
-                <li><a href="/pages/kitchenservice"
-                        class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
-                            class="fa-solid fa-angles-right"></i> Kitchen Plumbing</a></li>
+                            class="fa-solid fa-angles-right"></i>{{service.data.title}}</a>
+                </li>
+                {% endfor %}
             </ul>
         </div>
     </div>
