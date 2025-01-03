@@ -1,0 +1,4 @@
+{
+    "layout" : "blogPostTemplate.njk",
+    "tags" : "blogPosts"
+}

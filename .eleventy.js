@@ -1,7 +1,20 @@
+import MarkdownIt from "markdown-it";
+
 export default function (eleventyConfig) {
-//   eleventyConfig.addPassthroughCopy("./src/style/style.css");
-//   eleventyConfig.addPassthroughCopy("./src/javascript/index.js");
-//   eleventyConfig.addPassthroughCopy("./src/assets");
+  //   eleventyConfig.addPassthroughCopy("./src/style/style.css");
+  //   eleventyConfig.addPassthroughCopy("./src/javascript/index.js");
+  //   eleventyConfig.addPassthroughCopy("./src/assets");
+
+  const markdownItInstance = MarkdownIt({
+    html: true,
+    breaks: true,
+    linkify: true,
+    typographer: true,
+  });
+  eleventyConfig.setLibrary("md", markdownItInstance);
+  eleventyConfig.addFilter("markdown", (content) => {
+    return markdownItInstance.render(content || "");
+  });
 
   eleventyConfig.setTemplateFormats(["md", "njk", "html"]);
   eleventyConfig.addPassthroughCopy("src/style");

@@ -111,3 +111,59 @@ h1 {
 }
 
 
+/* blogPost */
+#blogPost h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--darkBlue);
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+}
+
+#blogPost h1 {
+  font-size: 40px;
+}
+#blogPost h2 {
+  font-size: 30px;
+}
+#blogPost h3 {
+  font-size: 28px;
+}
+#blogPost h4 {
+  font-size: 26px;
+}
+#blogPost h5 {
+  font-size: 24px;
+}
+#blogPost h6 {
+  font-size: 22px;
+}
+
+#blogPost p {
+  color: var(--textGray);
+  font-size: 18px;
+}
+
+#blogPost ul {
+  list-style: disc;
+  color: var(--textGray);
+  font-size: 18px;
+  padding-left: 20px;
+  margin-top: 0.8rem;
+  /* list-style-position: inside; */
+}
+#blogPost ol {
+  list-style: decimal;
+  color: var(--textGray);
+  font-size: 18px;
+  padding-left: 20px;
+  /* list-style-position: inside; */
+}
+#blogPost img {
+  margin: 1rem 0rem;
+}
+
+
