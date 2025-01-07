@@ -54,7 +54,7 @@ map_src : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d197214.41950694
                 </div>
                 <div class="w-full">
                     <label class="block text-[var(--textGray)] text-sm mb-1">Select service*</label>
-                    <select
+                    <select id="service" name="service" required
                         class="w-full px-4 py-2 bg-gray-800 rounded-lg text-[var(--colorWhite)] focus:outline-none focus:ring-2 focus:ring-[var(--primaryColor)]">
                         <option>Subject</option>
                         {% for service in collections.services %}
