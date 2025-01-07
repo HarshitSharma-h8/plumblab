@@ -63,24 +63,21 @@
                     </ul>
                 </li>
                 <li class="relative group">
-                    <button onclick="window.location.href='../servicearea/index.html';"
+                    <button onclick="window.location.href='/pages/ourServiceAreas';"
                         class="hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Service
                         Areas
                     </button>
                     <!-- Dropdown Menu -->
                     <ul
                         class="absolute left-0 top-[2.1rem] w-[20rem] hidden group-hover:block bg-[var(--colorWhite)] py-6 pb-5 rounded-md px-3  mt-2  z-10">
-                        <li><a href="./pages/Dublin/index.html"
-                                class=" block hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Dublin</a>
+                        <li><a href="/pages/ourServiceAreas"
+                                class=" block hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Our Service Area</a>
                         </li>
-                        <li><a href="./pages/Clintonville/index.html"
-                                class=" block hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Clintonville</a>
+                        {% for serviceArea in collections.serviceAreas %}
+                        <li><a href="{{serviceArea.url}}"
+                                class=" block hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">{{serviceArea.data.title}}</a>
                         </li>
-                        <li><a href="./pages/Downtown/index.html"
-                                class="block hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Downtown</a>
-                        </li>
-
-
+                        {% endfor %}
                     </ul>
                 </li>
                 <a href="/pages/projects"

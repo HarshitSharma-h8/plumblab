@@ -1,0 +1,4 @@
+{
+    "layout" : "serviceAreaTemplate.njk",
+    "tags" : "serviceAreas"
+}
