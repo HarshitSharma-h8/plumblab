@@ -50,18 +50,12 @@
                         class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
                             class="fa-solid fa-angles-right"></i> Our Blog</a>
                 </li>
-                <li><a href="/pages/Dublin"
+                {% for serviceArea in collections.serviceAreas %}
+                <li><a href={{serviceArea.url}}
                         class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
-                            class="fa-solid fa-angles-right"></i> Dublin, Columbus</a>
+                            class="fa-solid fa-angles-right"></i> {{ serviceArea.data.title }}</a>
                 </li>
-                <li><a href="/pages/Clintonville"
-                        class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
-                            class="fa-solid fa-angles-right"></i> Clintonville, Columbus</a>
-                </li>
-                <li><a href="/pages/Downtown"
-                        class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
-                            class="fa-solid fa-angles-right"></i> Downtown, Columbus</a>
-                </li>
+                {% endfor %}
             </ul>
         </div>
 
@@ -95,6 +89,6 @@
     </div>
     <div class="bg-[var(--colorDark2)] text-[var(--colorWhite)] text-center p-2 sm:p-4 lg:text-base px-4 md:px-10">
         <p>&#169; Copyright <span id="year"></span> | PlumbLab - Plumber Website Theme | All right reserved. | <a
-                href="/pages/privacypolicy" class="underline">Privacy Policy</a></p>
+                href="/pages/privacyPolicy" class="underline">Privacy Policy</a></p>
     </div>
 </footer>

@@ -167,3 +167,13 @@ h6 {
 }
 
 
+
+/* response message of form */
+
+#responseMessage.success {
+  background-color: #4caf50; /* Green for success */
+}
+
+#responseMessage.error {
+  background-color: #f44336; /* Red for error */
+}
