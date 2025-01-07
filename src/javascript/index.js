@@ -1,7 +1,7 @@
 let toggle = false;
 // target element
 const moboiconAll = document.querySelectorAll(".menuToggle");
-console.log(moboiconAll);
+
 
 const mobomenu = document.getElementById("mobileMenu");
 
@@ -188,6 +188,51 @@ window.addEventListener("scroll",function(){
 //   Waterline.classList.add("isActive")
 //   allimg.classList.remove("isActive")
 // })
+
+// Ensure the elements are correctly selected from the DOM
+const allimg = document.getElementById("Allimg");
+const Bathroom = document.getElementById("Bathroom");
+const Gasline = document.getElementById("Gasline");
+const Kitchen = document.getElementById("Kitchen");
+const Waterline = document.getElementById("Waterline");
+
+// Function to reset visibility for all elements
+function resetVisibility() {
+  ['gasline', 'kitchen', 'waterline', 'bathroom'].forEach(className => {
+    document.querySelectorAll(`.${className}`).forEach(e => e.classList.remove("hidden"));
+  });
+}
+
+// Function to handle hiding elements and activating the clicked section
+function handleSectionClick(sectionToShow) {
+  resetVisibility();
+  
+  const sections = ['bathroom', 'gasline', 'kitchen', 'waterline'];
+  sections.forEach(section => {
+    const elements = document.querySelectorAll(`.${section}`);
+    if (section !== sectionToShow) {
+      elements.forEach(e => e.classList.add("hidden"));
+    }
+  });
+
+  // Reset all 'isActive' states
+  [Bathroom, Gasline, Kitchen, Waterline, allimg].forEach(elem => elem.classList.remove("isActive"));
+  
+  // Add 'isActive' to the clicked section and remove from others
+  if (sectionToShow === 'allimg') {
+    allimg.classList.add("isActive");
+  } else {
+    document.getElementById(sectionToShow).classList.add("isActive");
+  }
+}
+
+// Event listeners for each section
+allimg.addEventListener('click', () => handleSectionClick('allimg'));
+Bathroom.addEventListener('click', () => handleSectionClick('bathroom'));
+Gasline.addEventListener('click', () => handleSectionClick('gasline'));
+Kitchen.addEventListener('click', () => handleSectionClick('kitchen'));
+Waterline.addEventListener('click', () => handleSectionClick('waterline'));
+
 
 
 

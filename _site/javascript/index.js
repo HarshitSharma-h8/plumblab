@@ -1,7 +1,7 @@
 let toggle = false;
 // target element
 const moboiconAll = document.querySelectorAll(".menuToggle");
-console.log(moboiconAll);
+
 
 const mobomenu = document.getElementById("mobileMenu");
 
@@ -98,96 +98,141 @@ window.addEventListener("scroll",function(){
 
 // image gallary
 
-function reset(){
-  const gasline = document.querySelectorAll('.gasline')
-  gasline.forEach(e => e.classList.remove("hidden"))
-  const kitchen = document.querySelectorAll('.kitchen')
-  kitchen.forEach(e => e.classList.remove("hidden"))
-  const waterline = document.querySelectorAll('.waterline')
-  waterline.forEach(e => e.classList.remove("hidden"))
-  const bathroom = document.querySelectorAll('.bathroom')
-  bathroom.forEach(e => e.classList.remove("hidden"))
+// function reset(){
+//   const gasline = document.querySelectorAll('.gasline')
+//   gasline.forEach(e => e.classList.remove("hidden"))
+//   const kitchen = document.querySelectorAll('.kitchen')
+//   kitchen.forEach(e => e.classList.remove("hidden"))
+//   const waterline = document.querySelectorAll('.waterline')
+//   waterline.forEach(e => e.classList.remove("hidden"))
+//   const bathroom = document.querySelectorAll('.bathroom')
+//   bathroom.forEach(e => e.classList.remove("hidden"))
+// }
+
+// const allimg = document.getElementById("Allimg")
+// const Bathroom = document.getElementById("Bathroom")
+// const Gasline = document.getElementById("Gasline")
+// const Kitchen = document.getElementById("Kitchen")
+// const Waterline = document.getElementById("Waterline")
+
+// allimg.addEventListener('click',function(){
+//   reset()
+//   Bathroom.classList.remove("isActive")
+//   Gasline.classList.remove("isActive")
+//   Kitchen.classList.remove("isActive")
+//   Waterline.classList.remove("isActive")
+//   allimg.classList.add("isActive")
+// })
+
+
+// Bathroom.addEventListener('click',function(){
+//   reset()
+//   const gasline = document.querySelectorAll('.gasline')
+//   gasline.forEach(e => e.classList.add("hidden"))
+//   const kitchen = document.querySelectorAll('.kitchen')
+//   kitchen.forEach(e => e.classList.add("hidden"))
+//   const waterline = document.querySelectorAll('.waterline')
+//   waterline.forEach(e => e.classList.add("hidden"))
+//   Bathroom.classList.add("isActive")
+//   Gasline.classList.remove("isActive")
+//   Kitchen.classList.remove("isActive")
+//   Waterline.classList.remove("isActive")
+//   allimg.classList.remove("isActive")
+// })
+
+// Gasline.addEventListener('click',function(){
+//   reset()
+//   const bathroom = document.querySelectorAll('.bathroom')
+//   bathroom.forEach(e => e.classList.add("hidden"))
+//   const kitchen = document.querySelectorAll('.kitchen')
+//   kitchen.forEach(e => e.classList.add("hidden"))
+//   const waterline = document.querySelectorAll('.waterline')
+//   waterline.forEach(e => e.classList.add("hidden"))
+//   Bathroom.classList.remove("isActive")
+//   Gasline.classList.add("isActive")
+//   Kitchen.classList.remove("isActive")
+//   Waterline.classList.remove("isActive")
+//   allimg.classList.remove("isActive")
+// })
+
+// Kitchen.addEventListener('click',function(){
+//   reset()
+//   const kitchen = document.querySelectorAll('.kitchen')
+//   kitchen.forEach(e => e.classList.remove("hidden"))
+//   const bathroom = document.querySelectorAll('.bathroom')
+//   bathroom.forEach(e => e.classList.add("hidden"))
+//   const gasline = document.querySelectorAll('.gasline')
+//   gasline.forEach(e => e.classList.add("hidden"))
+//   const waterline = document.querySelectorAll('.waterline')
+//   waterline.forEach(e => e.classList.add("hidden"))
+//   Bathroom.classList.remove("isActive")
+//   Gasline.classList.remove("isActive")
+//   Kitchen.classList.add("isActive")
+//   Waterline.classList.remove("isActive")
+//   allimg.classList.remove("isActive")
+// })
+
+// Waterline.addEventListener('click',function(){
+//   reset()
+//   const kitchen = document.querySelectorAll('.kitchen')
+//   kitchen.forEach(e => e.classList.add("hidden"))
+//   const bathroom = document.querySelectorAll('.bathroom')
+//   bathroom.forEach(e => e.classList.add("hidden"))
+//   const gasline = document.querySelectorAll('.gasline')
+//   gasline.forEach(e => e.classList.add("hidden"))
+//   const waterline = document.querySelectorAll('.waterline')
+//   waterline.forEach(e => e.classList.remove("hidden"))
+//   Bathroom.classList.remove("isActive")
+//   Gasline.classList.remove("isActive")
+//   Kitchen.classList.remove("isActive")
+//   Waterline.classList.add("isActive")
+//   allimg.classList.remove("isActive")
+// })
+
+// Ensure the elements are correctly selected from the DOM
+const allimg = document.getElementById("Allimg");
+const Bathroom = document.getElementById("Bathroom");
+const Gasline = document.getElementById("Gasline");
+const Kitchen = document.getElementById("Kitchen");
+const Waterline = document.getElementById("Waterline");
+
+// Function to reset visibility for all elements
+function resetVisibility() {
+  ['gasline', 'kitchen', 'waterline', 'bathroom'].forEach(className => {
+    document.querySelectorAll(`.${className}`).forEach(e => e.classList.remove("hidden"));
+  });
 }
 
-const allimg = document.getElementById("Allimg")
-const Bathroom = document.getElementById("Bathroom")
-const Gasline = document.getElementById("Gasline")
-const Kitchen = document.getElementById("Kitchen")
-const Waterline = document.getElementById("Waterline")
+// Function to handle hiding elements and activating the clicked section
+function handleSectionClick(sectionToShow) {
+  resetVisibility();
+  
+  const sections = ['bathroom', 'gasline', 'kitchen', 'waterline'];
+  sections.forEach(section => {
+    const elements = document.querySelectorAll(`.${section}`);
+    if (section !== sectionToShow) {
+      elements.forEach(e => e.classList.add("hidden"));
+    }
+  });
 
-allimg.addEventListener('click',function(){
-  reset()
-  Bathroom.classList.remove("isActive")
-  Gasline.classList.remove("isActive")
-  Kitchen.classList.remove("isActive")
-  Waterline.classList.remove("isActive")
-  allimg.classList.add("isActive")
-})
+  // Reset all 'isActive' states
+  [Bathroom, Gasline, Kitchen, Waterline, allimg].forEach(elem => elem.classList.remove("isActive"));
+  
+  // Add 'isActive' to the clicked section and remove from others
+  if (sectionToShow === 'allimg') {
+    allimg.classList.add("isActive");
+  } else {
+    document.getElementById(sectionToShow).classList.add("isActive");
+  }
+}
 
+// Event listeners for each section
+allimg.addEventListener('click', () => handleSectionClick('allimg'));
+Bathroom.addEventListener('click', () => handleSectionClick('bathroom'));
+Gasline.addEventListener('click', () => handleSectionClick('gasline'));
+Kitchen.addEventListener('click', () => handleSectionClick('kitchen'));
+Waterline.addEventListener('click', () => handleSectionClick('waterline'));
 
-Bathroom.addEventListener('click',function(){
-  reset()
-  const gasline = document.querySelectorAll('.gasline')
-  gasline.forEach(e => e.classList.add("hidden"))
-  const kitchen = document.querySelectorAll('.kitchen')
-  kitchen.forEach(e => e.classList.add("hidden"))
-  const waterline = document.querySelectorAll('.waterline')
-  waterline.forEach(e => e.classList.add("hidden"))
-  Bathroom.classList.add("isActive")
-  Gasline.classList.remove("isActive")
-  Kitchen.classList.remove("isActive")
-  Waterline.classList.remove("isActive")
-  allimg.classList.remove("isActive")
-})
-
-Gasline.addEventListener('click',function(){
-  reset()
-  const bathroom = document.querySelectorAll('.bathroom')
-  bathroom.forEach(e => e.classList.add("hidden"))
-  const kitchen = document.querySelectorAll('.kitchen')
-  kitchen.forEach(e => e.classList.add("hidden"))
-  const waterline = document.querySelectorAll('.waterline')
-  waterline.forEach(e => e.classList.add("hidden"))
-  Bathroom.classList.remove("isActive")
-  Gasline.classList.add("isActive")
-  Kitchen.classList.remove("isActive")
-  Waterline.classList.remove("isActive")
-  allimg.classList.remove("isActive")
-})
-
-Kitchen.addEventListener('click',function(){
-  reset()
-  const kitchen = document.querySelectorAll('.kitchen')
-  kitchen.forEach(e => e.classList.remove("hidden"))
-  const bathroom = document.querySelectorAll('.bathroom')
-  bathroom.forEach(e => e.classList.add("hidden"))
-  const gasline = document.querySelectorAll('.gasline')
-  gasline.forEach(e => e.classList.add("hidden"))
-  const waterline = document.querySelectorAll('.waterline')
-  waterline.forEach(e => e.classList.add("hidden"))
-  Bathroom.classList.remove("isActive")
-  Gasline.classList.remove("isActive")
-  Kitchen.classList.add("isActive")
-  Waterline.classList.remove("isActive")
-  allimg.classList.remove("isActive")
-})
-
-Waterline.addEventListener('click',function(){
-  reset()
-  const kitchen = document.querySelectorAll('.kitchen')
-  kitchen.forEach(e => e.classList.add("hidden"))
-  const bathroom = document.querySelectorAll('.bathroom')
-  bathroom.forEach(e => e.classList.add("hidden"))
-  const gasline = document.querySelectorAll('.gasline')
-  gasline.forEach(e => e.classList.add("hidden"))
-  const waterline = document.querySelectorAll('.waterline')
-  waterline.forEach(e => e.classList.remove("hidden"))
-  Bathroom.classList.remove("isActive")
-  Gasline.classList.remove("isActive")
-  Kitchen.classList.remove("isActive")
-  Waterline.classList.add("isActive")
-  allimg.classList.remove("isActive")
-})
 
 
 
