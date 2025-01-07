@@ -23,54 +23,23 @@ eleventyComputed:
         </div> #}
 
         <div class="flex flex-wrap justify-center mx-auto  items-center gap-8">
-            <a href="../Dublin/index.html"
+            {% for serviceArea in collections.serviceAreas %}
+            <a href={{serviceArea.url}}
                 class="team-card bg-[var(--colorWhite)] rounded-xl overflow-hidden w-full sm:max-w-[300px]">
                 <!-- Team member image with overlay effect -->
                 <div class="image-container relative group">
-                    <img src="../../assets/city1.jpg" class="w-full h-[20rem] object-cover rounded-xl" alt="">
+                    <img src="{{serviceArea.data.img}}" alt="{{ serviceArea.data.title }}" class="w-full h-[20rem] object-cover rounded-xl" >
                     <!-- Overlay with social icons -->
                     <div
                         class="overlay absolute inset-0 bg-[rgba(0,0,0,0.6)] flex items-end p-8 opacity-0 transition-opacity duration-300 rounded-xl">
                         <div class="">
-                            <p class="text-[var(--colorWhite)] text-2xl font-bold">Dublin</p>
+                            <p class="text-[var(--colorWhite)] text-2xl font-bold">{{ serviceArea.data.title }}</p>
                         </div>
                     </div>
                 </div>
-                <p class="text-center my-2 text-2xl font-medium text-[var(--primaryColor)]">Dublin</p>
+                <p class="text-center my-2 text-2xl font-medium text-[var(--primaryColor)]">{{ serviceArea.data.title }}</p>
             </a>
-            <a href="../Clintonville/index.html"
-                class="team-card bg-[var(--colorWhite)] rounded-xl overflow-hidden w-full sm:max-w-[300px]">
-                <!-- Team member image with overlay effect -->
-                <div class="image-container relative group">
-                    <img src="../../assets/city2.jpeg" class="w-full h-[20rem] object-cover rounded-xl" alt="">
-
-                    <!-- Overlay with social icons -->
-                    <div
-                        class="overlay absolute inset-0 bg-[rgba(0,0,0,0.6)] flex items-end p-8 opacity-0 transition-opacity duration-300 rounded-xl">
-                        <div class="">
-                            <p class="text-[var(--colorWhite)] text-2xl font-bold">Clintonville</p>
-                        </div>
-                    </div>
-                </div>
-                <p class="text-center my-2 text-2xl font-medium text-[var(--primaryColor)]">Clintonville</p>
-            </a>
-            <a href="../Downtown/index.html"
-                class="team-card bg-[var(--colorWhite)] rounded-xl overflow-hidden w-full sm:max-w-[300px]">
-                <!-- Team member image with overlay effect -->
-                <div class="image-container relative group">
-                    <img src="../../assets/city3.jpeg" class="w-full h-[20rem] object-cover rounded-xl" alt="">
-
-                    <!-- Overlay with social icons -->
-                    <div
-                        class="overlay absolute inset-0 bg-[rgba(0,0,0,0.6)] flex items-end p-8 opacity-0 transition-opacity duration-300 rounded-xl">
-                        <div class="">
-                            <p class="text-[var(--colorWhite)] text-2xl font-bold">Downtown</p>
-                        </div>
-                    </div>
-                </div>
-                <p class="text-center my-2 text-2xl font-medium text-[var(--primaryColor)]">Downtown</p>
-            </a>
-
+            {% endfor %}
         </div>
     </section>
 
