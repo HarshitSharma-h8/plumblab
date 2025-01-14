@@ -1,12 +1,12 @@
----
-layout: "base.njk"
+{% extends "base.njk" %}
+
+{% block content %}
+
+<!-- Hero Section -->
+{% include "components/shared/heroSection.njk" %}
 
 
----
-
-{% include "_layouts/heroSection.njk" %}
-
-<!-- Main Content -->
+<!-- Service body  -->
 <section class="mx-auto  px-4 md:px-14 py-16  lg:flex lg:space-x-8 ">
     <!-- Blog Content -->
     <div class="w-full lg:w-2/3  rounded-lg p-6 ">
@@ -18,7 +18,7 @@ layout: "base.njk"
         {{ content | safe }}
 
         <!-- Accordination -->
-        {% include "_layouts/accordion.njk" %}
+        {% include "components/shared/accordion.njk" %}
     </div>
 
     <!-- Sidebar -->
@@ -36,6 +36,12 @@ layout: "base.njk"
         </div>
         
 
-        {% include "_layouts/callUs.njk" %} 
+        {% include "components/shared/callUs.njk" %} 
     </aside>
 </section>
+
+{% endblock %}
+
+
+
+

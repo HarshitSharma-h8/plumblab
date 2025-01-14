@@ -36,5 +36,6 @@ Thumbs.db
 # Optional: Any other build output (adjust as needed)
 _build/
 *.bak
+_site/
 
 

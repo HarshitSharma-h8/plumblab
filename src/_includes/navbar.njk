@@ -42,15 +42,15 @@
             <div class="hidden lg:flex space-x-2 text-[var(--colorDark)] font-medium">
                 <a href="/"
                     class="hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Home</a>
-                <a href="/pages/about"
+                <a href="/about"
                     class="hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">About</a>
                 <li class="relative group ">
-                    <button href="#"
+                    <button onclick="window.location.href='/services';"
                         class="hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Services</button>
                     <!-- Dropdown Menu -->
                     <ul
                         class="absolute left-0 top-[2.1rem] w-[20rem] hidden group-hover:block bg-[var(--colorWhite)] py-6 pb-5 rounded-md px-3  mt-2  z-10">
-                        <li><a href="/pages/allservice"
+                        <li><a href="/services"
                                 class=" block hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Our
                                 Services</a>
                         </li>
@@ -63,15 +63,16 @@
                     </ul>
                 </li>
                 <li class="relative group">
-                    <button onclick="window.location.href='/pages/ourServiceAreas';"
+                    <button onclick="window.location.href='/our-service-areas';"
                         class="hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Service
                         Areas
                     </button>
                     <!-- Dropdown Menu -->
                     <ul
                         class="absolute left-0 top-[2.1rem] w-[20rem] hidden group-hover:block bg-[var(--colorWhite)] py-6 pb-5 rounded-md px-3  mt-2  z-10">
-                        <li><a href="/pages/ourServiceAreas"
-                                class=" block hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Our Service Area</a>
+                        <li><a href="/our-service-areas"
+                                class=" block hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Our
+                                Service Area</a>
                         </li>
                         {% for serviceArea in collections.serviceAreas %}
                         <li><a href="{{serviceArea.url}}"
@@ -80,18 +81,18 @@
                         {% endfor %}
                     </ul>
                 </li>
-                <a href="/pages/projects"
+                <a href="/projects"
                     class="hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Projects</a>
                 <!-- <a href="#"
                 class="hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Shop</a> -->
-                <a href="/pages/allBlog"
+                <a href="/blogs"
                     class="hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Blog</a>
-                <a href="/pages/contact"
+                <a href="/contact"
                     class="hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Contact</a>
             </div>
             <!-- Get Free Quote Button -->
             <div class="mt-3 md:mt-0">
-                <a href="/pages/contact/index.html#contactus"
+                <a href="/contact#contactus"
                     class="hidden lg:block bg-[var(--primaryColor)] text-[var(--colorWhite)] py-3 px-5 rounded-md hover:bg-[var(--primaryColorHover)] transition duration-300 ease-in-out text-[1.1rem]">Get
                     Free Quote</a>
             </div>
@@ -113,7 +114,7 @@
                 </div>
                 <a href="/"
                     class="hover:bg-[var(--colorWhite)] text-[var(--colorWhite)] hover:text-[var(--colorDark)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Home</a>
-                <a href="/pages/about"
+                <a href="/about"
                     class="hover:bg-[var(--colorWhite)] text-[var(--colorWhite)] hover:text-[var(--colorDark)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">About</a>
                 <a href="#" <li class="relative">
                     <a href="#"
@@ -123,7 +124,7 @@
                             id="dropMenu"></i></a>
                     <!-- Dropdown Menu (Hidden by default) -->
                     <ul id="mobileDropdown" class="hidden pl-4 space-y-2 text-[var(--colorWhite)]">
-                        <li><a href="/pages/allservice"
+                        <li><a href="/services"
                                 class=" block hover:bg-[var(--colorWhite)] hover:text-[var(--primaryColor)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Our
                                 Services</a>
                         </li>
@@ -144,36 +145,32 @@
                                 id="dropMenu2"></i></a>
                         <!-- Dropdown Menu (Hidden by default) -->
                         <ul id="mobileDropdown2" class="hidden pl-4 space-y-2 text-[var(--colorWhite)]">
-                            <li><a href="./pages/allservice/index.html"
+                            <li><a href="/allservices"
                                     class=" block hover:bg-[var(--colorWhite)] hover:text-[var(--primaryColor)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Our
                                     Service Areas</a>
                             </li>
-                            <li><a href="./pages/Dublin/index.html"
-                                    class=" block hover:bg-[var(--colorWhite)] hover:text-[var(--primaryColor)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Dublin,
-                                    Columbus</a>
+                            
+                            {% for serviceArea in collections.serviceAreas %}
+                            <li><a href="{{serviceArea.url}}"
+                                    class=" block hover:bg-[var(--colorWhite)] hover:text-[var(--primaryColor)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">{{
+                                        serviceArea.data.title }}</a>
                             </li>
-                            <li><a href="./pages/Clintonville/index.html"
-                                    class=" block hover:bg-[var(--colorWhite)] hover:text-[var(--primaryColor)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Clintonville,
-                                    Columbus</a>
-                            </li>
-                            <li><a href="./pages/Downtown/index.html"
-                                    class=" block hover:bg-[var(--colorWhite)] hover:text-[var(--primaryColor)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Downtown,
-                                    Columbus</a>
-                            </li>
+                            {% endfor %}
+
 
 
                         </ul>
                     </li>
-                    <a href="/pages/projects"
+                    <a href="/projects"
                         class="hover:bg-[var(--colorWhite)] text-[var(--colorWhite)] hover:text-[var(--colorDark)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Projects</a>
                     <!-- <a href="#"
                     class="hover:bg-[var(--colorWhite)] text-[var(--colorWhite)] hover:text-[var(--colorDark)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Shop</a> -->
-                    <a href="/pages/allBlog"
+                    <a href="/blogs"
                         class="hover:bg-[var(--colorWhite)] text-[var(--colorWhite)] hover:text-[var(--colorDark)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Blog</a>
-                    <a href="/pages/contact"
+                    <a href="/contact"
                         class="hover:bg-[var(--colorWhite)] text-[var(--colorWhite)] hover:text-[var(--colorDark)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Contact</a>
                     <div class="mt-3">
-                        <a href="/pages/contact/index.html#contactus"
+                        <a href="/contact#contactus"
                             class=" bg-[var(--colorWhite)] text-[var(--colorDark)] hover:text-[var(--primaryColorHover)] py-3 px-5 rounded-md  transition duration-300 ease-in-out text-[1.1rem]">Get
                             Free Quote</a>
                     </div>

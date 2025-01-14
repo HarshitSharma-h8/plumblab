@@ -1,94 +1,12 @@
 ---
-layout : 'base.njk'
+layout : 'layouts/home.njk'
 title : "PlumbLab"
+
+
+
 ---
 
 
-<!-- hero section -->
-<section class="h-[60vh] lg:h-[80vh] bg-[var(--bgLight)] flex justify-between items-center px-4 md:px-14  mx-auto">
-    <div class="lg:w-[70%]">
-        <h1
-            class="text-[var(--colorDark)] text-[2rem] lg:text-[2.6rem] xl:text-[3.5rem] font-medium  leading-tight mb-3">
-            We Provide Top- Notch <br><span class="text-[var(--primaryColor)] font-bold">Plumbing &
-                Repair</span><br> Service At Your Door</h1>
-        <p class="text-[var(--textGray)]  text-[1rem] lg:text-[1.1rem] xl:text-lg mb-1">We provide top-notch
-            plimbing and repair services at your doorstep!</p>
-        <p class="text-[var(--textGray)]  text-[1rem] lg:text-[1.1rem] xl:text-lg mb-5">Whether you're dealing
-            with a leaky faucet, clogged drains, or need a full system.</p>
-        <a href="./pages/contact/index.html#contactus"
-            class=" bg-[var(--primaryColor)] text-[var(--colorWhite)] py-3 px-5 rounded-md hover:bg-[var(--primaryColorHover)] transition duration-300 ease-in-out text-[1.1rem]">Get
-            Free Quote</a>
-    </div>
-    <div class="hidden md:block h-full">
-        <img src="./assets/heroimg.png" class="md:w-full w-[2rem] md:pr-12  h-full  object-cover object-top "
-            alt="heroimg">
-    </div>
-</section>
-
-<!-- about section -->
-{% include "_layouts/aboutUsSection.njk" %}
-
-<!-- Servise crousel -->
-<section class=" mx-auto  py-16 bg-[var(--bgLight)]  px-4 md:px-14">
-    <div class="mb-10">
-        <h2 class="text-center text-4xl mb-3 text-[var(--colorDark)] font-bold">Best <span
-                class="text-[var(--primaryColor)]">Services</span> We Offer</h2>
-        <p class="hidden sm:block text-center  text-[var(--colorDark)]">Lorem Ipsum is simply dummy text of the
-            printing and typesetting industry.<br> has been the industry's standard dummy text ever since the 1500s.
-        </p>
-    </div>
-
-    <div class="container swiper">
-        <div class="slider-wrapper">
-            <div class="card-list swiper-wrapper">
-                {% for service in collections.services %}
-                <div class="card-item swiper-slide bg-[var(--colorWhite)] rounded-xl group">
-                    <div class="overflow-hidden rounded-xl w-full h-[16rem]">
-                        <img src="{{ service.data.img }}"
-                            class="rounded-xl w-full h-full object-cover transition-transform duration-200 ease-in-out group-hover:scale-110"
-                            alt="{{ service.data.title }}">
-                    </div>
-                    <h4 class="text-[var(--colorDark)] text-xl font-medium mt-4 mb-2">{{ service.data.title }}</h4>
-                    <p class="text-[var(--textGray2)] mb-2">{{ service.content.slice(3) |  truncate(60, '...')  }}</p>
-                    <a href="{{service.url}}"
-                        class="transition duration-300 ease-in-out hover:text-[var(--primaryColor)] font-semibold">Read
-                        More
-                        <i class="fa-solid fa-angles-right"></i></a>
-                </div>
-                {% endfor %}
-
-
-            </div>
-
-            <div class="swiper-pagination"></div>
-            <div class="swiper-slide-button swiper-button-prev"></div>
-            <div class="swiper-slide-button swiper-button-next"></div>
-        </div>
-    </div>
-</section>
-
-{# Why choose us #}
-{% include "_layouts/whyChooseUs.njk" %}
-
-
-<!-- projects gallary -->
-<section class=" mx-auto  py-16 bg-[var(--bgLight)]  ">
-    <div >
-        <h2 class="text-center text-4xl mb-3 text-[var(--colorDark)] font-bold">Our Latest <span
-                class="text-[var(--primaryColor)]">Projects</span></h2>
-        <p class="hidden sm:block text-center  text-[var(--colorDark)]">Lorem Ipsum is simply dummy text of the
-            printing and typesetting industry.<br> has been the industry's standard dummy text ever since the 1500s.
-        </p>
-    </div>
-
-    {% include "_layouts/project.njk" %}
-</section>
-
-<!-- Testimonial -->
-{% include "_layouts/testimonial.njk" %}
-
-
-{% include "_layouts/blog3Card.njk" %}
 
 
 

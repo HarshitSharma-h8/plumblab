@@ -1,0 +1,28 @@
+<!-- service area location -->
+<section class=" mx-auto  py-16 bg-[var(--bgLight)]  px-4 md:px-14">
+    {# <div class="mb-10">
+        <h2 class="text-center text-4xl mb-3 text-[var(--colorDark)] font-bold">Our Service <span
+                class="text-[var(--primaryColor)]">Areas</span></h2>
+
+    </div> #}
+
+    <div class="flex flex-wrap justify-center mx-auto  items-center gap-8">
+        {% for serviceArea in collections.serviceAreas %}
+        <a href={{serviceArea.url}}
+            class="team-card bg-[var(--colorWhite)] rounded-xl overflow-hidden w-full sm:max-w-[300px]">
+            <!-- Team member image with overlay effect -->
+            <div class="image-container relative group">
+                <img src="{{serviceArea.data.img}}" alt="{{ serviceArea.data.title }}" class="w-full h-[20rem] object-cover rounded-xl" >
+                <!-- Overlay with social icons -->
+                <div
+                    class="overlay absolute inset-0 bg-[rgba(0,0,0,0.6)] flex items-end p-8 opacity-0 transition-opacity duration-300 rounded-xl">
+                    <div class="">
+                        <p class="text-[var(--colorWhite)] text-2xl font-bold">{{ serviceArea.data.title }}</p>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center my-2 text-2xl font-medium text-[var(--primaryColor)]">{{ serviceArea.data.title }}</p>
+        </a>
+        {% endfor %}
+    </div>
+</section>

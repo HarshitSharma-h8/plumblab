@@ -1,0 +1,66 @@
+<section class="grid grid-cols-1 lg:grid-cols-2 h-screen" id="contactus">
+
+    <!-- Form Section -->
+    <div class="bg-gray-900 p-8 px-4 md:px-14 flex flex-col justify-center h-full">
+        <h2 class="text-sm font-semibold text-[var(--textGray)]">BOOK ONLINE</h2>
+        <h3 class="text-3xl font-bold text-[var(--colorWhite)] mb-6">Online Booking For Appointments.</h3>
+
+        <!-- Form -->
+        <form class="space-y-4" method="POST" id="contact-form">
+
+            <!-- Full Name and Email -->
+            <div class="flex flex-col md:flex-row md:space-x-4">
+                <div class="w-full mb-4 md:mb-0">
+                    <label class="block text-[var(--textGray)] text-sm mb-1">Full name here*</label>
+                    <input type="text" placeholder="Ross Ward" id="name" name="name" required
+                        class="w-full px-4 py-2 bg-gray-800 rounded-lg text-[var(--colorWhite)] focus:outline-none focus:ring-2 focus:ring-[var(--primaryColor)]">
+                </div>
+                <div class="w-full">
+                    <label class="block text-[var(--textGray)] text-sm mb-1">Email here*</label>
+                    <input type="email" placeholder="rossward@gmail.com" id="email" name="email" required
+                        class="w-full px-4 py-2 bg-gray-800 rounded-lg text-[var(--colorWhite)] focus:outline-none focus:ring-2 focus:ring-[var(--primaryColor)]">
+                </div>
+            </div>
+
+            <!-- Contact Number and Select Service -->
+            <div class="flex flex-col md:flex-row md:space-x-4">
+                <div class="w-full mb-4 md:mb-0">
+                    <label class="block text-[var(--textGray)] text-sm mb-1">Contact number*</label>
+                    <input type="tel" placeholder="+88 *** *** ***" id="contact" name="contact"
+                        class="w-full px-4 py-2 bg-gray-800 rounded-lg text-[var(--colorWhite)] focus:outline-none focus:ring-2 focus:ring-[var(--primaryColor)]">
+                </div>
+                <div class="w-full">
+                    <label class="block text-[var(--textGray)] text-sm mb-1">Select service*</label>
+                    <select id="service" name="service" required
+                        class="w-full px-4 py-2 bg-gray-800 rounded-lg text-[var(--colorWhite)] focus:outline-none focus:ring-2 focus:ring-[var(--primaryColor)]">
+                        <option>Subject</option>
+                        {% for service in collections.services %}
+                        <option>{{service.data.title}}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+            </div>
+
+            <!-- Short Text -->
+            <div>
+                <label class="block text-[var(--textGray)] text-sm mb-1">Short text*</label>
+                <textarea placeholder="Type your message" id="message" name="message" required
+                    class="w-full px-4 py-2 bg-gray-800 rounded-lg text-[var(--colorWhite)] focus:outline-none focus:ring-2 focus:ring-[var(--primaryColor)] h-32"></textarea>
+            </div>
+
+            <div id="responseMessage" class=" rounded-lg px-4 py-2 text-white text-xl"></div>
+
+            <!-- Submit Button -->
+            <button type="submit"
+                class="w-full bg-[var(--primaryColor)] hover:bg-[var(--primaryColorHover)] text-[var(--colorWhite)] font-semibold py-3 rounded-lg mt-4">
+                Get An Appointment
+            </button>
+        </form>
+    </div>
+
+    <!-- Image Section -->
+    <div class="h-full hidden lg:block " id="contactusform-img">
+        <img src="/assets/callus.avif" alt="Contact Us" class="w-full h-full object-cover">
+    </div>
+
+</section>

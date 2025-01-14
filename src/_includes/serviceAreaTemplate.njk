@@ -1,16 +1,13 @@
----
-layout: "base.njk"
 
-heroImgSrc: "/assets/about.jpg"
-heroImgAlt: "HomePageHeroImg"
+{% extends "base.njk" %}
 
-eleventyComputed:
- heroTitle: "{{ title }}"
----
+{% block content %}
 
-{% include "_layouts/heroSection.njk" %}
+<!-- Hero Section -->
+{% include "components/shared/heroSection.njk" %}
 
 
+<!-- Service area Body -->
 <main class="mx-auto  px-4 md:px-14 py-16  lg:flex lg:space-x-8 ">
     <!-- Blog Content -->
     <section class="w-full lg:w-2/3  rounded-lg p-6 ">
@@ -69,7 +66,7 @@ eleventyComputed:
             <h3 class="text-xl font-bold text-[var(--colorDark)]">Service Area</h3>
             <hr class="h-[.3rem] bg-[var(--primaryColor)] rounded-full mt-3 mb-5" />
             <ul class="mt-4 space-y-2">
-                <li><a href="/pages/ourServiceAreas"
+                <li><a href="/our-Service-areas"
                         class="text-[var(--primaryColor)] hover:underline">Our Service Area</a>
                 </li>
                 {% for serviceArea in collections.serviceAreas %}
@@ -94,10 +91,12 @@ eleventyComputed:
         </div> -->
 
         <!-- contactus -->
-        {% include "_layouts/callUs.njk" %}
+        {% include "components/shared/callUs.njk" %}
     </aside>
 </main>
 
 
 <!-- Map -->
-{% include "_layouts/map.njk" %}
+{% include "components/shared/map.njk" %}
+
+{% endblock %}

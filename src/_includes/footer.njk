@@ -2,7 +2,7 @@
     <div class="container mx-auto  grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 p-8 px-4 md:px-10 ">
         <!-- Logo and Description -->
         <div>
-            <a href="/index.html" class="order-last lg:order-none flex items-center space-x-2">
+            <a href="/" class="order-last lg:order-none flex items-center space-x-2">
                 <img src="/assets/logo.png" alt="Logo" class="w-14 ">
                 <div class="flex flex-col">
                     <span class="text-[var(--primaryColor)] font-bold text-3xl ">Plum<span
@@ -33,20 +33,20 @@
 
         <!-- Quick Links -->
         <div>
-            <h5 class="text-xl font-semibold text-[var(--colorWhite)]">Quick Link</h5>
+            <h4 class="text-xl font-semibold text-[var(--colorWhite)]">Quick Link</h4>
             <ul class="mt-4 space-y-2 text-[var(--colorWhite)] transition duration-300 ease-in-out">
-                <li><a href=/pages/about"
+                <li><a href="/about"
                         class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
                             class="fa-solid fa-angles-right"></i> About Us</a></li>
-                <li><a href="/pages/projects"
+                <li><a href="/projects"
                         class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
                             class="fa-solid fa-angles-right"></i> Projects</a></li>
                 <!-- <li><a href="#" class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
                                 class="fa-solid fa-angles-right"></i> Services</a></li> -->
-                <li><a href="/pages/contact"
+                <li><a href="/contact"
                         class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
                             class="fa-solid fa-angles-right"></i> Contact</a></li>
-                <li><a href="/pages/blog"
+                <li><a href="/blogs"
                         class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
                             class="fa-solid fa-angles-right"></i> Our Blog</a>
                 </li>
@@ -61,7 +61,7 @@
 
         <!-- Quick contacts -->
         <div>
-            <h5 class="text-xl font-semibold text-[var(--colorWhite)]">Quick Contact</h5>
+            <h4 class="text-xl font-semibold text-[var(--colorWhite)]">Quick Contact</h4>
             <ul class="mt-4 space-y-2 text-[var(--colorWhite)] transition duration-300 ease-in-out">
                 <li><a href="#" class=" transition duration-300 ease-in-out flex items-center gap-4"><i
                             class="fa-solid fa-location-dot text-[var(--colorWhite)]"></i> Columbus, Ohio, USA</a>
@@ -76,7 +76,7 @@
 
         <!-- Our Services -->
         <div>
-            <h5 class="text-xl font-semibold text-[var(--colorWhite)]">Our Services</h5>
+            <h4 class="text-xl font-semibold text-[var(--colorWhite)]">Our Services</h4>
             <ul class="mt-4 space-y-2 text-[var(--colorWhite)] transition duration-300 ease-in-out">
                 {% for service in collections.services %}
                 <li><a href="{{service.url}}"
@@ -89,6 +89,6 @@
     </div>
     <div class="bg-[var(--colorDark2)] text-[var(--colorWhite)] text-center p-2 sm:p-4 lg:text-base px-4 md:px-10">
         <p>&#169; Copyright <span id="year"></span> | PlumbLab - Plumber Website Theme | All right reserved. | <a
-                href="/pages/privacyPolicy" class="underline">Privacy Policy</a></p>
+                href="/privacy-policy" class="underline">Privacy Policy</a></p>
     </div>
 </footer>
