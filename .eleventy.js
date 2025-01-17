@@ -2,6 +2,8 @@ import {
   addPagesWithSchema,
   addBreadcrumbSchema,
 } from "./src/resources/javascript/schemas.js";
+
+
 import MarkdownIt from "markdown-it";
 
 export default function (eleventyConfig) {

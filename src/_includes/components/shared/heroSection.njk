@@ -8,7 +8,12 @@
     <div class="absolute inset-0 bg-bgLight2 bg-opacity-50"></div>
 
     <!-- Text content -->
-    <div class="relative flex justify-center items-center h-full">
+    <div class="relative flex flex-col justify-center items-center h-full">
         <h1 class="text-white text-2xl md:text-3xl lg:text-4xl font-bold">{{heroTitle}}</h1>
+        <p class="{{ breadCrump }}  text-xl font-semibold text-white mt-4">
+            <a href="/" class="hover:underline">Home</a>
+            / {{ page.url | breadcrumbs | safe }}
+        </p>
     </div>
+    
 </section>
