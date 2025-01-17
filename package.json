@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "eleventy --serve",
     "start" : "npx tailwindcss -i ./src/resources/style/input.css -o ./_site/resources/style/output.css --watch",
-    "build": "npx tailwindcss -i ./src/resources/style/input.css -o ./_site/resources/style/output.css --watch && eleventy"
+    "build": "npx tailwindcss -i ./src/resources/style/input.css -o ./_site/resources/style/output.css && eleventy"
   },
   "keywords": [],
   "author": "",
