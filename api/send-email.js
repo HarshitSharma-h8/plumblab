@@ -23,8 +23,8 @@ export default async function handler(req, res) {
 
     // Set email options
     const mailOptions = {
-      from: `"Your Name" <${process.env.GMAIL_USER}>`,
-      to: process.env.GMAIL_USER, // Replace with the recipient's email
+      from: `"${name}" <${email}>`,
+      to: process.env.RECEIVER_EMAIL, // Replace with the recipient's email
       subject: "New Form Submission",
       html: `
           <h3>New Contact Form Submission</h3>
@@ -34,6 +34,8 @@ export default async function handler(req, res) {
           <p><strong>Contact:</strong> ${service}</p>
           <p><strong>Message:</strong> ${message}</p>
         `,
+
+        replyTo: email,   
     };
 
     // Send the email
