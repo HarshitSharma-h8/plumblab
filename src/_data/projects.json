@@ -1,42 +1,42 @@
 [
     {
         "service" : "Gas line Service",
-        "img" : "/assets/teamperson2.jpg",
+        "img" : "/resources/assets/teamperson2.jpg",
         "class" : "gasline"
     },
     {
         "service" : "Kitchen Plumbing",
-        "img" : "/assets/servise5.jpg",
+        "img" : "/resources/assets/servise5.jpg",
         "class" : "kitchen"
     },
     {
         "service" : "Water Line Repair",
-        "img" : "/assets/teamperson1.jpg",
+        "img" : "/resources/assets/teamperson1.jpg",
         "class" : "waterline"
     },
     {
         "service" : "Water Line Repair",
-        "img" : "/assets/teamperson3.jpg",
+        "img" : "/resources/assets/teamperson3.jpg",
         "class" : "waterline"
     },
     {
         "service" : "Water Line Repair",
-        "img" : "/assets/service4.jpg",
+        "img" : "/resources/assets/service4.jpg",
         "class" : "waterline"
     },
     {
         "service" : "Bathroom Repair",
-        "img" : "/assets/service2.jpg",
+        "img" : "/resources/assets/service2.jpg",
         "class" : "bathroom"
     },
     {
         "service" : "Bathroom Repair",
-        "img" : "/assets/about.jpg",
+        "img" : "/resources/assets/about.jpg",
         "class" : "bathroom"
     },
     {
         "service" : "Bathroom Repair",
-        "img" : "/assets/service6.jpg",
+        "img" : "/resources/assets/service6.jpg",
         "class" : "bathroom"
     }
     

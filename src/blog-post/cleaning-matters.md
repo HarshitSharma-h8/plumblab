@@ -1,7 +1,7 @@
 ---
 title: "PlumbLab Blog | Cleaning Matters"
 
-heroImgSrc: "/assets/about.jpg"
+heroImgSrc: "/resources/assets/about.jpg"
 heroImgAlt: "HomePageHeroImg"
 eleventyComputed:
   heroTitle: "{{ title }}"
@@ -9,7 +9,7 @@ eleventyComputed:
 
 date: "2022-11-20"
 author: "Harish Ikbaal"
-img: "/assets/about.jpg"
+img: "/resources/assets/about.jpg"
 
 ---
 

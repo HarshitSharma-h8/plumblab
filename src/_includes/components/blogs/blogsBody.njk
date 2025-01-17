@@ -1,34 +1,34 @@
 <!-- blog body -->
-<section class=" mx-auto  py-16 bg-[var(--colorWhite)]  px-4 md:px-14 flex flex-col items-center">
+<section class=" mx-auto  py-16 bg-colorWhite  px-4 md:px-14 flex flex-col items-center">
     {# <div class="mb-10">
-        <h2 class="text-center text-4xl mb-3 text-[var(--colorDark)] font-bold">Latest <span
-                class="text-[var(--primaryColor)]">News</span> & <span class="text-[var(--primaryColor)]">Blog</span>
+        <h2 class="text-center text-4xl mb-3 text-colorDark font-bold">Latest <span
+                class="text-primaryColor">News</span> & <span class="text-primaryColor">Blog</span>
         </h2>
-        <p class="hidden sm:block text-center  text-[var(--colorDark)]">Lorem Ipsum is simply dummy text of the
+        <p class="hidden sm:block text-center  text-colorDark">Lorem Ipsum is simply dummy text of the
             printing and typesetting industry.<br> has been the industry's standard dummy text ever since the 1500s.
         </p>
     </div> #}
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8  mb-8">
         {% for post in posts %}
-        <div class="md:hidden lg:block team-card bg-[var(--bgLight)] rounded-xl overflow-hidden ">
+        <div class="md:hidden lg:block team-card bg-bgLight rounded-xl overflow-hidden ">
             <!-- Team member image with overlay effect -->
             <div class="image-container relative group">
                 <img src={{post.data.img}} alt={{post.data.title}} class="w-full h-[18rem] object-cover rounded-xl">
             </div>
             <!-- Text below image -->
             <div class="p-6">
-                <p class="text-[var(--primaryColor)] mb-2"><i class="fa-regular fa-clock"></i> {{post.data.date }}</p>
-                <h2 class="text-[var(--colorDark)] hover:text-[var(--primaryColor)] text-xl font-semibold mb-4">
+                <p class="text-primaryColor mb-2"><i class="fa-regular fa-clock"></i> {{post.data.date }}</p>
+                <h2 class="text-colorDark hover:text-primaryColor text-xl font-semibold mb-4">
                     {{ post.data.title |  truncate(35, '...')  }}</h2>
                 <div class="flex gap-4 items-center mb-4">
-                    <h3 class="text-[var(--textGray)]"><i class="fa-regular fa-user text-[var(--primaryColor)]"></i>
+                    <h3 class="text-textGray"><i class="fa-regular fa-user text-primaryColor"></i>
                         {{post.data.author}}</h3>
-                    {# <p class="text-[var(--textGray)]"><i
-                            class="fa-regular fa-message text-[var(--primaryColor)]"></i> Coments (0)</p> #}
+                    {# <p class="text-textGray"><i
+                            class="fa-regular fa-message text-primaryColor"></i> Coments (0)</p> #}
                 </div>
                 <a href="{{ post.url }}"
-                    class="w-fit hidden lg:block bg-[var(--primaryColor)] text-[var(--colorWhite)] py-2 px-4 rounded-md hover:bg-[var(--primaryColorHover)] transition duration-300 ease-in-out text-[1.1rem]">Read
+                    class="w-fit hidden lg:block bg-primaryColor text-colorWhite py-2 px-4 rounded-md hover:bg-primaryColorHover transition duration-300 ease-in-out text-[1.1rem]">Read
                     More</a>
             </div>
         </div>
@@ -39,13 +39,13 @@
     <div class="flex justify-center item-center gap-4 mt-10">
         {% if pagination.href.previous %}
         <a href="{{ pagination.href.previous }}"
-            class="w-fit block bg-[var(--primaryColor)] text-[var(--colorWhite)] hover:bg-[var(--primaryColorHover)] py-2 px-4 rounded-md  transition duration-300 ease-in-out text-[1.1rem] uppercase">Previous
+            class="w-fit block bg-primaryColor text-colorWhite hover:bg-primaryColorHover py-2 px-4 rounded-md  transition duration-300 ease-in-out text-[1.1rem] uppercase">Previous
             page
         </a>
         {% endif %}
         {% if pagination.href.next %}
         <a href="{{ pagination.href.next }}"
-            class="w-fit block bg-[var(--primaryColor)] text-[var(--colorWhite)] hover:bg-[var(--primaryColorHover)] py-2 px-4 rounded-md  transition duration-300 ease-in-out text-[1.1rem] uppercase">Next
+            class="w-fit block bg-primaryColor text-colorWhite hover:bg-primaryColorHover py-2 px-4 rounded-md  transition duration-300 ease-in-out text-[1.1rem] uppercase">Next
             page
         </a>
         {% endif %}

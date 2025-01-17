@@ -1,14 +1,14 @@
 ---
 title: "AquaZap Blog | Dublin Plumbing Experiense"
 
-heroImgSrc: "/assets/about.jpg"
+heroImgSrc: "/resources/assets/about.jpg"
 heroImgAlt: "HomePageHeroImg"
 eleventyComputed:
   heroTitle: "{{ title }}"
 
 date: "2023-08-02"
 author: "Jhon Dao"
-img: "/assets/about.jpg"
+img: "/resources/assets/about.jpg"
 
 ---
 

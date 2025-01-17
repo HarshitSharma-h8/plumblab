@@ -1,14 +1,14 @@
 ---
 title: "AquaZap Blog | Understanding Plumbing: A Comprehensive Guide"
 
-heroImgSrc: "/assets/about.jpg"
+heroImgSrc: "/resources/assets/about.jpg"
 heroImgAlt: "HomePageHeroImg"
 eleventyComputed:
   heroTitle: "{{ title }}"
 
 date: "2024-11-22"
 author: "Alice Johnson"
-img: "/assets/about.jpg"
+img: "/resources/assets/about.jpg"
 
 ---
 

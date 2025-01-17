@@ -1,0 +1,181 @@
+<!-- Top bar for location and email -->
+<div
+    class=" bg-colorDark text-colorWhite text-sm p-2 sm:p-4 md:flex justify-between items-center px-4 md:px-14 hidden">
+    <div class="flex flex-col sm:flex-row  items-center justify-center  space-x-5  mb-1 md:mb-0">
+        <div class="flex items-center lg:text-base mb-1 md:mb-0"><i class="fas fa-map-marker-alt mr-1"></i> 121
+            King Street,
+            Melbourne,
+            Australia</div>
+        <div class="flex items-center lg:text-base"><i class="fas fa-envelope mr-1"></i> <a
+                href="mailto:someone@example.com">plumblab@gmail.com</a></div>
+    </div>
+    <div class="text-center md:flex space-x-5">
+        <a href="https://www.facebook.com/" class="hover:text-gray-300 lg:text-base"><i
+                class="fab fa-facebook-f"></i></a>
+        <a href="https://x.com/" class="hover:text-gray-300 lg:text-base"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/" class="hover:text-gray-300 lg:text-base"><i
+                class="fab fa-linkedin-in"></i></a>
+        <a href="https://in.pinterest.com/" class="hover:text-gray-300 lg:text-base"><i
+                class="fab fa-pinterest"></i></a>
+    </div>
+</div>
+<header id="navbar" class="sticky w-full z-50 top-0 transition-all duration-500 ease-in-out">
+    <!-- Main Navbar -->
+    <nav class="z-50 bg-white shadow-md shadow-bgLight px-4 md:px-14 relative ">
+        <div class="mx-auto  py-4 flex justify-between items-center ">
+            <!-- hamburger menue -->
+            <a
+                class="lg:hidden bg-primaryColor text-colorWhite px-3 py-1 rounded-md cursor-pointer menuToggle">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+            <!-- Logo and company name -->
+            <a href="/" class="order-last lg:order-none flex items-center space-x-2">
+                <img src="/resources/assets/logo.png" alt="Logo" class="lg:w-14 w-10">
+                <div class="flex flex-col">
+                    <span class="text-primaryColor font-bold lg:text-3xl text-[1.3rem]">Plum<span
+                            class="text-colorDark">Lab.</span></span>
+                    <span class="text-textGray lg:text-sm text-[.6rem] font-semibold">Best Plumber
+                        Service</span>
+                </div>
+            </a>
+            <!-- Navigation links -->
+            <div class="hidden lg:flex space-x-2 text-colorDark font-medium">
+                <a href="/"
+                    class="hover:bg-primaryColor hover:text-colorWhite px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Home</a>
+                <a href="/about"
+                    class="hover:bg-primaryColor hover:text-colorWhite px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">About</a>
+                <li class="relative group ">
+                    <button onclick="window.location.href='/services';"
+                        class="hover:bg-primaryColor hover:text-colorWhite px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Services</button>
+                    <!-- Dropdown Menu -->
+                    <ul
+                        class="absolute left-0 top-[2.1rem] w-[20rem] hidden group-hover:block bg-colorWhite py-6 pb-5 rounded-md px-3  mt-2  z-10">
+                        <li><a href="/services"
+                                class=" block hover:bg-primaryColor hover:text-colorWhite px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Our
+                                Services</a>
+                        </li>
+                        {% for service in collections.services %}
+                        <li><a href="{{service.url}}"
+                                class=" block hover:bg-primaryColor hover:text-colorWhite px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">{{
+                                service.data.title }}</a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </li>
+                <li class="relative group">
+                    <button onclick="window.location.href='/our-service-areas';"
+                        class="hover:bg-primaryColor hover:text-colorWhite px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Service
+                        Areas
+                    </button>
+                    <!-- Dropdown Menu -->
+                    <ul
+                        class="absolute left-0 top-[2.1rem] w-[20rem] hidden group-hover:block bg-colorWhite py-6 pb-5 rounded-md px-3  mt-2  z-10">
+                        <li><a href="/our-service-areas"
+                                class=" block hover:bg-primaryColor hover:text-colorWhite px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Our
+                                Service Area</a>
+                        </li>
+                        {% for serviceArea in collections.serviceAreas %}
+                        <li><a href="{{serviceArea.url}}"
+                                class=" block hover:bg-primaryColor hover:text-colorWhite px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">{{serviceArea.data.title}}</a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </li>
+                <a href="/projects"
+                    class="hover:bg-primaryColor hover:text-colorWhite px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Projects</a>
+                <!-- <a href="#"
+                class="hover:bg-primaryColor hover:text-colorWhite px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Shop</a> -->
+                <a href="/blogs"
+                    class="hover:bg-primaryColor hover:text-colorWhite px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Blog</a>
+                <a href="/contact"
+                    class="hover:bg-primaryColor hover:text-colorWhite px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Contact</a>
+            </div>
+            <!-- Get Free Quote Button -->
+            <div class="mt-3 md:mt-0">
+                <a href="/contact#contactus"
+                    class="hidden lg:block bg-primaryColor text-colorWhite py-3 px-5 rounded-md hover:bg-primaryColorHover transition duration-300 ease-in-out text-[1.1rem]">Get
+                    Free Quote</a>
+            </div>
+
+
+        </div>
+
+        <!-- mobile menu -->
+        <div class="z-10  bg-primaryColor  lg:hidden absolute left-0 top-0 transition-all duration-300 ease-in-out transform -translate-x-[400%] w-[60%] h-screen px-4 md:px-10 py-5"
+            id="mobileMenu">
+            <div class=" text-colorDark font-medium flex flex-col gap-2">
+                <!-- hamburger menue -->
+                <div class="flex justify-between">
+                    <div></div>
+                    <a
+                        class="lg:hidden bg-colorWhite text-primaryColor px-3 py-1 rounded-md cursor-pointer menuToggle group">
+                        <i class="fa-solid fa-xmark transition group-hover:rotate-90"></i>
+                    </a>
+                </div>
+                <a href="/"
+                    class="hover:bg-colorWhite text-colorWhite hover:text-colorDark px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Home</a>
+                <a href="/about"
+                    class="hover:bg-colorWhite text-colorWhite hover:text-colorDark px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">About</a>
+                <a href="#" <li class="relative">
+                    <a href="#"
+                        class="flex items-center justify-between w-full hover:bg-colorWhite text-colorWhite hover:text-colorDark px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold]"
+                        onclick="toggleDropdown()">Services <i
+                            class="fa-solid fa-chevron-down transform transition duration-200 ease-in-out "
+                            id="dropMenu"></i></a>
+                    <!-- Dropdown Menu (Hidden by default) -->
+                    <ul id="mobileDropdown" class="hidden pl-4 space-y-2 text-colorWhite">
+                        <li><a href="/services"
+                                class=" block hover:bg-colorWhite hover:text-primaryColor px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Our
+                                Services</a>
+                        </li>
+                        {% for service in collections.services %}
+                        <li><a href="{{service.url}}"
+                                class=" block hover:bg-colorWhite hover:text-primaryColor px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">{{
+                                service.data.title }}</a>
+                        </li>
+                        {% endfor %}
+
+                    </ul>
+                    </li>
+                    <li class="relative">
+                        <a href="#"
+                            class="flex items-center justify-between w-full hover:bg-colorWhite text-colorWhite hover:text-colorDark px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold]"
+                            onclick="toggleDropdown2()">Service Areas<i
+                                class="fa-solid fa-chevron-down transform transition duration-200 ease-in-out "
+                                id="dropMenu2"></i></a>
+                        <!-- Dropdown Menu (Hidden by default) -->
+                        <ul id="mobileDropdown2" class="hidden pl-4 space-y-2 text-colorWhite">
+                            <li><a href="/allservices"
+                                    class=" block hover:bg-colorWhite hover:text-primaryColor px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Our
+                                    Service Areas</a>
+                            </li>
+                            
+                            {% for serviceArea in collections.serviceAreas %}
+                            <li><a href="{{serviceArea.url}}"
+                                    class=" block hover:bg-colorWhite hover:text-primaryColor px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">{{
+                                        serviceArea.data.title }}</a>
+                            </li>
+                            {% endfor %}
+
+
+
+                        </ul>
+                    </li>
+                    <a href="/projects"
+                        class="hover:bg-colorWhite text-colorWhite hover:text-colorDark px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Projects</a>
+                    <!-- <a href="#"
+                    class="hover:bg-colorWhite text-colorWhite hover:text-colorDark px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Shop</a> -->
+                    <a href="/blogs"
+                        class="hover:bg-colorWhite text-colorWhite hover:text-colorDark px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Blog</a>
+                    <a href="/contact"
+                        class="hover:bg-colorWhite text-colorWhite hover:text-colorDark px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Contact</a>
+                    <div class="mt-3">
+                        <a href="/contact#contactus"
+                            class=" bg-colorWhite text-colorDark hover:text-primaryColorHover py-3 px-5 rounded-md  transition duration-300 ease-in-out text-[1.1rem]">Get
+                            Free Quote</a>
+                    </div>
+            </div>
+
+        </div>
+    </nav>
+</header>

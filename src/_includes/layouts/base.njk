@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta tags -->
+  {% include 'components/shared/baseHead.njk' %}
+</head>
+
+<body>
+    {% include 'components/shared/navbar.njk' %}
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    {# Take me top btn #}
+    {% include "components/shared/takeMeTopBTN.njk" %}
+    {% include 'components/shared/footer.njk' %}
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+
+</html>

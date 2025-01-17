@@ -1,34 +1,34 @@
 <!-- projects gallary -->
 <section class=" mx-auto  py-16   px-4 md:px-14">
     {# <div class="mb-10">
-        <h2 class="text-center text-4xl mb-3 text-[var(--colorDark)] font-bold">Our Latest <span
-                class="text-[var(--primaryColor)]">Project</span></h2>
-        <p class="hidden sm:block text-center  text-[var(--colorDark)]">Lorem Ipsum is simply dummy text of the
+        <h2 class="text-center text-4xl mb-3 text-colorDark font-bold">Our Latest <span
+                class="text-primaryColor">Project</span></h2>
+        <p class="hidden sm:block text-center  text-colorDark">Lorem Ipsum is simply dummy text of the
             printing and typesetting industry.<br> has been the industry's standard dummy text ever since the 1500s.
         </p>
     </div> #}
 
     <div class="text-center mb-10 flex justify-center items-center gap-3">
         <h3><button
-                class="hover:bg-[var(--primaryColor)]  hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-medium text-[var(--colorDark)] uppercase isActive"
+                class="hover:bg-primaryColor  hover:text-colorWhite px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-medium text-colorDark uppercase isActive"
                 id="Allimg">All Project</button></h3>
         <h3><button
-                class="hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-medium text-[var(--colorDark)] uppercase"
+                class="hover:bg-primaryColor hover:text-colorWhite px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-medium text-colorDark uppercase"
                 id="Bathroom">Bathroom</button></h3>
         <h3><button
-                class="hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-medium text-[var(--colorDark)] uppercase"
+                class="hover:bg-primaryColor hover:text-colorWhite px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-medium text-colorDark uppercase"
                 id="Gasline">Gas Line</button></h3>
         <h3><button
-                class="hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-medium text-[var(--colorDark)] uppercase"
+                class="hover:bg-primaryColor hover:text-colorWhite px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-medium text-colorDark uppercase"
                 id="Kitchen">Kitchen</button></h3>
         <h3><button
-                class="hover:bg-[var(--primaryColor)] hover:text-[var(--colorWhite)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-medium text-[var(--colorDark)] uppercase"
+                class="hover:bg-primaryColor hover:text-colorWhite px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-medium text-colorDark uppercase"
                 id="Waterline">Water Line</button></h3>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {% for project in projects %}
-        <div class="team-card bg-[var(--colorWhite)] rounded-xl overflow-hidden {{ project.class}}">
+        <div class="team-card bg-colorWhite rounded-xl overflow-hidden {{ project.class}}">
             <!-- Team member image with overlay effect -->
             <div class="image-container relative group">
                 <img src={{ project.img }} class="w-full h-[20rem] object-cover rounded-xl" alt="">
@@ -37,8 +37,8 @@
                 <div
                     class="overlay absolute inset-0 bg-[rgba(0,0,0,0.6)] flex items-end p-8 opacity-0 transition-opacity duration-300 rounded-xl">
                     <div class="">
-                        <p class="text-[var(--colorWhite)] text-2xl font-bold">{{ project.service }}</p>
-                        <p class="text-[var(--colorWhite)] text-xl font-medium">Plumbing</p>
+                        <p class="text-colorWhite text-2xl font-bold">{{ project.service }}</p>
+                        <p class="text-colorWhite text-xl font-medium">Plumbing</p>
                     </div>
                 </div>
             </div>

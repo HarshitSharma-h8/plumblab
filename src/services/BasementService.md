@@ -1,12 +1,12 @@
 ---
 title: "Basement Service"
 
-heroImgSrc: "/assets/about.jpg"
+heroImgSrc: "/resources/assets/about.jpg"
 heroImgAlt: "HomePageHeroImg"
 eleventyComputed:
  heroTitle: "{{ title }}"
 
-img : "/assets/about.jpg"
+img : "/resources/assets/about.jpg"
 
 ---
 

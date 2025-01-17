@@ -1,0 +1,24 @@
+{
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://aplayeradvantage.com/#organization",
+        "name": "A Player Advantage",
+        "url": "https://aplayeradvantage.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "@id": "https://aplayeradvantage.com/#/schema/logo/image/",
+          "url": "https://aplayeradvantage.com/wp-content/uploads/2017/05/A-Player-Logo-for-Website-Largest.jpg",
+          "contentUrl": "https://aplayeradvantage.com/wp-content/uploads/2017/05/A-Player-Logo-for-Website-Largest.jpg",
+          "width": 681,
+          "height": 171,
+          "caption": "A Player"
+        },
+        "image": {
+          "@id": "https://aplayeradvantage.com/#/schema/logo/image/"
+        }
+      }
+    ]
+}
+  

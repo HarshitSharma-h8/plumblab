@@ -1,9 +1,9 @@
 <!-- Testimonial -->
-<section class=" mx-auto  py-16 bg-[var(--colorWhite)]  px-4 md:px-14">
+<section class=" mx-auto  py-16 bg-colorWhite  px-4 md:px-14">
     <div class="mb-10">
-        <h2 class="text-center text-4xl mb-3 text-[var(--colorDark)] font-bold">What <span
-                class="text-[var(--primaryColor)]">People’s</span> Say</h2>
-        <!-- <p class="hidden sm:block text-center  text-[var(--colorDark)]">Lorem Ipsum is simply dummy text of the
+        <h2 class="text-center text-4xl mb-3 text-colorDark font-bold">What <span
+                class="text-primaryColor">People’s</span> Say</h2>
+        <!-- <p class="hidden sm:block text-center  text-colorDark">Lorem Ipsum is simply dummy text of the
             printing and typesetting industry.<br> has been the industry's standard dummy text ever since the 1500s.
         </p> -->
     </div>
@@ -13,17 +13,17 @@
             <div class="card-list swiper-wrapper">
                 {% for testimonial in testimonials %}
                 <div class="card-item swiper-slide  rounded-xl group ">
-                    <div class="bg-[var(--bgLight)] rounded-xl  p-4 h-[300px]">
+                    <div class="bg-bgLight rounded-xl  p-4 h-[300px]">
                         <blockquote>
-                            <p class="text-[var(--colorDark)]">"{{ testimonial.message }}"</p>
+                            <p class="text-colorDark">"{{ testimonial.message }}"</p>
                         </blockquote>
                     </div>
-                    <div class="bg-[var(--bgLight)] rounded-xl  p-2 mt-4 flex items-center gap-1">
+                    <div class="bg-bgLight rounded-xl  p-2 mt-4 flex items-center gap-1">
                         <img src={{ testimonial.img }} class="w-[75px] h-[75px] object-cover rounded-full"
                             alt="testimonial1">
                         <div class="p-4">
-                            <p class="text-[var(--colorDark)] text-2xl mb-1">{{ testimonial.person }}</p>
-                            <p class="text-[var(--textGray)]">{{ testimonial.position }}</p>
+                            <p class="text-colorDark text-2xl mb-1">{{ testimonial.person }}</p>
+                            <p class="text-textGray">{{ testimonial.position }}</p>
                         </div>
                     </div>
                 </div>

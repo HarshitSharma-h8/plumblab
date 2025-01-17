@@ -1,4 +1,4 @@
 {
-    "layout" : "servicePageTemplate.njk",
+    "layout" : "layouts/servicePageTemplate.njk",
     "tags" : "services"
 }

@@ -1,4 +1,4 @@
 {
-    "layout" : "blogPostTemplate.njk",
+    "layout" : "layouts/blogPostTemplate.njk",
     "tags" : "blogPosts"
 }

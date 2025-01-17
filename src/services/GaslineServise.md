@@ -1,12 +1,12 @@
 ---
 title: "Gasline Service"
 
-heroImgSrc: "/assets/about.jpg"
+heroImgSrc: "/resources/assets/about.jpg"
 heroImgAlt: "HomePageHeroImg"
 eleventyComputed:
  heroTitle: "{{ title }}"
 
-img : "/assets/service3.jpg"
+img : "/resources/assets/service3.jpg"
 
 ---
 

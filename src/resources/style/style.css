@@ -1,18 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
-:root {
-  --primaryColor: #0053d4;
-  --primaryColorHover: #054aba;
-  --bgLight: #6c9be738;
-  --bgLight2: #0051d492;
-  --colorWhite: #ffffff;
-  --colorWhite2: #e6eaf051;
-  --colorDark: #253141;
-  --colorDark2: #212d3d;
-  --textGray: rgb(107 114 128);
-  --textGray2: rgb(100, 104, 111);
-  --gold : #fca900;
-  --purple : #6C48C5;
-}
+
 
 body {
   font-family: "Mulish", sans-serif;
@@ -106,63 +93,63 @@ h1 {
 
 
 .isActive{
-  background-color: var(--primaryColor) !important;
-  color: var(--colorWhite) !important;
+  background-color: #0053d4 !important;
+  color: #ffffff !important;
 }
 
 
-/* blogPost */
-#blogPost h1,
+/*.blogPost */
+.blogPost h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  color: var(--darkBlue);
+  color: #0053d4;
   padding-top: 0.6rem;
   padding-bottom: 0.6rem;
 }
 
-#blogPost h1 {
+.blogPost h1 {
   font-size: 40px;
 }
-#blogPost h2 {
+.blogPost h2 {
   font-size: 30px;
 }
-#blogPost h3 {
+.blogPost h3 {
   font-size: 28px;
 }
-#blogPost h4 {
+.blogPost h4 {
   font-size: 26px;
 }
-#blogPost h5 {
+.blogPost h5 {
   font-size: 24px;
 }
-#blogPost h6 {
+.blogPost h6 {
   font-size: 22px;
 }
 
-#blogPost p {
-  color: var(--textGray);
+.blogPost p {
+  color: rgb(107 114 128);
   font-size: 18px;
 }
 
-#blogPost ul {
+.blogPost ul {
   list-style: disc;
-  color: var(--textGray);
+  color: rgb(107 114 128);
   font-size: 18px;
   padding-left: 20px;
   margin-top: 0.8rem;
   /* list-style-position: inside; */
 }
-#blogPost ol {
+.blogPost ol {
   list-style: decimal;
-  color: var(--textGray);
+  color: rgb(107 114 128);
   font-size: 18px;
   padding-left: 20px;
   /* list-style-position: inside; */
 }
-#blogPost img {
+.blogPost img {
   margin: 1rem 0rem;
 }
 

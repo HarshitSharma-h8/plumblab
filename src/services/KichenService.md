@@ -1,12 +1,12 @@
 ---
 title: "Kichen Service"
 
-heroImgSrc: "/assets/about.jpg"
+heroImgSrc: "/resources/assets/about.jpg"
 heroImgAlt: "HomePageHeroImg"
 eleventyComputed:
  heroTitle: "{{ title }}"
 
-img : "/assets/service4.jpg"
+img : "/resources/assets/service4.jpg"
 
 ---
 

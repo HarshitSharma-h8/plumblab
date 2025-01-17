@@ -1,12 +1,12 @@
 ---
 title: "Bathroom Service"
 
-heroImgSrc: "/assets/about.jpg"
+heroImgSrc: "/resources/assets/about.jpg"
 heroImgAlt: "HomePageHeroImg"
 eleventyComputed:
  heroTitle: "{{ title }}"
 
-img : "/assets/service2.jpg"
+img : "/resources/assets/service2.jpg"
 
 ---
 
