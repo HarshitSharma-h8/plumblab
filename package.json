@@ -4,8 +4,8 @@
   "type": "module",
   "scripts": {
     "dev": "eleventy --serve",
-    "start" : "npx tailwindcss -i ./src/resources/style/input.css -o ./src/resources/style/output.css --watch",
-    "build": "npx tailwindcss -i ./src/resources/style/input.css -o ./src/resources/style/output.css --watch && eleventy"
+    "start" : "npx tailwindcss -i ./src/resources/style/input.css -o ./_site/resources/style/output.css --watch",
+    "build": "npx tailwindcss -i ./src/resources/style/input.css -o ./_site/resources/style/output.css --watch && eleventy"
   },
   "keywords": [],
   "author": "",
